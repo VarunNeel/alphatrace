@@ -14,12 +14,14 @@ Why a window: Yahoo usually has nothing on the listing day itself, so a symbol s
 retried every run until Yahoo has it. After that the normal daily job (stocks.csv now includes it) carries it forward.
 App: Import > Pull from GitHub > "New listings".
 """
-import argparse, csv, datetime as dt, io, os, sys, time, urllib.request
+import argparse, csv, datetime as dt, io, os, re, sys, time, urllib.request
 
 UA = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36"
 NSE_LIST = "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv"
 NSE_HDR = {"User-Agent": UA, "Accept": "text/csv,*/*", "Referer": "https://www.nseindia.com/"}
 LOG_HEAD = ["SYMBOL", "SERIES", "LISTING_DATE", "NAME", "FIRST_SEEN"]
+# rights entitlements (-RE, -RE1), partly-paid (-PP) and warrants (-W1) are temporary instruments, not stocks
+JUNK = re.compile(r"-(RE|PP|W)\d*$")
 MONTHS = {m: i + 1 for i, m in enumerate("JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split())}
 
 
@@ -64,7 +66,7 @@ def fetch_nse(path=None):
     for r in rows[1:]:
         if len(r) <= max(iS, iSe): continue
         sym = r[iS].strip().upper(); se = r[iSe].strip().upper()
-        if sym and se in ("EQ", "BE"):
+        if sym and se in ("EQ", "BE") and not JUNK.search(sym):
             out.append({"SYMBOL": sym, "SERIES": se, "NAME": r[iN].strip() if iN >= 0 and len(r) > iN else "", "DATE": parse_date(r[iD]) if iD >= 0 and len(r) > iD else None})
     return out
 
@@ -106,6 +108,12 @@ def cmd_sync(a):
                 log.append({"SYMBOL": r["SYMBOL"], "SERIES": r["SERIES"], "LISTING_DATE": r["DATE"].isoformat() if r["DATE"] else "", "NAME": r["NAME"], "FIRST_SEEN": today})
         for r in new[:40]: print("  + %-14s %s  listed %s  %s" % (r["SYMBOL"], r["SERIES"], r["DATE"] or "?", r["NAME"]))
         if len(new) > 40: print("  … and %d more" % (len(new) - 40))
+    junk = {r["SYMBOL"] for r in log if JUNK.search(r["SYMBOL"])}
+    if junk:  # an earlier version let these in — take them back out of the log and out of stocks.csv
+        log = [r for r in log if r["SYMBOL"] not in junk]
+        with open(a.stocks, newline="", encoding="utf-8-sig") as fh: keep = [r for r in csv.reader(fh) if not (r and r[0].strip().upper() in junk)]
+        with open(a.stocks, "w", newline="", encoding="utf-8") as fh: csv.writer(fh).writerows(keep)
+        print("removed %d temporary instruments: %s" % (len(junk), ", ".join(sorted(junk))))
     # listing dates for symbols already logged but missing one (EQUITY_L fills them in later)
     dates = {r["SYMBOL"]: r["DATE"] for r in nse if r["DATE"]}
     for r in log:
@@ -141,9 +149,14 @@ def cmd_backfill(a):
 
 
 def cmd_universe(a):
-    rec = {s for s, _ in recent(a)}
-    if not rec or not os.path.exists(a.universe): print("universe: nothing to add"); return 0
+    rec = {s for s, _ in recent(a) if not JUNK.search(s)}
+    if not os.path.exists(a.universe): print("universe: nothing to add"); return 0
     with open(a.universe, newline="", encoding="utf-8") as fh: rows = list(csv.reader(fh))
+    clean = [r for i, r in enumerate(rows) if i == 0 or not (r and JUNK.search(r[0].strip().upper()))]
+    if len(clean) != len(rows):
+        with open(a.universe, "w", newline="", encoding="utf-8") as fh: csv.writer(fh).writerows(clean)
+        print("universe: removed %d temporary instruments (rights entitlements etc.)" % (len(rows) - len(clean))); rows = clean
+    if not rec: print("universe: nothing to add"); return 0
     have = {r[0].strip().upper() for r in rows[1:] if r}; ser = {r["SYMBOL"]: r["SERIES"] for r in read_log(os.path.join(a.out, "new_listings.csv"))}
     add = sorted(s for s in rec if s not in have)
     if not add: print("universe: all recent listings already present"); return 0
