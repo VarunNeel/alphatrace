@@ -1,0 +1,40 @@
+name: New listings (IPOs)
+on:
+  schedule:
+    - cron: "0 14 * * 1-5"     # 19:30 IST, weekdays — before the 21:00 daily price job
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: newlist
+  cancel-in-progress: false
+jobs:
+  new:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Reuse earlier BSE / Yahoo replies
+        uses: actions/cache@v4
+        with:
+          path: fundamentals/cache
+          key: fundamentals-cache-${{ github.run_id }}
+          restore-keys: fundamentals-cache-
+      - name: New symbols on NSE -> stocks.csv
+        run: python new_listings.py sync --stocks stocks.csv
+      - name: Full price history of recent listings
+        run: python new_listings.py backfill --stocks stocks.csv
+      - name: Classification + float for them (cached, so only the new ones are fetched)
+        run: python fundamentals.py run --stocks stocks.csv --eod eod
+      - name: Make sure fresh IPOs are on the stock list even if BSE has not classified them yet
+        run: python new_listings.py universe
+      - name: Commit
+        run: |
+          git config user.name  "newlist"
+          git config user.email "newlist@users.noreply.github.com"
+          git add stocks.csv ohlcv/new fundamentals/*.csv
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "New listings $(date -u +%F)"; git pull --rebase -q; git push; fi
