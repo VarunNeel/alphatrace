@@ -1,0 +1,27 @@
+name: Daily EOD feed
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"   # 19:00 IST — NSE publishes the bhavcopy by early evening
+    - cron: "30 15 * * 1-5"   # 21:00 IST — retry in case it was late
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: eod-feed
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download bhavcopy
+        run: python fetch_eod.py --days 5
+      - name: Commit new days
+        run: |
+          git config user.name  "eod-feed"
+          git config user.email "eod-feed@users.noreply.github.com"
+          git add eod
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "EOD $(date -u +%F)"; git push; fi

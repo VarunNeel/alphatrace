@@ -1,0 +1,28 @@
+name: Daily OHLCV (Yahoo)
+on:
+  schedule:
+    - cron: "30 15 * * 1-5"    # 21:00 IST, weekdays
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: ohlcv
+  cancel-in-progress: false
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Download the last days for every stock in stocks.csv
+        run: python yahoo_ohlcv.py daily --stocks stocks.csv
+      - name: Commit
+        run: |
+          git config user.name  "ohlcv"
+          git config user.email "ohlcv@users.noreply.github.com"
+          git add ohlcv/DAILY_OHLCV.csv ohlcv/daily ohlcv/missing.csv
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "OHLCV $(date -u +%F)"; git pull --rebase -q; git push; fi

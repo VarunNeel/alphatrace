@@ -1,0 +1,34 @@
+name: Fundamentals (classification + float)
+on:
+  schedule:
+    - cron: "0 2 1 * *"        # 07:30 IST on the 1st of every month
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: fundamentals
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Reuse earlier BSE / Yahoo replies
+        uses: actions/cache@v4
+        with:
+          path: fundamentals/cache
+          key: fundamentals-cache-${{ github.run_id }}
+          restore-keys: fundamentals-cache-
+      - name: Build nse_classification.csv, STOCKS_FLOAT.csv, universe.csv
+        run: python fundamentals.py run --stocks stocks.csv --eod eod
+      - name: Commit results
+        run: |
+          git config user.name  "fundamentals"
+          git config user.email "fundamentals@users.noreply.github.com"
+          git add fundamentals/*.csv
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "Fundamentals $(date -u +%F)"; git pull --rebase -q; git push; fi

@@ -1,0 +1,33 @@
+name: Historical OHLCV (Yahoo)
+on:
+  workflow_dispatch:
+    inputs:
+      from_year:
+        description: "First calendar year to download"
+        default: "2010"
+      to_year:
+        description: "Last year (blank = this year)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: ohlcv
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Download history, one gzip per year
+        run: python yahoo_ohlcv.py history --stocks stocks.csv --from-year "${{ inputs.from_year }}" --to-year "${{ inputs.to_year || 0 }}"
+      - name: Commit
+        run: |
+          git config user.name  "ohlcv"
+          git config user.email "ohlcv@users.noreply.github.com"
+          git add ohlcv/history ohlcv/missing.csv
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "OHLCV history from ${{ inputs.from_year }}"; git pull --rebase -q; git push; fi
