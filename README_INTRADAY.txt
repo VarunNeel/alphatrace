@@ -1,10 +1,12 @@
-AlphaTrace intraday kit — ALL stocks in stocks.csv (EQ + BE), 5m / 15m / 1h
-  intraday.py                       next to yahoo_ohlcv.py (it reuses its stock reader)
-  .github/workflows/intraday.yml    the scheduled job
+AlphaTrace kit v4 — everything fresh (daily EOD, daily Yahoo, history, new listings, fundamentals, intraday)
 
-First run (Actions -> "Intraday bars (Yahoo)" -> Run workflow):
-  1) days=59   intervals=5m,15m      2) days=700  intervals=1h
-Then it runs every weekday 16:15 IST with days=5.
-Retention: NOTHING is deleted — every day file stays on GitHub forever (5m/15m start ~59 days back, 1h ~700 days, and grow each day).
-Size: roughly 3-4 MB of new files per day for ~2,400 stocks (5m is the bulk), i.e. ~1 GB/year. To prune later add e.g. --keep 5m=90 to the fetch line.
-To limit symbols instead:  python intraday.py pick --float STOCKS_FLOAT.csv --top 800  (writes intraday_symbols.csv, then used).
+Install on the phone (Termux):   bash push_fresh.sh            (repo assumed at ~/alphatrace; or:  bash push_fresh.sh /path/to/repo)
+Or by hand: copy the files to the repo root and the 6 .yml files to .github/workflows/ . Data folders are never touched.
+A push that changes .github/workflows needs a token with Workflows: read & write.
+
+After pushing, run these once from GitHub -> Actions (Run workflow), in this order:
+  1) "Daily OHLCV (Yahoo)"            -> refreshes ohlcv/DAILY_OHLCV.csv (all stocks, latest day)
+  2) "Historical OHLCV (Yahoo)"       -> only if the year files look incomplete
+  3) "Intraday bars (Yahoo)"  days=59 intervals=5m,15m   then   days=700 intervals=1h
+Intraday: nothing is ever deleted; ~3-4 MB/day for all stocks. Schedule: weekdays 16:15 IST.
+In the app: Vault -> Pull from GitHub -> Historical "All" -> then "Pull latest".

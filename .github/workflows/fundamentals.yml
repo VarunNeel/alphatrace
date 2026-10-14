@@ -1,76 +1,34 @@
-name: fundamentals
-
+name: Fundamentals (classification + float)
 on:
   schedule:
-    - cron: "30 20 * * 5"   # Saturday 02:00 IST; a stock is re-fetched only if its record is older than max_age_days
-  workflow_dispatch:
-    inputs:
-      max_age_days:
-        description: "Re-fetch records older than N days (0 = everything)"
-        default: "6"
-      limit:
-        description: "Per-shard cap for a quick test (0 = no cap)"
-        default: "0"
-
+    - cron: "0 2 1 * *"        # 07:30 IST on the 1st of every month
+  workflow_dispatch: {}
+permissions:
+  contents: write
 concurrency:
   group: fundamentals
   cancel-in-progress: false
-
-permissions:
-  contents: write
-
 jobs:
-  fetch:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
-    strategy:
-      fail-fast: false
-      matrix:
-        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install requirements
-        run: pip install -r fundamentals_pipeline/requirements.txt
-      - name: Fetch and clean this shard
-        run: |
-          python fundamentals_pipeline/scripts/run_shard.py \
-            --shard "${{ matrix.shard }}" --of 8 --out shard_out \
-            --max-age-days "${{ inputs.max_age_days || '6' }}" \
-            --limit "${{ inputs.limit || '0' }}"
-      - uses: actions/upload-artifact@v4
+      - run: pip install yfinance
+      - name: Reuse earlier BSE / Yahoo replies
+        uses: actions/cache@v4
         with:
-          name: shard-${{ matrix.shard }}
-          path: shard_out
-          retention-days: 2
-
-  publish:
-    needs: fetch
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - uses: actions/download-artifact@v4
-        with:
-          path: shards
-          pattern: shard-*
-      - name: Merge shard output into fundamentals/data/stock
+          path: fundamentals/cache
+          key: fundamentals-cache-${{ github.run_id }}
+          restore-keys: fundamentals-cache-
+      - name: Build nse_classification.csv, STOCKS_FLOAT.csv, universe.csv
+        run: python fundamentals.py run --stocks stocks.csv --eod eod
+      - name: Commit results
         run: |
-          mkdir -p fundamentals/data/stock
-          for d in shards/shard-*; do cp -f "$d"/*.json fundamentals/data/stock/ 2>/dev/null || true; done
-          rm -f fundamentals/data/stock/_errors.json
-      - name: Build the output files
-        run: python fundamentals_pipeline/scripts/build_outputs.py
-      - name: Commit (only if something changed)
-        run: |
-          git config user.name "alphatrace-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add fundamentals/data
-          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -m "fundamentals: refresh $(date -u +%F)"
-          for i in 1 2 3; do git pull --rebase -X theirs && git push && break || sleep 5; done
+          git config user.name  "fundamentals"
+          git config user.email "fundamentals@users.noreply.github.com"
+          git add fundamentals/*.csv
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "Fundamentals $(date -u +%F)"; git pull --rebase -q; git push; fi
