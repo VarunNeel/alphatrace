@@ -1,0 +1,59 @@
+SECTOR,INDUSTRY,STOCKS,STOCKS_WITH_DATA,MEDIAN_SALES_YOY,MEDIAN_NI_YOY,MEDIAN_SALES_CAGR3,MEDIAN_NI_CAGR3,MEDIAN_OPM,MEDIAN_NPM,MEDIAN_ROE,MEDIAN_ROCE,MEDIAN_DE,MEDIAN_PAYOUT,MEDIAN_PROMOTER_PCT
+Automobile and Auto Components,Auto Components,110,104,20.87,15.86,9.71,14.92,8.83,6.22,12.91,16.98,0.28,10.1,65.91
+Automobile and Auto Components,Automobiles,16,15,33.46,10.53,17.47,25.3,8.35,7.83,18.37,17.22,0.31,20.1,52.27
+Capital Goods,Aerospace & Defense,25,22,34.72,11.79,15.47,37.5,13.31,17.53,12.29,14.73,0.08,7.1,60.06
+Capital Goods,Agricultural Commercial & Construction Vehicles,12,10,15.19,5.16,15.62,26.29,9.63,5.54,14.92,17.83,0.37,2.75,69.3
+Capital Goods,Electrical Equipment,69,60,20.5,16.02,28.11,40.82,14.07,9.82,17.81,22.86,0.25,0.0,68.84
+Capital Goods,Industrial Manufacturing,74,64,16.54,15.52,12.04,13.79,10.77,7.32,9.38,14.98,0.19,0.0,65.22
+Capital Goods,Industrial Products,204,189,18.9,25.34,9.13,16.15,9.06,6.37,11.84,16.3,0.23,5.6,69.59
+Chemicals,Chemicals & Petrochemicals,134,122,21.27,52.47,1.93,-1.92,9.61,6.97,10.79,13.46,0.22,5.65,68.94
+Chemicals,Fertilizers & Agrochemicals,37,35,4.08,9.5,2.2,2.53,8.78,6.18,12.48,17.19,0.33,7.1,69.94
+Construction,Construction,80,67,6.15,4.91,8.18,14.5,9.7,5.94,8.99,14.19,0.4,0.0,66.69
+Construction Materials,Cement & Cement Products,32,27,8.91,-26.09,2.85,16.74,7.75,5.79,7.97,9.38,0.46,11.5,64.34
+Construction Materials,Other Construction Materials,6,5,18.06,146.24,7.13,35.17,9.4,6.21,8.97,15.16,0.04,2.7,63.88
+Consumer Durables,Consumer Durables,139,125,18.94,32.02,8.99,10.28,6.82,4.21,8.9,11.76,0.26,0.0,65.39
+Consumer Services,Leisure Services,63,51,11.42,8.8,10.53,11.41,15.65,9.29,5.78,7.48,0.28,0.0,69.32
+Consumer Services,Other Consumer Services,18,16,11.06,13.11,12.04,18.47,7.13,9.64,6.72,8.81,0.15,0.0,59.49
+Consumer Services,Retailing,45,38,14.88,19.52,16.61,17.56,6.75,3.5,10.18,12.95,0.34,0.0,58.08
+Diversified,Diversified,6,5,13.75,31.17,5.86,8.37,9.96,7.69,13.49,13.03,0.11,19.1,75.61
+Fast Moving Consumer Goods,Agricultural Food & other Products,76,67,8.73,18.5,4.02,2.87,5.3,4.18,7.0,11.19,0.53,1.3,73.17
+Fast Moving Consumer Goods,Beverages,17,17,8.64,11.03,8.73,17.36,11.0,4.65,10.79,13.67,0.29,7.6,60.59
+Fast Moving Consumer Goods,Cigarettes & Tobacco Products,4,4,-13.44,-34.38,26.59,30.26,22.62,20.64,22.39,26.88,0.37,0.0,74.66
+Fast Moving Consumer Goods,Diversified FMCG,5,3,4.62,,3.65,2.54,6.49,3.57,13.36,14.4,0.67,0.0,63.31
+Fast Moving Consumer Goods,Food Products,44,41,19.14,22.39,9.46,16.58,6.6,5.25,13.28,16.73,0.29,6.95,70.42
+Fast Moving Consumer Goods,Household Products,10,9,2.95,-13.88,3.81,9.34,11.08,8.93,12.22,17.82,0.11,8.8,70.75
+Fast Moving Consumer Goods,Personal Products,10,10,16.75,10.47,5.54,7.39,20.22,18.36,27.56,32.28,0.07,65.2,61.83
+Financial Services,Banks,41,37,13.35,34.5,12.16,16.78,,25.45,11.33,,,10.6,48.13
+Financial Services,Capital Markets,50,47,19.15,23.1,19.25,20.69,,28.82,14.96,,,8.05,58.48
+Financial Services,Finance,168,142,19.62,23.26,18.44,17.44,,23.2,8.71,,,0.0,70.73
+Financial Services,Financial Technology (Fintech),9,6,24.37,85.71,14.45,,,6.75,2.68,,,0.0,34.87
+Financial Services,Insurance,13,10,13.36,21.06,11.06,12.81,,3.86,11.4,,,17.0,58.12
+Forest Materials,Paper Forest & Jute Products,24,21,10.06,-3.93,-3.62,-27.3,5.9,3.1,4.04,6.22,0.37,9.9,69.33
+Healthcare,Healthcare Equipment & Supplies,8,6,13.48,-7.58,22.53,20.85,8.27,10.2,9.62,12.82,0.2,0.0,75.01
+Healthcare,Healthcare Services,40,38,21.83,13.22,15.75,19.5,16.13,11.95,13.66,15.34,0.32,0.0,64.09
+Healthcare,Pharmaceuticals & Biotechnology,124,115,16.86,20.95,9.46,15.95,13.82,11.84,11.89,15.7,0.19,5.2,62.41
+Information Technology,IT - Hardware,11,10,11.26,30.0,17.66,12.14,5.88,5.79,12.18,19.8,0.36,0.0,62.91
+Information Technology,IT - Services,54,49,20.37,3.38,14.81,20.96,7.15,6.68,9.34,12.77,0.15,0.0,60.15
+Information Technology,IT - Software,67,61,14.89,11.01,12.89,14.2,14.07,10.66,13.5,16.57,0.08,1.6,63.64
+Media Entertainment & Publication,Entertainment,35,26,7.71,-17.27,6.07,8.03,1.99,2.23,2.33,3.54,0.26,0.0,72.09
+Media Entertainment & Publication,Media,13,9,8.54,20.54,3.32,-0.48,5.51,9.84,8.59,11.07,0.14,1.8,74.5
+Media Entertainment & Publication,Printing & Publication,4,3,20.13,,9.55,,12.3,18.94,28.03,34.76,0.13,19.8,64.81
+Metals & Mining,Diversified Metals,4,3,,,39.41,56.54,6.54,4.55,23.21,36.66,0.82,0.0,72.73
+Metals & Mining,Ferrous Metals,22,19,10.5,23.52,1.13,15.72,9.98,5.73,8.36,10.14,0.35,2.8,72.24
+Metals & Mining,Metals & Minerals Trading,8,7,24.58,-1.0,8.31,35.63,1.99,1.65,6.96,9.83,0.38,0.0,75.0
+Metals & Mining,Minerals & Mining,10,9,14.43,5.23,10.74,16.91,10.81,8.96,15.32,19.98,0.3,6.5,60.8
+Metals & Mining,Non - Ferrous Metals,13,11,45.2,117.84,7.1,12.14,8.88,14.29,10.83,17.94,0.2,5.2,68.93
+Oil Gas & Consumable Fuels,Consumable Fuels,5,4,-3.56,0.63,6.35,-8.04,9.76,5.17,17.03,18.58,1.02,0.0,67.66
+Oil Gas & Consumable Fuels,Gas,9,8,20.66,66.0,3.67,5.12,10.73,9.16,12.46,14.03,0.2,26.25,63.26
+Oil Gas & Consumable Fuels,Oil,16,13,45.17,37.91,28.36,11.54,25.3,20.05,10.53,11.5,0.12,0.0,67.73
+Oil Gas & Consumable Fuels,Petroleum Products,14,10,42.01,56.88,5.69,3.45,10.23,8.12,22.55,29.96,0.13,13.7,67.65
+Power,Power,35,30,7.39,2.58,5.9,12.81,20.65,12.38,9.44,8.98,1.2,1.0,62.39
+Realty,Realty,86,66,15.82,23.34,20.5,21.48,21.46,15.33,8.21,9.68,0.4,0.0,68.56
+Services,Commercial Services & Supplies,75,68,8.96,25.09,8.03,8.68,4.44,4.88,7.28,10.14,0.16,0.0,70.2
+Services,Engineering Services,2,2,,,,,,,,,,,
+Services,Transport Infrastructure,12,7,18.57,-19.98,10.13,22.63,11.88,4.89,11.76,10.97,0.63,0.0,69.98
+Services,Transport Services,43,38,18.07,21.83,6.36,5.4,6.53,4.52,10.13,13.09,0.34,0.0,65.12
+Telecommunication,Telecom - Equipment & Accessories,8,4,75.03,,10.71,,1.08,4.33,11.59,16.73,0.47,0.0,70.62
+Telecommunication,Telecom - Services,16,9,10.45,6.88,13.66,34.61,15.79,10.62,15.31,16.47,0.76,23.35,61.27
+Textiles,Textiles & Apparels,135,120,9.89,21.56,3.58,0.62,5.79,3.44,6.35,10.96,0.4,0.0,73.32
+Utilities,Other Utilities,12,8,21.37,3.1,12.44,34.92,15.41,10.05,12.59,18.59,0.15,1.2,64.81
