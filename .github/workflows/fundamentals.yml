@@ -1,13 +1,23 @@
 name: fundamentals
+
 on:
   schedule:
-    - cron: "30 20 * * 5"      # Saturday 02:00 IST. Each stock is re-fetched only if its record is older than max_age_days.
+    - cron: "30 20 * * 5"   # Saturday 02:00 IST; a stock is re-fetched only if its record is older than max_age_days
   workflow_dispatch:
     inputs:
-      max_age_days: { description: "Re-fetch records older than N days (0 = everything)", default: "6" }
-      limit:        { description: "Per-shard cap, for a quick test (0 = no cap)", default: "0" }
-concurrency: { group: fundamentals, cancel-in-progress: false }
-permissions: { contents: write }
+      max_age_days:
+        description: "Re-fetch records older than N days (0 = everything)"
+        default: "6"
+      limit:
+        description: "Per-shard cap for a quick test (0 = no cap)"
+        default: "0"
+
+concurrency:
+  group: fundamentals
+  cancel-in-progress: false
+
+permissions:
+  contents: write
 
 jobs:
   fetch:
@@ -15,17 +25,26 @@ jobs:
     timeout-minutes: 340
     strategy:
       fail-fast: false
-      matrix: { shard: [0, 1, 2, 3, 4, 5, 6, 7] }
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12", cache: pip, cache-dependency-path: fundamentals_pipeline/requirements.txt }
-      - run: pip install -r fundamentals_pipeline/requirements.txt
-      - run: >
-          python fundamentals_pipeline/scripts/run_shard.py --shard ${{ matrix.shard }} --of 8
-          --out shard_out --max-age-days "${{ inputs.max_age_days || '6' }}" --limit "${{ inputs.limit || '0' }}"
+        with:
+          python-version: "3.12"
+      - name: Install requirements
+        run: pip install -r fundamentals_pipeline/requirements.txt
+      - name: Fetch and clean this shard
+        run: |
+          python fundamentals_pipeline/scripts/run_shard.py \
+            --shard "${{ matrix.shard }}" --of 8 --out shard_out \
+            --max-age-days "${{ inputs.max_age_days || '6' }}" \
+            --limit "${{ inputs.limit || '0' }}"
       - uses: actions/upload-artifact@v4
-        with: { name: shard-${{ matrix.shard }}, path: shard_out, retention-days: 2 }
+        with:
+          name: shard-${{ matrix.shard }}
+          path: shard_out
+          retention-days: 2
 
   publish:
     needs: fetch
@@ -34,19 +53,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+        with:
+          python-version: "3.12"
       - uses: actions/download-artifact@v4
-        with: { path: shards, pattern: "shard-*", merge-multiple: false }
+        with:
+          path: shards
+          pattern: shard-*
       - name: Merge shard output into fundamentals/data/stock
         run: |
           mkdir -p fundamentals/data/stock
           for d in shards/shard-*; do cp -f "$d"/*.json fundamentals/data/stock/ 2>/dev/null || true; done
           rm -f fundamentals/data/stock/_errors.json
-      - run: python fundamentals_pipeline/scripts/build_outputs.py
+      - name: Build the output files
+        run: python fundamentals_pipeline/scripts/build_outputs.py
       - name: Commit (only if something changed)
         run: |
-          git config user.name "alphatrace-bot"; git config user.email "bot@users.noreply.github.com"
+          git config user.name "alphatrace-bot"
+          git config user.email "bot@users.noreply.github.com"
           git add fundamentals/data
-          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "fundamentals: refresh $(date -u +%F)"
           for i in 1 2 3; do git pull --rebase -X theirs && git push && break || sleep 5; done
