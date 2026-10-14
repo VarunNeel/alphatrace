@@ -1,0 +1,35 @@
+name: Intraday bars (Yahoo)
+on:
+  schedule:
+    - cron: "45 10 * * 1-5"    # 16:15 IST, weekdays (after the close)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days to fetch (first run: 59 for 5m/15m; use intervals=1h with 700 for the hourly back-fill)"
+        default: "5"
+      intervals:
+        description: "Intervals"
+        default: "5m,15m,1h"
+permissions:
+  contents: write
+concurrency:
+  group: ohlcv
+  cancel-in-progress: false
+jobs:
+  intraday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Download intraday bars
+        run: python intraday.py fetch --days "${{ github.event.inputs.days || '5' }}" --intervals "${{ github.event.inputs.intervals || '5m,15m,1h' }}"
+      - name: Commit
+        run: |
+          git config user.name  "ohlcv"
+          git config user.email "ohlcv@users.noreply.github.com"
+          git add intraday
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "Intraday $(date -u +%F)"; git pull --rebase -q; git push; fi
