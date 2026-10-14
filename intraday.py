@@ -12,13 +12,13 @@ COMMANDS
            intraday/<iv>/index.json          {"interval":..., "dates":[...], "updated":...}
          Re-running merges into existing day files (same Symbol+Time is replaced), so a late run never loses data.
   Yahoo keeps 5m/15m for ~60 days and 1h for ~730 days; --days is clamped to that.  Daily run: --days 5.  First run: --days 59 (1h: --days 700).
-  Retention (files older than this are deleted):  5m 30 days, 15m 60 days, 1h 730 days   (override with --keep 5m=30,15m=60,1h=730)
+  Retention: nothing is deleted by default (old days stay on GitHub). To prune:  --keep 5m=30,15m=60
 """
 import argparse, csv, datetime as dt, glob, gzip, io, json, os, sys, time
 
 HEAD = ["Time", "Open", "High", "Low", "Close", "Volume", "Symbol"]
 LIMIT = {"5m": 59, "15m": 59, "1h": 729}
-KEEP = {"5m": 30, "15m": 60, "1h": 730}
+KEEP = {"5m": 36500, "15m": 36500, "1h": 36500}   # keep everything (set --keep 5m=30 to prune)
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
 
