@@ -194,6 +194,7 @@ HSBCGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 HYBRIDETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 ICEMAKE,INE520Y01019,"no BSE listing for this ISIN, so no classification"
 ICICIB22,,not in NSE's equity list (ETF / fund / bond / other instrument)
+ICICIPRULI,,not in NSE's equity list (ETF / fund / bond / other instrument)
 IDFNIFTYET,,not in NSE's equity list (ETF / fund / bond / other instrument)
 INFRA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 INFRABEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -449,7 +450,6 @@ SPCENET,INE970N01027,"no BSE listing for this ISIN, so no classification"
 SPELS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 STEELCITY,INE395H01011,"no BSE listing for this ISIN, so no classification"
 SUMIT,INE748Z01013,"no BSE listing for this ISIN, so no classification"
-SVLL,INE00CE01017,"no BSE listing for this ISIN, so no classification"
 TARACHAND,INE555Z01020,"no BSE listing for this ISIN, so no classification"
 TATAGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 TATSILV,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -527,6 +527,7 @@ HDFIRE,INE18AK01028,"classified, but no shares/float from any source"
 HESTERBIO,INE782E01017,"classified, but no shares/float from any source"
 HINDALUMI,INE227B01019,"classified, but no shares/float from any source"
 HTEL,INE0LEG01024,"classified, but no shares/float from any source"
+ICICILIFE,INE726G01019,"classified, but no shares/float from any source"
 IIRM,INE670C01026,"classified, but no shares/float from any source"
 INDPRUD,INE620D01011,"classified, but no shares/float from any source"
 INVPRECQ,INE155E01016,"classified, but no shares/float from any source"
@@ -570,6 +571,7 @@ SHRADDHA,INE311M01018,"classified, but no shares/float from any source"
 SIMPLXREA,INE167H01014,"classified, but no shares/float from any source"
 SINGERIND,INE638A01035,"classified, but no shares/float from any source"
 SKMEGGPROD,INE411D01023,"classified, but no shares/float from any source"
+SMT,INE356Y01018,"classified, but no shares/float from any source"
 SRIKPRIND,INE009C01019,"classified, but no shares/float from any source"
 STEAMHOUSE,INE0FRO01022,"classified, but no shares/float from any source"
 SUNLOC,INE671C01016,"classified, but no shares/float from any source"
@@ -582,6 +584,7 @@ TCC,INE887D01024,"classified, but no shares/float from any source"
 TEMPSENS,INE1KZI01025,"classified, but no shares/float from any source"
 TIKONA,INE534A01028,"classified, but no shares/float from any source"
 TIMEX,INE064A01026,"classified, but no shares/float from any source"
+TONBO,INE0LDG01026,"classified, but no shares/float from any source"
 TRANSCOR,INE330E01023,"classified, but no shares/float from any source"
 TRITONV,INE440G01017,"classified, but no shares/float from any source"
 TRIVENIPT,INE2WKE01011,"classified, but no shares/float from any source"
@@ -595,4 +598,5 @@ VIJSOLX,INE362D01010,"classified, but no shares/float from any source"
 VOITHPAPR,INE285C01015,"classified, but no shares/float from any source"
 WELSPLSOL,INE731F01037,"classified, but no shares/float from any source"
 YOGI,INE290E01011,"classified, but no shares/float from any source"
+ZETWERK,INE09PO01019,"classified, but no shares/float from any source"
 ZODIAC,INE761Y01019,"classified, but no shares/float from any source"

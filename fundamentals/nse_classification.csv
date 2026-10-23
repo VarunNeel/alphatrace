@@ -251,7 +251,7 @@ AXTEL,Axtel Industries Limited,INE767C01012,EQ,Industrials,Capital Goods,Industr
 AYE,Aye Finance Limited,INE501X01029,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
 AYMSYNTEX,AYM Syntex Limited,INE193B01039,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 AZAD,Azad Engineering Limited,INE02IJ01035,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,bse:ComHeader
-AZADIND,Azad India Mobility Limited,INE566M01017,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,bse:ComHeader
+AZADIND,Azad India Mobility Limited,INE566M01025,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,bse:ComHeader
 BAFNAPH,Bafna Pharmaceuticals Limited,INE878I01022,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
 BAGFILMS,B.A.G Films and Media Limited,INE116D01028,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,TV Broadcasting & Software Production,bse:ComHeader
 BAIDFIN,Baid Finserv Limited,INE020D01022,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
@@ -364,6 +364,7 @@ BNAGROCHEM,BN Agrochem Limited,INE00HZ01011,EQ,Services,Services,Commercial Serv
 BNALTD,B & A Limited,INE489D01011,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,bse:ComHeader
 BODALCHEM,Bodal Chemicals Limited,INE338D01028,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Dyes And Pigments,bse:ComHeader
 BOMDYEING,Bombay Dyeing & Mfg Company Limited,INE032A01023,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
+BONFIG,Bonfiglioli Transmissions Limited,INE28SO01013,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,bse:ComHeader
 BONLON,Bonlon Industries Limited,INE0B9A01018,EQ,Commodities,Metals & Mining,Metals & Minerals Trading,Trading - Metals,bse:ComHeader
 BORANA,Borana Weaves Limited,INE16SF01016,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 BOROLTD,Borosil Limited,INE02PY01013,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Houseware,bse:ComHeader
@@ -944,7 +945,7 @@ ICDSLTD,ICDS Limited,INE613B01010,BE,Services,Services,Commercial Services & Sup
 ICICIAMC,ICICI Prudential Asset Management Company Limited,INE346A01027,EQ,Financial Services,Financial Services,Capital Markets,Asset Management Company,bse:ComHeader
 ICICIBANK,ICICI Bank Limited,INE090A01021,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,bse:ComHeader
 ICICIGI,ICICI Lombard General Insurance Company Limited,INE765G01017,EQ,Financial Services,Financial Services,Insurance,General Insurance,bse:ComHeader
-ICICIPRULI,ICICI Prudential Life Insurance Company Limited,INE726G01019,EQ,Financial Services,Financial Services,Insurance,Life Insurance,bse:ComHeader
+ICICILIFE,ICICI Life Insurance Limited,INE726G01019,EQ,Financial Services,Financial Services,Insurance,Life Insurance,bse:ComHeader
 ICIL,Indo Count Industries Limited,INE483B01026,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 ICRA,ICRA Limited,INE725G01011,EQ,Financial Services,Financial Services,Capital Markets,Ratings,bse:ComHeader
 IDBI,IDBI Bank Limited,INE008A01015,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,bse:ComHeader
@@ -2009,6 +2010,7 @@ SMCGLOBAL,SMC Global Securities Limited,INE103C01036,EQ,Financial Services,Finan
 SMLMAH,SML Mahindra Limited,INE294B01019,EQ,Industrials,Capital Goods,Agricultural Commercial & Construction Vehicles,Commercial Vehicles,bse:ComHeader
 SMLT,Sarthak Metals Limited,INE017W01010,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,bse:ComHeader
 SMSPHARMA,SMS Pharmaceuticals Limited,INE812G01025,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
+SMT,Sahajanand Medical Technologies Limited,INE356Y01018,EQ,Healthcare,Healthcare,Healthcare Equipment & Supplies,Medical Equipment & Supplies,bse:ComHeader
 SNOWMAN,Snowman Logistics Limited,INE734N01019,EQ,Services,Services,Transport Services,Logistics Solution Provider,bse:ComHeader
 SOBHA,Sobha Limited,INE671H01015,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,bse:ComHeader
 SOFTTECH,Softtech Engineers Limited,INE728Z01015,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,bse:ComHeader
@@ -2119,6 +2121,7 @@ SUVIDHAA,Suvidhaa Infoserve Limited,INE018401013,EQ,Financial Services,Financial
 SUYOG,Suyog Telematics Limited,INE442P01014,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,bse:ComHeader
 SUZLON,Suzlon Energy Limited,INE040H01021,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,bse:ComHeader
 SVGLOBAL,S V Global Mill Limited,INE159L01013,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,bse:ComHeader
+SVLL,Shree Vasu Logistics Limited,INE00CE01017,EQ,Services,Services,Transport Services,Logistics Solution Provider,bse:ComHeader
 SVPGLOB,SVP GLOBAL TEXTILES LIMITED,INE308E01029,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 SWANCORP,SWAN CORP LIMITED,INE665A01038,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Petrochemicals,bse:ComHeader
 SWANDEF,Swan Defence and Heavy Industries Limited,INE542F01020,BE,Industrials,Capital Goods,Industrial Manufacturing,Ship Building & Allied Services,bse:ComHeader
@@ -2225,6 +2228,7 @@ TNPL,Tamil Nadu Newsprint & Papers Limited,INE107A01015,EQ,Commodities,Forest Ma
 TNTELE,Tamilnadu Telecommunication Limited,INE141D01018,BE,Telecommunication,Telecommunication,Telecom - Equipment & Accessories,Telecom - Equipment & Accessories,bse:ComHeader
 TOKYOPLAST,Tokyo Plast International Limited,INE932C01012,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Plastic Products - Consumer,bse:ComHeader
 TOLINS,Tolins Tyres Limited,INE0RWQ01014,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Tyres & Rubber Products,bse:ComHeader
+TONBO,Tonbo Imaging India Limited,INE0LDG01026,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,bse:ComHeader
 TORNTPHARM,Torrent Pharmaceuticals Limited,INE685A01028,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
 TORNTPOWER,Torrent Power Limited,INE813H01021,EQ,Utilities,Power,Power,Integrated Power Utilities,bse:ComHeader
 TOYAMSL,Toyam Sports Limited,INE457P01020,EQ,Financial Services,Financial Services,Finance,Other Financial Services,bse:ComHeader
@@ -2443,6 +2447,7 @@ ZENITHEXPO,Zenith Exports Limited,INE058B01018,EQ,Consumer Discretionary,Consume
 ZENITHSTL,Zenith Steel Pipes & Industries Limited,INE318D01020,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,bse:ComHeader
 ZENSARTECH,Zensar Technologies Limited,INE520A01027,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,bse:ComHeader
 ZENTEC,Zen Technologies Limited,INE251B01027,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,bse:ComHeader
+ZETWERK,Zetwerk Manufacturing Businesses Limited,INE09PO01019,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,bse:ComHeader
 ZFCVINDIA,ZF Commercial Vehicle Control Systems India Limited,INE342J01019,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,bse:ComHeader
 ZFSTEERING,ZF Steering Gear (India) Limited,INE116C01012,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,bse:ComHeader
 ZIMLAB,Zim Laboratories Limited,INE518E01015,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
