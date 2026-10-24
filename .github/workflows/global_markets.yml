@@ -1,0 +1,34 @@
+name: Global markets (Yahoo)
+on:
+  schedule:
+    - cron: "0 21 * * 1-5"    # 02:30 IST next morning, after the US close
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Download the whole history (first run) instead of just the last days"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: global
+  cancel-in-progress: false
+jobs:
+  global:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Download
+        run: |
+          if [ "${{ github.event.inputs.full }}" = "true" ]; then python global_markets.py full; else python global_markets.py daily; fi
+      - name: Commit
+        run: |
+          git config user.name  "global"
+          git config user.email "global@users.noreply.github.com"
+          git add global
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "Global markets $(date -u +%F)"; git pull --rebase -q; git push; fi
