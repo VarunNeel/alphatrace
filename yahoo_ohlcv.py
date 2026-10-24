@@ -13,6 +13,7 @@ COMMANDS
              ohlcv/daily/YYYY-MM-DD.csv   one file per trading day in the window (new days are added, old ones pruned)
              ohlcv/daily/index.json       {"dates": [...], "updated": ...}
   history  python yahoo_ohlcv.py history --stocks stocks.csv --from-year 2010 [--to-year 2026] [--out ohlcv/history]
+           or only a date range:  history --stocks stocks.csv --from-date 2026-10-14 --to-date 2026-10-23   (downloads just those days from Yahoo and merges them into the yearly files)
              ohlcv/history/HIST_OHLCV_<year>.csv.gz   one gzip per calendar year (the app opens .gz directly; select all of them at once)
              Splits are applied retroactively by Yahoo, so re-run `history --from-year <this year - 2>` now and then to refresh recent years.
   Both write ohlcv/missing.csv — symbols Yahoo returned nothing for (new listings, very illiquid BE names).
@@ -119,7 +120,35 @@ def cmd_daily(a, yf):
     return 0
 
 
+def cmd_range(a, yf):
+    """Download only [from-date, to-date] and merge it into the yearly HIST_OHLCV_<year>.csv.gz files (rows in the range are replaced, the rest is kept)."""
+    syms = read_stocks(a.stocks, a.series); f = a.from_date; t = a.to_date or dt.date.today().isoformat()
+    end = (dt.date.fromisoformat(t) + dt.timedelta(days=1)).isoformat()
+    print("history range: %d symbols, %s to %s" % (len(syms), f, t))
+    new, got = {}, set()
+    for s, rows in download(yf, syms, f, end, a.batch, a.delay):
+        got.add(s)
+        for r in rows:
+            if f <= r[0] <= t: new.setdefault(r[0][:4], []).append(r)
+    if not new: print("Yahoo returned no data for that range - nothing written."); return 1
+    os.makedirs(a.out, exist_ok=True); n = 0
+    for y in sorted(new):
+        dst = os.path.join(a.out, "HIST_OHLCV_%s.csv.gz" % y); keep = []
+        if os.path.exists(dst):
+            with gzip.open(dst, "rt", newline="", encoding="utf-8") as fh:
+                rd = csv.reader(fh); next(rd, None)
+                for r in rd:
+                    if r and not (f <= r[0] <= t): keep.append(r)
+        allr = keep + new[y]; allr.sort(key=lambda r: (r[0], r[-1]))
+        write_csv(dst, allr, gz=True); n += 1
+        print("  %s: %d new rows merged into %d existing -> %d" % (y, len(new[y]), len(keep), len(allr)))
+    miss = write_missing(os.path.dirname(a.out.rstrip("/")) or ".", syms, got)
+    print("history range: %d year file(s) updated; %d symbols without data" % (n, len(miss)))
+    return 0
+
+
 def cmd_history(a, yf):
+    if a.from_date: return cmd_range(a, yf)
     syms = read_stocks(a.stocks, a.series); to_year = a.to_year or dt.date.today().year
     print("history: %d symbols, %d-%d" % (len(syms), a.from_year, to_year))
     os.makedirs(a.out, exist_ok=True); tmp = os.path.join(a.out, ".tmp"); os.makedirs(tmp, exist_ok=True)
@@ -157,6 +186,7 @@ def make_parser():
             q.add_argument("--out", default="ohlcv"); q.add_argument("--days", type=int, default=7); q.add_argument("--keep-days", type=int, default=90); q.add_argument("--force", action="store_true")
         else:
             q.add_argument("--out", default="ohlcv/history"); q.add_argument("--from-year", type=int, default=2010); q.add_argument("--to-year", type=int, default=0)
+            q.add_argument("--from-date", default=""); q.add_argument("--to-date", default="")
     return p
 
 
@@ -170,3 +200,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

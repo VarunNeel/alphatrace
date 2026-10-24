@@ -8,6 +8,12 @@ on:
       to_year:
         description: "Last year (blank = this year)"
         default: ""
+      from_date:
+        description: "Optional: only this date range, YYYY-MM-DD (leave blank to download whole years)"
+        default: ""
+      to_date:
+        description: "Optional: last date of the range, YYYY-MM-DD (blank = today)"
+        default: ""
 permissions:
   contents: write
 concurrency:
@@ -24,10 +30,21 @@ jobs:
           python-version: "3.12"
       - run: pip install yfinance
       - name: Download history, one gzip per year
-        run: python yahoo_ohlcv.py history --stocks stocks.csv --from-year "${{ inputs.from_year }}" --to-year "${{ inputs.to_year || 0 }}"
+        env:
+          FROM_YEAR: ${{ inputs.from_year }}
+          TO_YEAR: ${{ inputs.to_year }}
+          FROM_DATE: ${{ inputs.from_date }}
+          TO_DATE: ${{ inputs.to_date }}
+        run: |
+          if [ -n "$FROM_DATE" ]; then
+            python yahoo_ohlcv.py history --stocks stocks.csv --from-date "$FROM_DATE" --to-date "$TO_DATE"
+          else
+            python yahoo_ohlcv.py history --stocks stocks.csv --from-year "$FROM_YEAR" --to-year "${TO_YEAR:-0}"
+          fi
       - name: Commit
         run: |
           git config user.name  "ohlcv"
           git config user.email "ohlcv@users.noreply.github.com"
           git add ohlcv/history ohlcv/missing.csv
-          if git diff --cached --quiet; then echo "No change"; else git commit -m "OHLCV history from ${{ inputs.from_year }}"; git pull --rebase -q; git push; fi
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "OHLCV history ${{ inputs.from_date || inputs.from_year }}"; git pull --rebase -q; git push; fi
+
