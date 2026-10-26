@@ -65,7 +65,6 @@ CEMNTGROWW,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CENTEXT-RE,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CHEMICAL,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CHOICEGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
-CLCIND,,not in NSE's equity list (ETF / fund / bond / other instrument)
 COMMOIETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CONS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CONSOFINVT,INE025A01027,"no BSE listing for this ISIN, so no classification"
@@ -229,7 +228,6 @@ KRITIKA,INE00Z501029,"no BSE listing for this ISIN, so no classification"
 KSHITIJPOL,INE013801027,"no BSE listing for this ISIN, so no classification"
 LAGNAM,INE548Z01017,"no BSE listing for this ISIN, so no classification"
 LARGEMID50,,not in NSE's equity list (ETF / fund / bond / other instrument)
-LASA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 LATTEYS,INE262Z01023,"no BSE listing for this ISIN, so no classification"
 LAXMICOT,INE801V01019,"no BSE listing for this ISIN, so no classification"
 LEMERITE,INE0G1L01025,"no BSE listing for this ISIN, so no classification"
@@ -407,7 +405,6 @@ SBISMLETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SBIVALETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SECLEDBETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SELECTIPO,,not in NSE's equity list (ETF / fund / bond / other instrument)
-SELMC,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXADD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXAXIS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXBETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -447,7 +444,6 @@ SNXT30BEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SNXT50BETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SONAMLTD,INE00LM01029,"no BSE listing for this ISIN, so no classification"
 SPCENET,INE970N01027,"no BSE listing for this ISIN, so no classification"
-SPELS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 STEELCITY,INE395H01011,"no BSE listing for this ISIN, so no classification"
 SUMIT,INE748Z01013,"no BSE listing for this ISIN, so no classification"
 TARACHAND,INE555Z01020,"no BSE listing for this ISIN, so no classification"
@@ -468,7 +464,6 @@ TWCGOLDETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 UNIINFO,INE481Z01011,"no BSE listing for this ISIN, so no classification"
 UNIONGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 UNITEDTEA,INE458F01011,"no BSE listing for this ISIN, so no classification"
-UNIVAFOODS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 UNIVASTU,INE562X01013,"no BSE listing for this ISIN, so no classification"
 VAISHALI,INE972X01022,"no BSE listing for this ISIN, so no classification"
 VAL30IETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -537,6 +532,7 @@ JENBURPH,INE354A01013,"classified, but no shares/float from any source"
 KAMAHOLD,INE411F01010,"classified, but no shares/float from any source"
 KANCOTEA,INE398L01017,"classified, but no shares/float from any source"
 KARAMTARA,INE590T01012,"classified, but no shares/float from any source"
+KHAZANCHI,INE0OWC01011,"classified, but no shares/float from any source"
 KIRANVYPAR,INE555P01013,"classified, but no shares/float from any source"
 KLBRENG-B,INE338F01015,"classified, but no shares/float from any source"
 KPL,INE552U01010,"classified, but no shares/float from any source"
@@ -574,6 +570,7 @@ SKMEGGPROD,INE411D01023,"classified, but no shares/float from any source"
 SMT,INE356Y01018,"classified, but no shares/float from any source"
 SRIKPRIND,INE009C01019,"classified, but no shares/float from any source"
 STEAMHOUSE,INE0FRO01022,"classified, but no shares/float from any source"
+SUDARSHAN,INE00TV01023,"classified, but no shares/float from any source"
 SUNLOC,INE671C01016,"classified, but no shares/float from any source"
 SUNRAKSHAK,INE671K01027,"classified, but no shares/float from any source"
 SURYALA,INE132C01027,"classified, but no shares/float from any source"
