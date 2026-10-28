@@ -1,0 +1,41 @@
+name: News + financials
+on:
+  schedule:
+    - cron: "30 14 * * *"        # 20:00 IST every day
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run = collect now, test = one small request per source"
+        default: "run"
+      news_limit:
+        description: "stocks whose headlines to refresh this run"
+        default: "600"
+      fund_limit:
+        description: "stocks whose financials to refresh this run"
+        default: "300"
+permissions:
+  contents: write
+concurrency:
+  group: news-fund
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Collect
+        run: |
+          MODE="${{ github.event.inputs.mode || 'run' }}"
+          if [ "$MODE" = "test" ]; then python news_fund.py test
+          else python news_fund.py run --news-limit "${{ github.event.inputs.news_limit || '600' }}" --fund-limit "${{ github.event.inputs.fund_limit || '300' }}"; fi
+      - name: Commit results
+        run: |
+          git config user.name  "news-fund"
+          git config user.email "news-fund@users.noreply.github.com"
+          git add info
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "News + financials $(date -u +%F)"; git pull --rebase -q; git push; fi
