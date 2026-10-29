@@ -1,7 +1,8 @@
 name: Daily OHLCV (Yahoo)
 on:
   schedule:
-    - cron: "30 15 * * 1-5"    # 21:00 IST, weekdays
+    - cron: "30 12 * * 1-5"    # 18:00 IST, weekdays — Yahoo has usually posted the day's final prices by now
+    - cron: "30 15 * * 1-5"    # 21:00 IST — second pass to catch late updates
   workflow_dispatch: {}
 permissions:
   contents: write
