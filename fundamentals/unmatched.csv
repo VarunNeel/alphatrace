@@ -409,6 +409,7 @@ HTEL,INE0LEG01024,"classified, but no shares/float from any source"
 ICICILIFE,INE726G01019,"classified, but no shares/float from any source"
 IIRM,INE670C01026,"classified, but no shares/float from any source"
 INDPRUD,INE620D01011,"classified, but no shares/float from any source"
+INDTONER,INE826B01026,"classified, but no shares/float from any source"
 INVPRECQ,INE155E01016,"classified, but no shares/float from any source"
 IONEXCHANG,INE570A01022,"classified, but no shares/float from any source"
 ITL,INE478D01014,"classified, but no shares/float from any source"
@@ -487,6 +488,7 @@ ZODIAC,INE761Y01019,"classified, but no shares/float from any source"
 AHLADA,INE00PV01013,second source found nothing (NSE blocked/empty; Yahoo industry 'Building Products & Equipment' not mappable)
 AKG,INE00Y801016,second source found nothing (NSE blocked/empty; Yahoo industry 'Industrial Distribution' not mappable)
 APOLSINHOT,INE451F01024,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
+ARHAM,INE0L2Y01011,"no BSE listing for this ISIN, so no classification"
 BANKA,INE862Y01015,second source found nothing (NSE blocked/empty; Yahoo industry 'Pollution & Treatment Controls' not mappable)
 BEARDSELL,INE520H01022,second source found nothing (NSE blocked/empty; Yahoo industry 'Building Products & Equipment' not mappable)
 GKWLIMITED,INE528A01020,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
