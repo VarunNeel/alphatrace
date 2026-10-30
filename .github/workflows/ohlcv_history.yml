@@ -1,5 +1,9 @@
 name: Historical OHLCV (Yahoo)
 on:
+  schedule:
+    - cron: "30 17 * * 1-5"   # 23:00 IST weekdays  - last 7 days   (after the daily price job)
+    - cron: "30 0 * * 6"      # 06:00 IST Saturday  - last 31 days
+    - cron: "30 21 1 * *"     # 03:00 IST on the 2nd of every month - every year from 2010 (full refresh, picks up Yahoo's split adjustments)
   workflow_dispatch:
     inputs:
       from_year:
@@ -31,19 +35,28 @@ jobs:
       - run: pip install yfinance
       - name: Download history, one gzip per year
         env:
+          SCHED: ${{ github.event.schedule }}
           FROM_YEAR: ${{ inputs.from_year }}
           TO_YEAR: ${{ inputs.to_year }}
           FROM_DATE: ${{ inputs.from_date }}
           TO_DATE: ${{ inputs.to_date }}
         run: |
+          TODAY=$(date -u +%F)
+          case "$SCHED" in
+            "30 17 * * 1-5") FROM_DATE=$(date -u -d '7 days ago' +%F);  TO_DATE=$TODAY ;;
+            "30 0 * * 6")    FROM_DATE=$(date -u -d '31 days ago' +%F); TO_DATE=$TODAY ;;
+            "30 21 1 * *")   FROM_DATE=""; FROM_YEAR=2010; TO_YEAR="" ;;
+          esac
+          echo "mode: ${SCHED:-manual}  from_date=$FROM_DATE to_date=$TO_DATE from_year=${FROM_YEAR:-2010}"
+          echo "LABEL=${FROM_DATE:-${FROM_YEAR:-2010}}" >> "$GITHUB_ENV"
           if [ -n "$FROM_DATE" ]; then
             python yahoo_ohlcv.py history --stocks stocks.csv --from-date "$FROM_DATE" --to-date "$TO_DATE"
           else
-            python yahoo_ohlcv.py history --stocks stocks.csv --from-year "$FROM_YEAR" --to-year "${TO_YEAR:-0}"
+            python yahoo_ohlcv.py history --stocks stocks.csv --from-year "${FROM_YEAR:-2010}" --to-year "${TO_YEAR:-0}"
           fi
       - name: Commit
         run: |
           git config user.name  "ohlcv"
           git config user.email "ohlcv@users.noreply.github.com"
           git add ohlcv/history ohlcv/missing.csv
-          if git diff --cached --quiet; then echo "No change"; else git commit -m "OHLCV history ${{ inputs.from_date || inputs.from_year }}"; git pull --rebase -q; git push; fi
+          if git diff --cached --quiet; then echo "No change"; else git commit -m "OHLCV history $LABEL"; git pull --rebase -q; git push; fi
