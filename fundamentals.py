@@ -115,8 +115,21 @@ def load_nse_list(path):
     return out
 
 
-def load_bse_list():
-    data = json.loads(http(BSE_LIST, BSE_HDR, timeout=60).decode("utf-8", "replace"))
+def load_bse_list(cache_dir=None):
+    """BSE's scrip list (ISIN -> BSE code). Saved after every good download; when BSE refuses (it often answers 403 to GitHub's servers)
+    the saved copy is used, and with no saved copy the run carries on without BSE instead of failing."""
+    cf = os.path.join(cache_dir, "bse_list.json") if cache_dir else None
+    try:
+        raw = http(BSE_LIST, BSE_HDR, timeout=60).decode("utf-8", "replace"); data = json.loads(raw)
+        if cf:
+            os.makedirs(cache_dir, exist_ok=True); open(cf, "w", encoding="utf-8").write(raw)
+    except Exception as e:  # noqa
+        if cf and os.path.exists(cf):
+            print("    BSE refused the scrip list (%s) — using the copy saved on %s" % (str(e)[-60:], time.strftime("%Y-%m-%d", time.localtime(os.path.getmtime(cf)))))
+            data = json.load(open(cf, encoding="utf-8"))
+        else:
+            print("    BSE refused the scrip list (%s) and there is no saved copy — previous classifications are kept, new stocks go to the second source" % str(e)[-60:])
+            return {}
     if isinstance(data, dict): data = data.get("Table") or data.get("data") or list(data.values())[0]
     by_isin = {}
     for r in data:
@@ -269,21 +282,63 @@ def cmd_probe(a):
     return 0
 
 
+def read_rows(path):
+    if not os.path.exists(path): return []
+    with open(path, newline="", encoding="utf-8-sig") as fh: return list(csv.reader(fh))
+
+
+def previous(out):
+    """Last run's classification and float, so a stock BSE cannot be asked about this time keeps what it had."""
+    pc, pf = {}, {}
+    for r in read_rows(os.path.join(out, "nse_classification.csv"))[1:]:
+        if len(r) >= 9 and r[0] and r[7] and r[7] != "Unclassified": pc[r[0].strip().upper()] = r[:9]
+    for r in read_rows(os.path.join(out, "STOCKS_FLOAT.csv"))[1:]:
+        if len(r) >= 3 and r[0]: pf[r[0].strip().upper()] = r[:4] + [""] * (4 - len(r[:4]))
+    return pc, pf
+
+
+def overrides(out):
+    """fundamentals/classification_overrides.csv — your own fixes (SYMBOL,MACRO_ECONOMIC_SECTOR,SECTOR,INDUSTRY,BASIC_INDUSTRY[,COMPANY_NAME]).
+    Applied last on every run, so a fix is never lost when the job rebuilds the classification."""
+    rows = read_rows(os.path.join(out, "classification_overrides.csv"))
+    if not rows: return {}
+    hd = [norm(h) for h in rows[0]]; ix = lambda n: hd.index(n) if n in hd else -1
+    iS, iM, iSe, iI, iB, iN = ix("symbol"), ix("macroeconomicsector"), ix("sector"), ix("industry"), ix("basicindustry"), ix("companyname")
+    out_ = {}
+    for r in rows[1:]:
+        if iS < 0 or len(r) <= max(iS, iB) or not r[iS].strip(): continue
+        out_[r[iS].strip().upper()] = {"macro": r[iM].strip() if iM >= 0 else "", "sector": r[iSe].strip(), "industry": r[iI].strip(), "basic": r[iB].strip(), "name": r[iN].strip() if iN >= 0 and len(r) > iN else ""}
+    return out_
+
+
+def non_stocks(out):
+    return {r[0].strip().upper() for r in read_rows(os.path.join(out, "non_stocks.csv"))[1:] if r and r[0].strip()}
+
+
 def build(a, stocks, nse, bse, px, getj, yf):
     """Pure pipeline (network passed in) so it can be tested. Returns (cls, flt, universe, unmatched)."""
     out = a.out; cache = os.path.join(out, "cache"); ycache = os.path.join(cache, "yahoo")
     os.makedirs(cache, exist_ok=True); os.makedirs(ycache, exist_ok=True)
+    prev_cls, prev_flt = previous(out); ovr = overrides(out); ns = non_stocks(out)
+    stocks = {s: v for s, v in stocks.items() if s not in ns or s in ovr}
+    kept = []
     K = lambda s, dflt: [s] if s else dflt
     unmatched, todo = [], []
     for sym in sorted(stocks):
         n = nse.get(sym)
         if not n or not n["isin"]: unmatched.append((sym, "", "not in NSE's equity list (ETF / fund / bond / other instrument)")); continue
         b = bse.get(n["isin"])
-        if not b: unmatched.append((sym, n["isin"], "no BSE listing for this ISIN, so no classification")); continue
+        if not b:
+            if sym in prev_cls: kept.append(sym); continue   # BSE unreachable / not listed there: keep last run's answer
+            unmatched.append((sym, n["isin"], "no BSE listing for this ISIN, so no classification")); continue
         todo.append((sym, n, b))
     if a.limit: todo = todo[:a.limit]
     print("BSE ComHeader for %d symbols (cached ones are skipped) ..." % len(todo))
     cls, flt, fails, src = [], [], 0, {"yahoo": 0, "bse": 0, "none": 0}
+    for sym in kept:
+        r = list(prev_cls[sym]); r[8] = r[8] if r[8].startswith("kept:") else "kept:" + r[8]; cls.append(r)
+        if sym in prev_flt: flt.append(prev_flt[sym])
+    if kept: print("kept the previous classification for %d stocks BSE was not asked about this run" % len(kept))
     for i, (sym, n, b) in enumerate(todo, 1):
         code = b["code"]; cf = os.path.join(cache, code + ".json")
         try:
@@ -319,6 +374,18 @@ def build(a, stocks, nse, bse, px, getj, yf):
     if a.second_source != "off" and unmatched:
         n_cls, n_flt, unmatched, cnt = second_source(a, unmatched, nse, stocks, cls, ycache, yf, cache)
         cls += n_cls; flt += n_flt
+    if ovr:   # your fixes win, and a fixed stock is never left out of the universe
+        have = {r[0]: i for i, r in enumerate(cls)}; n_ov = 0
+        for sym, o in ovr.items():
+            if sym not in stocks and sym not in have: continue
+            macro = o["macro"] or o["sector"]
+            if sym in have:
+                r = cls[have[sym]]; r[4:8] = [macro, o["sector"], o["industry"], o["basic"]]; r[8] = "override"
+            else:
+                nn = nse.get(sym, {}); cls.append([sym, clean(o["name"] or nn.get("name", "")), nn.get("isin", ""), stocks.get(sym, "EQ"), macro, o["sector"], o["industry"], o["basic"], "override"])
+            n_ov += 1
+        unmatched = [u for u in unmatched if u[0] not in ovr]
+        print("applied %d of your classification fixes (classification_overrides.csv)" % n_ov)
     universe = [[r[0], r[3]] for r in cls]
     def w(name, head, rows):
         with open(os.path.join(out, name), "w", newline="", encoding="utf-8") as fh:
@@ -334,7 +401,7 @@ def cmd_run(a):
     stocks = read_stocks(a.stocks, a.series); print("1/4 stocks.csv: %d symbols (series %s)" % (len(stocks), a.series))
     if not stocks: print("No EQ/BE symbols found in %s" % a.stocks); return 1
     print("2/4 NSE equity list ..."); nse = load_nse_list(a.nse_list)
-    print("3/4 BSE scrip list ..."); bse = load_bse_list(); print("    %d BSE scrips" % len(bse))
+    print("3/4 BSE scrip list ..."); bse = load_bse_list(os.path.join(a.out, "cache")); print("    %d BSE scrips" % len(bse))
     yf = None
     if a.float_source in ("yahoo", "auto") or a.second_source in ("auto", "yahoo"):
         try:
