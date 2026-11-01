@@ -11,8 +11,10 @@ SYMBOL,COMPANY_NAME,ISIN,SERIES,MACRO_ECONOMIC_SECTOR,SECTOR,INDUSTRY,BASIC_INDU
 A2ZINFRA,A2Z Infra Engineering Limited,INE619I01012,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
 AAATECH,AAA Technologies Limited,INE0D0U01013,EQ,Services,Services,Commercial Services & Supplies,Consulting Services,kept:bse:ComHeader
 AADHARHFC,Aadhar Housing Finance Limited,INE883F01010,EQ,Financial Services,Financial Services,Finance,Housing Finance Company,kept:bse:ComHeader
+AAKASH,Aakash Exploration Services Limited,INE087Z01024,EQ,Energy,Oil Gas & Consumable Fuels,Oil,Oil Equipment & Services,override
 AAREYDRUGS,Aarey Drugs & Pharmaceuticals Limited,INE198H01019,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 AARNAV,Aarnav Fashions Limited,INE750R01016,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
+AARON,Aaron Industries Limited,INE721Z01010,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
 AARTECH,Aartech Solonics Limited,INE01C001026,BE,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 AARTIDRUGS,Aarti Drugs Limited,INE767A01016,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 AARTIIND,Aarti Industries Limited,INE769A01020,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
@@ -31,6 +33,7 @@ ABDL,Allied Blenders and Distillers Limited,INE552Z01027,EQ,Fast Moving Consumer
 ABFRL,Aditya Birla Fashion and Retail Limited,INE647O01011,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
 ABINFRA,A B Infrabuild Limited,INE00YB01025,BE,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 ABLBL,Aditya Birla Lifestyle Brands Limited,INE14LE01019,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
+ABMINTLLTD,ABM International Limited,INE251C01025,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,override
 ABMKNO,ABM Knowledgeware Limited,INE850B01026,EQ,Information Technology,Information Technology,IT - Software,Software Products,kept:bse:ComHeader
 ABREL,Aditya Birla Real Estate Limited,INE055A01016,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 ABSLAMC,Aditya Birla Sun Life AMC Limited,INE404A01024,EQ,Financial Services,Financial Services,Capital Markets,Asset Management Company,kept:bse:ComHeader
@@ -80,23 +83,29 @@ AFIL,Akme Fintrade (India) Limited,INE916Y01027,EQ,Financial Services,Financial 
 AFSL,Abans Financial Services Limited,INE00ZE01026,EQ,Financial Services,Financial Services,Finance,Holding Company,kept:bse:ComHeader
 AGARIND,Agarwal Industrial Corporation Limited,INE204E01012,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Petrochemicals,kept:bse:ComHeader
 AGARWALEYE,Dr. Agarwal's Health Care Limited,INE943P01029,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
+AGASTYAEN,Agastya Energy and Infrastructure Limited,INE753W01010,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 AGI,AGI Greenpac Limited,INE415A01038,EQ,Industrials,Capital Goods,Industrial Products,Packaging,kept:bse:ComHeader
 AGIIL,Agi Infra Limited,INE976R01033,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 AGL,Allcargo Global Limited,INE1YPB01014,EQ,Services,Services,Transport Services,Logistics Solution Provider,kept:bse:ComHeader
 AGOL,Ashapuri Gold Ornament Limited,INE05FR01029,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 AGRITECH,Agri-Tech (India) Limited,INE449G01018,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
+AGROPHOS,Agro Phos India Limited,INE740V01019,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
 AHCL,Anlon Healthcare Limited,INE0Y8W01025,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
+AHLADA,Ahlada Engineers Limited,INE00PV01013,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 AHLEAST,Asian Hotels (East) Limited,INE926K01017,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 AHLUCONT,Ahluwalia Contracts (India) Limited,INE758C01029,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 AHLWEST,Asian Hotels (West) Limited,INE915K01010,BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 AIAENG,AIA Engineering Limited,INE212H01026,EQ,Industrials,Capital Goods,Industrial Products,Castings & Forgings,kept:bse:ComHeader
 AIIL,Authum Investment & Infrastructure Limited,INE206F01022,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 AIRAN,Airan Limited,INE645W01026,EQ,Information Technology,Information Technology,IT - Services,IT Enabled Services,kept:bse:ComHeader
+AIROLAM,Airo Lam limited,INE801L01010,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Plywood Boards/ Laminates,override
 AJANTPHARM,Ajanta Pharma Limited,INE031B01049,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 AJAXENGG,Ajax Engineering Limited,INE274Y01021,EQ,Industrials,Capital Goods,Agricultural Commercial & Construction Vehicles,Construction Vehicles,kept:bse:ComHeader
 AJMERA,Ajmera Realty & Infra India Limited,INE298G01035,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
+AJOONI,Ajooni Biotech Limited,INE820Y01021,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Animal Feed,override
 AKASH,Akash Infra-Projects Limited,INE737W01013,EQ,Industrials,Construction,Construction,Civil Construction,kept:yahoo:Engineering & Construction (matches 69% of 95 BSE-classified stocks)
 AKCAPIT,AK Capital Services Limited,INE701G01012,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
+AKG,Akg Exim Limited,INE00Y801016,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,override
 AKI,AKI India Limited,INE642Z01026,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Leather And Leather Products,kept:bse:ComHeader
 AKSHAR,Akshar Spintex Limited,INE256Z01025,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 AKSHARCHEM,AksharChem India Limited,INE542B01011,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Dyes And Pigments,kept:bse:ComHeader
@@ -142,6 +151,7 @@ ANDREWYU,Andrew Yule & Company Limited,INE449C01025,EQ,Fast Moving Consumer Good
 ANGELONE,Angel One Limited,INE732I01021,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
 ANIKINDS,Anik Industries Limited,INE087B01017,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 ANMOL,Anmol India Limited,INE02AR01019,BE,Energy,Oil Gas & Consumable Fuels,Consumable Fuels,Trading Coal,kept:bse:ComHeader
+ANNAPURNA,Annapurna Swadisht Limited,INE0MGM01017,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
 ANNU,Annu Projects Limited,INE103001017,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 ANSALBU,Ansal Buildwell Limited,INE030C01015,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 ANTELOPUS,Antelopus Selan Energy Limited,INE818A01017,EQ,Energy,Oil Gas & Consumable Fuels,Oil,Oil Exploration & Production,kept:bse:ComHeader
@@ -161,6 +171,7 @@ APOLLO,Apollo Micro Systems Limited,INE713T01028,EQ,Industrials,Capital Goods,Ae
 APOLLOHOSP,Apollo Hospitals Enterprise Limited,INE437A01024,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 APOLLOPIPE,Apollo Pipes Limited,INE126J01016,EQ,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,kept:bse:ComHeader
 APOLLOTYRE,Apollo Tyres Limited,INE438A01022,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Tyres & Rubber Products,kept:bse:ComHeader
+APOLSINHOT,Apollo Sindoori Hotels Limited,INE451F01024,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,override
 APOORVA,Apoorva Leasing Finance and Investment Company Limited,INE217S01014,BE,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
 APTECHT,Aptech Limited,INE266F01018,EQ,Consumer Discretionary,Consumer Services,Other Consumer Services,Education,kept:bse:ComHeader
 APTUS,Aptus Value Housing Finance India Limited,INE852O01025,EQ,Financial Services,Financial Services,Finance,Housing Finance Company,kept:bse:ComHeader
@@ -173,6 +184,7 @@ ARDEE,Ardee Industries Limited,INE0XNF01022,EQ,Commodities,Metals & Mining,Diver
 ARE&M,Amara Raja Energy & Mobility Limited,INE885A01032,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 ARENTERP,Rajdarshan Industries Limited,INE610C01014,EQ,Commodities,Metals & Mining,Metals & Minerals Trading,Trading - Minerals,kept:bse:ComHeader
 ARFIN,Arfin India Limited,INE784R01023,EQ,Commodities,Metals & Mining,Non - Ferrous Metals,Aluminium,kept:bse:ComHeader
+ARHAM,Arham Technologies Limited,INE0L2Y01011,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,override
 ARIES,Aries Agro Limited,INE298I01015,BE,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,kept:bse:ComHeader
 ARIHANT,Arihant Foundations & Housing Limited,INE413D01011,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 ARIHANTCAP,Arihant Capital Markets Limited,INE420B01036,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
@@ -186,6 +198,7 @@ ARROWGREEN,Arrow Greentech Limited,INE570D01018,EQ,Industrials,Capital Goods,Ind
 ARSSBL,Anand Rathi Share and Stock Brokers Limited,INE549H01021,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
 ARTEMISMED,Artemis Medicare Services Limited,INE025R01021,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 ARTNIRMAN,Art Nirman Limited,INE738V01013,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:yahoo:Real Estate - Development (matches 92% of 63 BSE-classified stocks)
+ARVEE,Arvee Laboratories (India) Limited,INE006Z01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 ARVIND,Arvind Limited,INE034A01011,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,kept:bse:ComHeader
 ARVINDFASN,Arvind Fashions Limited,INE955V01021,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
 ARVSMART,Arvind SmartSpaces Limited,INE034S01021,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
@@ -208,6 +221,7 @@ ASIANTILES,Asian Granito India Limited,INE022I01019,EQ,Consumer Discretionary,Co
 ASIANTNE,Asian Tea & Exports Limited,INE822B01017,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 ASKAUTOLTD,ASK Automotive Limited,INE491J01022,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 ASMS,Avio Smart Market Stack Limited,INE855F01042,EQ,Information Technology,Information Technology,IT - Services,IT Enabled Services,kept:bse:ComHeader
+ASPINWALL,Aspinwall and Company Limited,INE991I01015,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
 ASSAMENT,Assam Entrade Limited,INE165G01010,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 ASTAR,Asian Star Company Limited,INE194D01017,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 ASTEC,Astec LifeSciences Limited,INE563J01010,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,kept:bse:ComHeader
@@ -304,6 +318,7 @@ BCLIND,Bcl Industries Limited,INE412G01024,EQ,Fast Moving Consumer Goods,Fast Mo
 BCONCEPTS,Brand Concepts Limited,INE977Y01011,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
 BCPL,BCPL Railway Infrastructure Limited,INE00SW01015,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 BDL,Bharat Dynamics Limited,INE171Z01026,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
+BEARDSELL,Beardsell Limited,INE520H01022,EQ,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,override
 BECTORFOOD,Mrs. Bectors Food Specialities Limited,INE495P01020,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 BEDMUTHA,Bedmutha Industries Limited,INE844K01012,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
 BEEKAY,Beekay Steel Industries Limited,INE213D01015,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
@@ -369,6 +384,7 @@ BMWVENTLTD,BMW Ventures Limited,INE965W01036,EQ,Commodities,Metals & Mining,Meta
 BNAGROCHEM,BN Agrochem Limited,INE00HZ01011,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 BNALTD,B & A Limited,INE489D01011,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,kept:bse:ComHeader
 BODALCHEM,Bodal Chemicals Limited,INE338D01028,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Dyes And Pigments,kept:bse:ComHeader
+BOHRAIND,Bohra Industries Limited,INE802W01023,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
 BOMDYEING,Bombay Dyeing & Mfg Company Limited,INE032A01023,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 BONDADA,Bondada Engineering Limited,INE0Q8P01029,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,kept:bse:ComHeader
 BONFIG,Bonfiglioli Transmissions Limited,INE28SO01013,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
@@ -389,6 +405,7 @@ BRIGHTBR,Bright Brothers Limited,INE630D01010,EQ,Industrials,Capital Goods,Indus
 BRITANNIA,Britannia Industries Limited,INE216A01030,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 BRNL,Bharat Road Network Limited,INE727S01012,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 BROOKS,Brooks Laboratories Limited,INE650L01011,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
+BSE,BSE Limited,INE118H01025,EQ,Financial Services,Financial Services,Capital Markets,Exchange and Data Platform,override
 BSHSL,Bombay Super Hybrid Seeds Limited,INE032Z01020,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
 BSL,BSL Limited,INE594B01012,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 BSOFT,BIRLASOFT LIMITED,INE836A01035,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,kept:bse:ComHeader
@@ -422,6 +439,7 @@ CCAVENUE,AvenuesAI Limited,INE483S01038,EQ,Financial Services,Financial Services
 CCCL,Consolidated Construction Consortium Limited,INE429I01024,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 CCHHL,Country Club Hospitality & Holidays Limited,INE652F01027,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 CCL,CCL Products (India) Limited,INE421D01022,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,kept:bse:ComHeader
+CDSL,Central Depository Services (India) Limited,INE736A01011,EQ,Financial Services,Financial Services,Capital Markets,Depositories Clearing Houses and Other Intermediaries,override
 CEATLTD,CEAT Limited,INE482A01020,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Tyres & Rubber Products,kept:bse:ComHeader
 CEIGALL,Ceigall India Limited,INE0AG901020,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 CEINSYS,Ceinsys Tech Limited,INE016Q01014,EQ,Information Technology,Information Technology,IT - Services,IT Enabled Services,kept:bse:ComHeader
@@ -483,6 +501,7 @@ COMSYN,Commercial Syn Bags Limited,INE073V01015,EQ,Industrials,Capital Goods,Ind
 CONCOR,Container Corporation of India Limited,INE111A01025,EQ,Services,Services,Transport Services,Logistics Solution Provider,kept:bse:ComHeader
 CONCORDBIO,Concord Biotech Limited,INE338H01029,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 CONFIPET,Confidence Petroleum India Limited,INE552D01024,EQ,Energy,Oil Gas & Consumable Fuels,Gas,LPG/CNG/PNG/LNG Supplier,kept:bse:ComHeader
+CONSOFINVT,Consolidated Finvest & Holdings Limited,INE025A01027,BE,Financial Services,Financial Services,Finance,Investment Company,override
 CONTROLPR,Control Print Limited,INE663B01015,EQ,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,kept:bse:ComHeader
 CORALFINAC,Coral India Finance & Housing Limited,INE558D01021,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
 CORDELIA,Waterways Leisure Tourism Limited,INE0LZF01039,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Tour Travel Related Services,kept:bse:ComHeader
@@ -501,6 +520,7 @@ CRAVATEX,Cravatex Limited,INE145E01017,EQ,Services,Services,Commercial Services 
 CREATIVEYE,Creative Eye Limited,INE230B01021,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,kept:bse:ComHeader
 CREDITACC,CREDITACCESS GRAMEEN LIMITED,INE741K01010,EQ,Financial Services,Financial Services,Finance,Microfinance Institutions,kept:bse:ComHeader
 CREST,Crest Ventures Limited,INE559D01011,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
+CRESTO,CRESTO TECHNO LIMITED,INE203Y01012,BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,override
 CRISIL,Crisil Limited,INE007A01025,EQ,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
 CRIZAC,Crizac Limited,INE0S4R01014,EQ,Consumer Discretionary,Consumer Services,Retailing,Internet & Catalogue Retail,kept:bse:ComHeader
 CROMPTON,Crompton Greaves Consumer Electricals Limited,INE299U01018,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,kept:bse:ComHeader
@@ -602,6 +622,7 @@ DOLPHIN,Dolphin Offshore Enterprises (India) Limited,INE920A01037,EQ,Energy,Oil 
 DOMS,DOMS Industries Limited,INE321T01012,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Household Products,Stationary,kept:bse:ComHeader
 DONEAR,Donear Industries Limited,INE668D01028,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 DPABHUSHAN,D. P. Abhushan Limited,INE266Y01019,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
+DPSCLTD,DPSC Limited,INE360C01024,BE,Utilities,Power,Power,Integrated Power Utilities,override
 DPWIRES,D P Wires Limited,INE864X01013,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
 DRAGARWQ,Dr Agarwals Eye Hospital Limited,INE934C01018,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 DRCSYSTEMS,DRC Systems India Limited,INE03RS01027,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,kept:bse:ComHeader
@@ -632,6 +653,7 @@ EFCIL,EFC (I) Limited,INE886D01026,EQ,Services,Services,Commercial Services & Su
 EICHERMOT,Eicher Motors Limited,INE066A01021,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,2/3 Wheelers,kept:bse:ComHeader
 EIDPARRY,EID Parry India Limited,INE126A01031,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Other Food Products,kept:bse:ComHeader
 EIEL,Enviro Infra Engineers Limited,INE0LLY01014,EQ,Utilities,Utilities,Other Utilities,Water Supply & Management,kept:bse:ComHeader
+EIFFL,Euro India Fresh Foods Limited,INE546V01010,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
 EIHAHOTELS,EIH Associated Hotels Limited,INE276C01014,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 EIHOTEL,EIH Limited,INE230A01023,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 EIMCOELECO,Eimco Elecon (India) Limited,INE158B01016,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
@@ -726,6 +748,7 @@ FLEXITUFF,Flexituff Ventures International Limited,INE060J01017,BE,Consumer Disc
 FLUOROCHEM,Gujarat Fluorochemicals Limited,INE09N301011,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 FMGOETZE,Federal-Mogul Goetze (India) Limited.,INE529A01010,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 FMNL,Future Market Networks Limited,INE360L01017,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
+FOCUS,Focus Lighting and Fixtures Limited,INE593W01028,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,override
 FOODSIN,Foods & Inns Limited,INE976E01023,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 FORCEMOT,FORCE MOTORS LTD,INE451A01017,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,Passenger Cars & Utility Vehicles,kept:bse:ComHeader
 FORTIS,Fortis Healthcare Limited,INE061F01013,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
@@ -749,6 +772,7 @@ GANECOS,Ganesha Ecosphere Limited,INE845D01014,EQ,Consumer Discretionary,Textile
 GANESHBE,Ganesh Benzoplast Limited,INE388A01029,BE,Energy,Oil Gas & Consumable Fuels,Oil,Oil Storage & Transportation,kept:bse:ComHeader
 GANESHCP,Ganesh Consumer Products Limited,INE652V01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 GANESHHOU,GANESH HOUSING LIMITED,INE460C01014,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
+GANGAFORGE,Ganga Forging Limited,INE691Z01023,EQ,Industrials,Capital Goods,Industrial Products,Castings & Forgings,override
 GANGESSECU,Ganges Securities Limited,INE335W01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,kept:bse:ComHeader
 GARFIBRES,Garware Technical Fibres Limited,INE276A01018,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 GARUDA,Garuda Construction and Engineering Limited,INE0JVO01026,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
@@ -760,6 +784,7 @@ GAYAHWS,Gayatri Highways Limited,INE287Z01012,EQ,Services,Services,Transport Inf
 GAYAPROJ,Gayatri Projects Limited,INE336H01023,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 GCSL,Gretex Corporate Services Limited,INE199P01028,EQ,Financial Services,Financial Services,Capital Markets,Other Capital Market related Services,kept:bse:ComHeader
 GEECEE,GeeCee Ventures Limited,INE916G01016,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
+GEEKAYWIRE,Geekay Wires Limited,INE669X01032,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 GEMAROMA,Gem Aromatics Limited,INE06XZ01023,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 GENCON,Generic Engineering Construction and Projects Limited,INE854S01022,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 GENESYS,Genesys International Corporation Limited,INE727B01026,EQ,Information Technology,Information Technology,IT - Services,IT Enabled Services,kept:bse:ComHeader
@@ -825,6 +850,7 @@ GPIL,Godawari Power And Ispat limited,INE177H01039,EQ,Industrials,Capital Goods,
 GPPL,Gujarat Pipavav Port Limited,INE517F01014,EQ,Services,Services,Transport Infrastructure,Port & Port services,kept:bse:ComHeader
 GPTHEALTH,GPT Healthcare Limited,INE486R01017,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 GPTINFRA,GPT Infraprojects Limited,INE390G01014,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
+GRADIENTE,Gradiente Infotainment Limited,INE361K01017,BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,override
 GRANDOAK,Grand Oak Canyons Distillery Limited,INE926B01016,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 GRANULES,Granules India Limited,INE101D01020,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 GRAPHITE,Graphite India Limited,INE371A01025,EQ,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,kept:bse:ComHeader
@@ -840,6 +866,7 @@ GREENPOWER,Orient Green Power Company Limited,INE999K01014,EQ,Utilities,Power,Po
 GRINDWELL,Grindwell Norton Limited,INE536A01023,EQ,Industrials,Capital Goods,Industrial Products,Abrasives & Bearings,kept:bse:ComHeader
 GRINFRA,G R Infraprojects Limited,INE201P01022,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 GRMOVER,GRM Overseas Limited,INE192H01020,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
+GROBTEA,The Grob Tea Company Limited,INE646C01018,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
 GROWW,Billionbrains Garage Ventures Limited,INE0HOQ01053,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
 GRPLTD,GRP Limited,INE137I01015,EQ,Industrials,Capital Goods,Industrial Products,Rubber,kept:bse:ComHeader
 GRSE,Garden Reach Shipbuilders & Engineers Limited,INE382Z01011,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
@@ -864,6 +891,7 @@ GULFPETRO,GP Petroleums Limited,INE586G01017,BE,Energy,Oil Gas & Consumable Fuel
 GULPOLY,Gulshan Polyols Limited,INE255D01024,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
 GVKPIL,GVK Power & Infrastructure Limited,INE251H01024,BE,Utilities,Power,Power,Power Generation,kept:bse:ComHeader
 GVPIL,GE Power India Limited,INE878A01011,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
+GVPTECH,GVP Infotech Limited,INE382T01030,BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,override
 GVT&D,GE Vernova T&D India Limited,INE200A01026,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 GYFTR,Gyftr Limited,INE724A01017,EQ,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
 HAL,Hindustan Aeronautics Limited,INE066F01020,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
@@ -922,6 +950,7 @@ HINDADH,Hindustan Adhesives Limited,INE074C01013,EQ,Industrials,Capital Goods,In
 HINDALCO,Hindalco Industries Limited,INE038A01020,EQ,Commodities,Metals & Mining,Non - Ferrous Metals,Aluminium,kept:bse:ComHeader
 HINDALUMI,Hind Aluminium Industries Limited,INE227B01019,EQ,Commodities,Metals & Mining,Non - Ferrous Metals,Aluminium,kept:bse:ComHeader
 HINDCOMPOS,Hindustan Composites Limited,INE310C01029,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
+HINDCON,Hindcon Chemicals Limited,INE642Y01029,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 HINDCOPPER,Hindustan Copper Limited,INE531E01026,EQ,Commodities,Metals & Mining,Non - Ferrous Metals,Copper,kept:bse:ComHeader
 HINDOILEXP,Hindustan Oil Exploration Company Limited,INE345A01011,EQ,Energy,Oil Gas & Consumable Fuels,Oil,Oil Exploration & Production,kept:bse:ComHeader
 HINDPETRO,Hindustan Petroleum Corporation Limited,INE094A01015,EQ,Energy,Oil Gas & Consumable Fuels,Petroleum Products,Refineries & Marketing,kept:bse:ComHeader
@@ -957,6 +986,7 @@ HYBRIDFIN,Hybrid Financial Services Limited,INE965B01022,EQ,Financial Services,F
 HYUNDAI,Hyundai Motor India Limited,INE0V6F01027,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,Passenger Cars & Utility Vehicles,kept:bse:ComHeader
 IBULLSLTD,Indiabulls Limited,INE126M01010,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
 ICDSLTD,ICDS Limited,INE613B01010,BE,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
+ICEMAKE,Ice Make Refrigeration Limited,INE520Y01019,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
 ICICIAMC,ICICI Prudential Asset Management Company Limited,INE346A01027,EQ,Financial Services,Financial Services,Capital Markets,Asset Management Company,kept:bse:ComHeader
 ICICIBANK,ICICI Bank Limited,INE090A01021,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,kept:bse:ComHeader
 ICICIGI,ICICI Lombard General Insurance Company Limited,INE765G01017,EQ,Financial Services,Financial Services,Insurance,General Insurance,kept:bse:ComHeader
@@ -1110,6 +1140,7 @@ JMA,Jullundur Motor Agency (Delhi) Limited,INE412C01023,EQ,Consumer Discretionar
 JMFINANCIL,JM Financial Limited,INE780C01023,EQ,Financial Services,Financial Services,Finance,Holding Company,kept:bse:ComHeader
 JNKINDIA,JNK India Limited,INE0OAF01028,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 JNPR,Juniper Green Energy Limited,INE05C901015,EQ,Utilities,Power,Power,Power Generation,kept:bse:ComHeader
+JOCIL,Jocil Limited,INE839G01010,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 JPL,Jio Platforms Limited,INE0BJO01010,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Cellular & Fixed line services,kept:bse:ComHeader
 JPOLYINVST,Jindal Poly Investment and Finance Company Limited,INE147P01019,EQ,Financial Services,Financial Services,Finance,Investment Company,kept:bse:ComHeader
 JPPOWER,Jaiprakash Power Ventures Limited,INE351F01018,EQ,Utilities,Power,Power,Power Generation,kept:bse:ComHeader
@@ -1156,6 +1187,7 @@ KANOHAR,Kanohar Electricals Limited,INE877D01025,EQ,Industrials,Capital Goods,El
 KANORICHEM,Kanoria Chemicals & Industries Limited,INE138C01024,BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 KANPRPLA,Kanpur Plastipack Limited,INE694E01014,EQ,Industrials,Capital Goods,Industrial Products,Packaging,kept:bse:ComHeader
 KANSAINER,Kansai Nerolac Paints Limited,INE531A01024,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Paints,kept:bse:ComHeader
+KAPSTON,Kapston Services Limited,INE542Z01028,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,override
 KARAMTARA,Karamtara Engineering Limited,INE590T01012,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 KARMAENG,Karma Energy Limited,INE725L01011,EQ,Utilities,Power,Power,Power Generation,kept:bse:ComHeader
 KARURVYSYA,Karur Vysya Bank Limited,INE036D01028,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,kept:bse:ComHeader
@@ -1203,6 +1235,7 @@ KMCSHIL,K M C Speciality Hospitals (India) Limited,INE879K01018,EQ,Healthcare,He
 KMEW,Knowledge Marine & Engineering Works Limited,INE0CJD01029,EQ,Services,Services,Engineering Services,Dredging,kept:bse:ComHeader
 KMSUGAR,K.M.Sugar Mills Limited,INE157H01023,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,kept:bse:ComHeader
 KNACK,Knack Packaging Limited,INE17QZ01016,EQ,Industrials,Capital Goods,Industrial Products,Packaging,kept:bse:ComHeader
+KNAGRI,KN Agri Resources Limited,INE0KNW01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,override
 KNRCON,KNR Constructions Limited,INE634I01029,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 KOHINOOR,Kohinoor Foods Limited,INE080B01012,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
 KOKUYOCMLN,Kokuyo Camlin Limited,INE760A01029,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Household Products,Stationary,kept:bse:ComHeader
@@ -1210,6 +1243,7 @@ KOLTEPATIL,Kolte - Patil Developers Limited,INE094I01018,EQ,Consumer Discretiona
 KOPRAN,Kopran Limited,INE082A01010,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 KOTAKBANK,Kotak Mahindra Bank Limited,INE237A01036,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,kept:bse:ComHeader
 KOTARISUG,Kothari Sugars And Chemicals Limited,INE419A01022,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,kept:yahoo:Confectioners (matches 92% of 25 BSE-classified stocks)
+KOTHARIPET,Kothari Petrochemicals Limited,INE720A01015,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Petrochemicals,override
 KOTHARIPRO,Kothari Products Limited,INE823A01017,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 KOTIC,Kothari Industrial Corporation Limited,INE972A01020,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Leather And Leather Products,kept:bse:ComHeader
 KOTYARK,Kotyark Industries Limited,INE0J0B01017,EQ,Energy,Oil Gas & Consumable Fuels,Petroleum Products,Refineries & Marketing,kept:bse:ComHeader
@@ -1223,7 +1257,9 @@ KPRMILL,K.P.R. Mill Limited,INE930H01031,EQ,Consumer Discretionary,Textiles,Text
 KRBL,KRBL Limited,INE001B01026,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
 KREBSBIO,Krebs Biochemicals and Industries Limited,INE268B01013,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 KRIDHANINF,Kridhan Infra Limited,INE524L01026,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
+KRISHANA,Krishana Phoschem Limited,INE506W01020,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
 KRISHIVAL,Krishival Foods Limited,INE0GGO01015,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Other Food Products,kept:bse:ComHeader
+KRISHNADEF,Krishna Defence And Allied Industries Limited,INE0J5601015,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,override
 KRITI,Kriti Industries (India) Limited,INE479D01038,EQ,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,kept:bse:ComHeader
 KRITIKA,Kritika Wires Limited,INE00Z501029,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:yahoo:Steel (matches 61% of 88 BSE-classified stocks)
 KRITINUT,Kriti Nutrients Limited,INE798K01010,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,kept:bse:ComHeader
@@ -1259,6 +1295,7 @@ LANDSMILL,Landsmill Green Limited,INE688J01023,BE,Services,Services,Commercial S
 LAOPALA,La Opala RG Limited,INE059D01020,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Glass - Consumer,kept:bse:ComHeader
 LASERPOWER,Laser Power & Infra Limited,INE17IR01028,EQ,Industrials,Capital Goods,Industrial Products,Cables - Electricals,kept:bse:ComHeader
 LATENTVIEW,Latent View Analytics Limited,INE0I7C01011,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,kept:bse:ComHeader
+LATTEYS,Latteys Industries Limited,INE262Z01023,EQ,Industrials,Capital Goods,Industrial Products,Compressors Pumps & Diesel Engines,override
 LAURUSLABS,Laurus Labs Limited,INE947Q01028,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 LAXMICOT,Laxmi Cotspin Limited,INE801V01019,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 LAXMIDENTL,Laxmi Dental Limited,INE0WO601020,EQ,Healthcare,Healthcare,Healthcare Equipment & Supplies,Medical Equipment & Supplies,kept:bse:ComHeader
@@ -1271,6 +1308,8 @@ LEENEE,Lee & Nee Softwares Exports Limited,INE791B01014,BE,Information Technolog
 LEMERITE,Le Merite Exports Limited,INE0G1L01025,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 LEMONTREE,Lemon Tree Hotels Limited,INE970X01018,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 LENSKART,Lenskart Solutions Limited,INE956O01016,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
+LEXUS,Lexus Granito (India) Limited,INE500X01013,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Ceramics,override
+LFIC,Lakshmi Finance & Industrial Corporation Limited,INE850E01012,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),override
 LGBBROSLTD,LG Balakrishnan & Bros Limited,INE337A01034,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 LGEINDIA,LG Electronics India Limited,INE324D01010,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,kept:bse:ComHeader
 LGHL,Laxmi Goldorna House Limited,INE258Y01016,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:yahoo:Luxury Goods (matches 97% of 30 BSE-classified stocks)
@@ -1311,6 +1350,7 @@ LYKALABS,Lyka Labs Limited,INE933A01014,BE,Healthcare,Healthcare,Pharmaceuticals
 M&M,Mahindra & Mahindra Limited,INE101A01026,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,Passenger Cars & Utility Vehicles,kept:bse:ComHeader
 M&MFIN,Mahindra & Mahindra Financial Services Limited,INE774D01024,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 MAANALU,Maan Aluminium Limited,INE215I01027,EQ,Commodities,Metals & Mining,Non - Ferrous Metals,Aluminium,kept:bse:ComHeader
+MACPOWER,Macpower CNC Machines Limited,INE155Z01011,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
 MADHAV,Madhav Marbles and Granites Limited,INE925C01016,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Granites & Marbles,kept:bse:ComHeader
 MADHAVIPL,Madhav Infra Projects Limited,INE631R01026,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 MADHUCON,Madhucon Projects Limited,INE378D01032,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
@@ -1357,11 +1397,13 @@ MAPMYINDIA,C.E. Info Systems Limited,INE0BV301023,EQ,Information Technology,Info
 MARALOVER,Maral Overseas Limited,INE882A01013,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 MARATHON,Marathon Nextgen Realty Limited,INE182D01020,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 MARICO,Marico Limited,INE196A01026,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,kept:bse:ComHeader
+MARINE,Marine Electricals (India) Limited,INE01JE01028,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
 MARKOLINES,Markolines Pavement Technologies Limited,INE0FW001016,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 MARKSANS,Marksans Pharma Limited,INE750C01026,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 MARSONS,Marsons Limited,INE415B01044,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 MARUTI,Maruti Suzuki India Limited,INE585B01010,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,Passenger Cars & Utility Vehicles,kept:bse:ComHeader
 MASFIN,MAS Financial Services Limited,INE348L01012,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
+MASKINVEST,Mask Investments Limited,INE885F01015,EQ,Financial Services,Financial Services,Finance,Investment Company,override
 MASTEK,Mastek Limited,INE759A01021,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,kept:bse:ComHeader
 MASTERTR,Master Trust Limited,INE677D01037,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
 MATRIMONY,Matrimony.Com Limited,INE866R01028,EQ,Consumer Discretionary,Consumer Services,Retailing,Internet & Catalogue Retail,kept:bse:ComHeader
@@ -1372,6 +1414,7 @@ MAXIND,Max India Limited,INE0CG601016,EQ,Financial Services,Financial Services,F
 MAYURUNIQ,Mayur Uniquoters Ltd,INE040D01038,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Leather And Leather Products,kept:bse:ComHeader
 MAZDA,Mazda Limited,INE885E01042,BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 MAZDOCK,Mazagon Dock Shipbuilders Limited,INE249Z01020,EQ,Industrials,Capital Goods,Industrial Manufacturing,Ship Building & Allied Services,kept:bse:ComHeader
+MBAPL,Madhya Bharat Agro Products Limited,INE900L01028,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
 MBECL,Mcnally Bharat Engineering Company Limited,INE748A01024,BE,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 MBEL,M & B Engineering Limited,INE08N601015,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 MBLINFRA,MBL Infrastructure Limited,INE912H01013,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
@@ -1496,8 +1539,10 @@ NAVKARURB,Navkar Urbanstructure Limited,INE268H01044,EQ,Industrials,Construction
 NAVNETEDUL,Navneet Education Limited,INE060A01024,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Household Products,Stationary,kept:bse:ComHeader
 NAZARA,Nazara Technologies Limited,INE418L01047,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Digital Entertainment,kept:bse:ComHeader
 NBCC,NBCC (India) Limited,INE095N01031,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
+NBIFIN,N. B. I. Industrial Finance Company Limited,INE365I01020,EQ,Financial Services,Financial Services,Finance,Investment Company,override
 NCC,NCC Limited,INE868B01028,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 NCLIND,NCL Industries Limited,INE732C01016,EQ,Commodities,Construction Materials,Cement & Cement Products,Cement & Cement Products,kept:bse:ComHeader
+NDGL,Naga Dhunseri Group Limited,INE756C01015,EQ,Financial Services,Financial Services,Finance,Investment Company,override
 NDL,Nandan Denim Limited,INE875G01048,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 NDLVENTURE,NDL Ventures Limited,INE353A01023,EQ,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
 NDRAUTO,Ndr Auto Components Limited,INE07OG01012,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
@@ -1540,6 +1585,7 @@ NIRAJISPAT,Niraj Ispat Industries Limited,INE326T01011,BE,Consumer Discretionary
 NIRLON,Nirlon Limited,INE910A01012,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
 NITCO,Nitco Limited,INE858F01012,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Ceramics,kept:bse:ComHeader
 NITINSPIN,Nitin Spinners Limited,INE229H01012,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
+NITIRAJ,Nitiraj Engineers Limited,INE439T01012,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
 NITTAGELA,Nitta Gelatin India Limited,INE265B01019,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 NITYAS,Nityas Gems and Jewellery Limited,INE211501023,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 NIVABUPA,Niva Bupa Health Insurance Company Limited,INE995S01015,EQ,Financial Services,Financial Services,Insurance,General Insurance,kept:bse:ComHeader
@@ -1615,6 +1661,7 @@ ORTINGLOBE,ORTIN GLOBAL LIMITED,INE749B01020,EQ,Healthcare,Healthcare,Pharmaceut
 OSWALAGRO,Oswal Agro Mills Limited,INE142A01012,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 OSWALGREEN,Oswal Greentech Limited,INE143A01010,EQ,Financial Services,Financial Services,Finance,Investment Company,kept:bse:ComHeader
 OSWALPUMPS,Oswal Pumps Limited,INE0BYP01024,EQ,Industrials,Capital Goods,Industrial Products,Compressors Pumps & Diesel Engines,kept:bse:ComHeader
+OSWALSEEDS,ShreeOswal Seeds And Chemicals Limited,INE00IK01029,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,override
 PACEDIGITK,Pace Digitek Limited,INE0S3G01027,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,kept:bse:ComHeader
 PACIFICI,Pacific Industries Limited,INE883C01025,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Granites & Marbles,kept:bse:ComHeader
 PAGEIND,Page Industries Limited,INE761H01022,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,kept:bse:ComHeader
@@ -1623,6 +1670,7 @@ PAKKA,PAKKA LIMITED,INE551D01018,EQ,Commodities,Forest Materials,Paper Forest & 
 PALASHSECU,Palash Securities Limited,INE471W01019,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 PALREDTEC,Palred Technologies Limited,INE218G01033,EQ,Information Technology,Information Technology,IT - Services,IT Enabled Services,kept:bse:ComHeader
 PANACEABIO,Panacea Biotec Limited,INE922B01023,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
+PANACHE,Panache Digilife Limited,INE895W01019,BE,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,override
 PANAMAPET,Panama Petrochem Limited,INE305C01029,EQ,Energy,Oil Gas & Consumable Fuels,Petroleum Products,Lubricants,kept:bse:ComHeader
 PANCHMAHQ,Panchmahal Steel Limited,INE798F01010,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
 PANORAMA,Panorama Studios International Limited,INE258R01028,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,kept:bse:ComHeader
@@ -1634,6 +1682,7 @@ PARAGMILK,Parag Milk Foods Limited,INE883N01014,EQ,Fast Moving Consumer Goods,Fa
 PARAS,Paras Defence and Space Technologies Limited,INE045601023,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
 PARASHLTH,Paras Healthcare Limited,INE661T01029,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 PARASPETRO,Paras Petrofils Limited,INE162C01024,EQ,Financial Services,Financial Services,Finance,Investment Company,kept:bse:ComHeader
+PARIN,Parin Enterprises Limited,INE00U801010,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,override
 PARKHOSPS,Park Medi World Limited,INE119201023,EQ,Healthcare,Healthcare,Healthcare Services,Hospital,kept:bse:ComHeader
 PARKHOTELS,Apeejay Surrendra Park Hotels Limited,INE988S01028,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 PARNAXLAB,Parnax Lab Limited,INE383L01019,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
@@ -1681,6 +1730,7 @@ PIONRINV,Pioneer Investcorp Limited,INE746D01014,BE,Financial Services,Financial
 PIRAMALFIN,Piramal Finance Limited,INE202B01038,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 PITTIENG,Pitti Engineering Limited,INE450D01021,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 PIXTRANS,Pix Transmissions Limited,INE751B01018,EQ,Industrials,Capital Goods,Industrial Products,Rubber,kept:bse:ComHeader
+PKTEA,The Peria Karamalai Tea & Produce Company Limited,INE431F01018,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
 PLASTIBLEN,Plastiblends India Limited,INE083C01022,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 PLATIND,Platinum Industries Limited,INE0PT501018,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 PLAZACABLE,Plaza Wires Limited,INE0INJ01017,EQ,Industrials,Capital Goods,Industrial Products,Cables - Electricals,kept:bse:ComHeader
@@ -1735,6 +1785,7 @@ PRIMO,Primo Chemicals Limited,INE607A01022,EQ,Commodities,Chemicals,Chemicals & 
 PRINCEPIPE,Prince Pipes And Fittings Limited,INE689W01016,EQ,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,kept:bse:ComHeader
 PRIORITY,Priority Jewels Limited,INE15EH01014,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 PRISMX,Prismx Global Ventures Limited,INE286N01028,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
+PRITI,Priti International Limited,INE974Z01015,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,override
 PRITIKAUTO,Pritika Auto Industries Limited,INE583R01029,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 PRIVISCL,Privi Speciality Chemicals Limited,INE959A01019,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 PROSTARM,Prostarm Info Systems Limited,INE0BX301013,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,kept:bse:ComHeader
@@ -1961,6 +2012,7 @@ SEMAC,Semac Construction Limited,INE617A01013,EQ,Industrials,Construction,Constr
 SENCO,Senco Gold Limited,INE602W01027,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 SENORES,Senores Pharmaceuticals Limited,INE0RB801010,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 SEPC,SEPC Limited,INE964H01014,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
+SERVOTECH,Servotech Renewable Power System Limited,INE782X01033,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
 SESHAPAPER,Seshasayee Paper and Boards Limited,INE630A01024,EQ,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,kept:bse:ComHeader
 SETCO,Setco Automotive Limited,INE878E01021,BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 SETL,Standard Engineering Technology Limited,INE0M4D01010,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
@@ -1982,6 +2034,7 @@ SHALBY,Shalby Limited,INE597J01018,EQ,Healthcare,Healthcare,Healthcare Services,
 SHALPAINTS,Shalimar Paints Limited,INE849C01026,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Paints,kept:bse:ComHeader
 SHANKARA,Shankara Building Products Limited,INE274V01019,EQ,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,kept:bse:ComHeader
 SHANKESH,Shankesh Jewellers Limited,INE1WFC01025,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
+SHANTI,Shanti Overseas (India) Limited,INE933X01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,override
 SHANTIGEAR,Shanthi Gears Limited,INE631A01022,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 SHANTIGOLD,Shanti Gold International Limited,INE06ZD01017,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 SHARDACROP,Sharda Cropchem Limited,INE221J01015,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,kept:bse:ComHeader
@@ -2035,6 +2088,7 @@ SIGMAADV,SIGMA ADVANCED SYSTEMS LIMITED,INE933B01012,BE,Industrials,Capital Good
 SIGNATURE,Signatureglobal (India) Limited,INE903U01023,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 SIGNPOST,Signpost India Limited,INE0KGZ01021,EQ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,kept:bse:ComHeader
 SIKA,Sika Interplant Systems Limited,INE438E01032,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
+SIKKO,Sikko Industries Limited,INE112X01025,BE,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,override
 SIL,Standard Industries Limited,INE173A01025,EQ,Consumer Discretionary,Realty,Realty,Real Estate related services,kept:bse:ComHeader
 SILGO,Silgo Retail Limited,INE01II01013,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:yahoo:Luxury Goods (matches 97% of 30 BSE-classified stocks)
 SILINV,SIL Investments Limited,INE923A01015,EQ,Financial Services,Financial Services,Finance,Investment Company,kept:bse:ComHeader
@@ -2076,6 +2130,7 @@ SOMICONVEY,Somi Conveyor Beltings Limited,INE323J01019,EQ,Industrials,Capital Go
 SONA,Sonaselection India Limited,INE0LLZ01011,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 SONACOMS,Sona BLW Precision Forgings Limited,INE073K01018,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 SONAL,Sonal Mercantile Limited,INE321M01017,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
+SONAMLTD,SONAM LIMITED,INE00LM01029,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Houseware,override
 SONATSOFTW,Sonata Software Limited,INE269A01021,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,kept:bse:ComHeader
 SOTL,Savita Oil Technologies Limited,INE035D01020,EQ,Energy,Oil Gas & Consumable Fuels,Petroleum Products,Lubricants,kept:bse:ComHeader
 SOUTHBANK,The South Indian Bank Limited,INE683A01023,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,kept:bse:ComHeader
@@ -2083,6 +2138,7 @@ SOUTHWEST,South West Pinnacle Exploration Limited,INE980Y01015,EQ,Services,Servi
 SPAL,S. P. Apparels Limited,INE212I01016,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,kept:bse:ComHeader
 SPANDANA,Spandana Sphoorty Financial Limited,INE572J01011,EQ,Financial Services,Financial Services,Finance,Microfinance Institutions,kept:bse:ComHeader
 SPARC,Sun Pharma Advanced Research Company Limited,INE232I01014,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
+SPCENET,Spacenet Enterprises India Limited,INE970N01027,EQ,Financial Services,Financial Services,Financial Technology (Fintech),Financial Technology (Fintech),override
 SPECIALITY,Speciality Restaurants Limited,INE247M01014,BE,Consumer Discretionary,Consumer Services,Leisure Services,Restaurants,kept:bse:ComHeader
 SPECTRUM,Spectrum Electrical Industries Limited,INE01EO01010,BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 SPENCERS,Spencer's Retail Limited,INE020801028,EQ,Consumer Discretionary,Consumer Services,Retailing,Diversified Retail,kept:bse:ComHeader
@@ -2113,6 +2169,7 @@ STARTECK,Starteck Finance Limited,INE992I01013,EQ,Financial Services,Financial S
 STCINDIA,The State Trading Corporation of India Limited,INE655A01013,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,kept:bse:ComHeader
 STEAMHOUSE,Steamhouse India Limited,INE0FRO01022,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Industrial Gases,kept:bse:ComHeader
 STEELCAS,Steelcast Limited,INE124E01038,EQ,Industrials,Capital Goods,Industrial Products,Castings & Forgings,kept:bse:ComHeader
+STEELCITY,Steel City Securities Limited,INE395H01011,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,override
 STEELXIND,STEEL EXCHANGE INDIA LIMITED,INE503B01021,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
 STEL,Stel Holdings Limited,INE577L01016,EQ,Financial Services,Financial Services,Finance,Investment Company,kept:bse:ComHeader
 STERTOOLS,Sterling Tools Limited,INE334A01023,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
@@ -2201,6 +2258,7 @@ TALBROAUTO,Talbros Automotive Components Limited,INE187D01029,EQ,Consumer Discre
 TAMBOLIIN,Tamboli Industries Limited,INE864J01012,BE,Financial Services,Financial Services,Finance,Holding Company,kept:bse:ComHeader
 TANAA,Taneja Aerospace & Aviation Limited,INE692C01020,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
 TANLA,Tanla Platforms Limited,INE483C01032,EQ,Information Technology,Information Technology,IT - Software,Software Products,kept:bse:ComHeader
+TARACHAND,Tara Chand InfraLogistic Solutions Limited,INE555Z01020,EQ,Services,Services,Transport Services,Logistics Solution Provider,override
 TARAPUR,Tarapur Transformers Limited,INE747K01017,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 TARC,TARC Limited,INE0EK901012,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 TARIL,Transformers And Rectifiers (India) Limited,INE763I01026,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
@@ -2251,6 +2309,7 @@ THACKER,Thacker & Company Limited,INE077P01034,EQ,Financial Services,Financial S
 THAKDEV,Thakkers Developers Limited,INE403F01017,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 THANGAMAYL,Thangamayil Jewellery Limited,INE085J01014,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 THEINVEST,The Investment Trust Of India Limited,INE924D01017,EQ,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
+THEJO,Thejo Engineering Limited,INE121N01019,EQ,Industrials,Capital Goods,Industrial Products,Other Industrial Products,override
 THELEELA,Leela Palaces Hotels & Resorts Limited,INE0AQ201015,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,kept:bse:ComHeader
 THEMISMED,Themis Medicare Limited,INE083B01024,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 THERMAX,Thermax Limited,INE152A01029,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
@@ -2272,6 +2331,7 @@ TINNARUBR,Tinna Rubber and Infrastructure Limited,INE015C01016,EQ,Industrials,Ca
 TIPSFILMS,Tips Films Limited,INE0LQS01015,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,kept:bse:ComHeader
 TIPSMUSIC,Tips Music Limited,INE716B01029,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,kept:bse:ComHeader
 TIRUMALCHM,Thirumalai Chemicals Limited,INE338A01024,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,kept:bse:ComHeader
+TIRUPATIFL,Tirupati Forge Limited,INE319Y01024,BE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,override
 TITAGARH,TITAGARH RAIL SYSTEMS LIMITED,INE615H01020,EQ,Industrials,Capital Goods,Industrial Manufacturing,Railway Wagons,kept:bse:ComHeader
 TITAN,Titan Company Limited,INE280A01028,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,kept:bse:ComHeader
 TMB,Tamilnad Mercantile Bank Limited,INE668A01016,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,kept:bse:ComHeader
@@ -2286,6 +2346,7 @@ TONBO,Tonbo Imaging India Limited,INE0LDG01026,EQ,Industrials,Capital Goods,Aero
 TORNTPHARM,Torrent Pharmaceuticals Limited,INE685A01028,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 TORNTPOWER,Torrent Power Limited,INE813H01021,EQ,Utilities,Power,Power,Integrated Power Utilities,kept:bse:ComHeader
 TOTAL,Total Transport Systems Limited,INE336X01012,BE,Services,Services,Transport Services,Logistics Solution Provider,kept:yahoo:Integrated Freight & Logistics (matches 93% of 27 BSE-classified stocks)
+TOUCHWOOD,Touchwood Entertainment Limited,INE486Y01013,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,override
 TOYAMSL,Toyam Sports Limited,INE457P01020,EQ,Financial Services,Financial Services,Finance,Other Financial Services,kept:bse:ComHeader
 TPHQ,Teamo Productions HQ Limited,INE065J01024,BE,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 TPLPLASTEH,TPL Plastech Limited,INE413G01022,EQ,Industrials,Capital Goods,Industrial Products,Packaging,kept:bse:ComHeader
@@ -2308,6 +2369,7 @@ TRIVENI,Triveni Engineering & Industries Limited,INE256C01024,EQ,Fast Moving Con
 TRIVENIPT,Triveni Power Transmission Limited,INE2WKE01011,BE,Utilities,Power,Power,Power - Transmission,kept:bse:ComHeader
 TRU,TruCap Finance Limited,INE615R01029,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 TRUALT,TruAlt Bioenergy Limited,INE0MWH01014,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,kept:bse:ComHeader
+TSFINV,TSF INVESTMENTS LIMITED,INE202Z01029,EQ,Financial Services,Financial Services,Finance,Holding Company,override
 TTKHLTCARE,TTK Healthcare Limited,INE910C01018,EQ,Diversified,Diversified,Diversified,Diversified,kept:bse:ComHeader
 TTKPRESTIG,TTK Prestige Limited,INE690A01028,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,kept:bse:ComHeader
 TTL,T T Limited,INE592B01024,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
@@ -2342,12 +2404,14 @@ UNICHEMLAB,Unichem Laboratories Limited,INE351A01035,EQ,Healthcare,Healthcare,Ph
 UNIDT,United Drilling Tools Limited,INE961D01019,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,kept:bse:ComHeader
 UNIECOM,Unicommerce Esolutions Limited,INE00U401027,EQ,Information Technology,Information Technology,IT - Software,Software Products,kept:bse:ComHeader
 UNIENTER,Uniphos Enterprises Limited,INE037A01022,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,kept:bse:ComHeader
+UNIINFO,Uniinfo Telecom Services Limited,INE481Z01011,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,override
 UNIMECH,Unimech Aerospace and Manufacturing Limited,INE0U3I01011,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,kept:bse:ComHeader
 UNIONBANK,Union Bank of India,INE692A01016,EQ,Financial Services,Financial Services,Banks,Public Sector Bank,kept:bse:ComHeader
 UNIPARTS,Uniparts India Limited,INE244O01017,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
 UNITDSPR,United Spirits Limited,INE854D01024,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Beverages,Breweries & Distilleries,kept:bse:ComHeader
 UNITECH,Unitech Limited,INE694A01020,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,kept:bse:ComHeader
 UNITEDPOLY,United Polyfab Gujarat Limited,INE368U01029,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
+UNITEDTEA,The United Nilgiri Tea Estates Company Limited,INE458F01011,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
 UNIVASTU,Univastu India Limited,INE562X01013,BE,Industrials,Construction,Construction,Civil Construction,kept:yahoo:Engineering & Construction (matches 69% of 95 BSE-classified stocks)
 UNIVCABLES,Universal Cables Limited,INE279A01012,EQ,Industrials,Capital Goods,Industrial Products,Cables - Electricals,kept:bse:ComHeader
 UNIVPHOTO,Universus Photo Imagings Limited,INE03V001013,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,kept:bse:ComHeader
@@ -2393,6 +2457,7 @@ VENTIVE,Ventive Hospitality Limited,INE781S01027,EQ,Consumer Discretionary,Consu
 VENUSPIPES,Venus Pipes & Tubes Limited,INE0JA001018,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,kept:bse:ComHeader
 VENUSREM,Venus Remedies Limited,INE411B01019,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 VERANDA,Veranda Learning Solutions Limited,INE0IQ001011,BE,Consumer Discretionary,Consumer Services,Other Consumer Services,E-Learning,kept:bse:ComHeader
+VERTOZ,Vertoz Limited,INE188Y01031,EQ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,override
 VESUVIUS,Vesuvius India Limited,INE386A01023,EQ,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,kept:bse:ComHeader
 VETO,Veto Switchgears And Cables Limited,INE918N01018,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,kept:bse:ComHeader
 VGCL,Vibrant Global Capital Limited,INE761Q01015,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
@@ -2428,6 +2493,7 @@ VISHAL,Vishal Fabrics Limited,INE755Q01025,EQ,Consumer Discretionary,Textiles,Te
 VISHNU,Vishnu Chemicals Limited,INE270I01022,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,kept:bse:ComHeader
 VISHWARAJ,Vishwaraj Sugar Industries Limited,INE430N01022,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,kept:bse:ComHeader
 VISL,Vedanta Iron and Steel Limited,INE1CLE01013,EQ,Commodities,Metals & Mining,Ferrous Metals,Iron & Steel,kept:bse:ComHeader
+VITAL,Vital Chemtech Limited,INE0L4K01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 VIVIANA,Viviana Power Tech Limited,INE0MEG01014,EQ,Industrials,Construction,Construction,Civil Construction,kept:yahoo:Engineering & Construction (matches 69% of 95 BSE-classified stocks)
 VIVIDHA,Visagar Polytex Limited,INE370E01029,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,kept:bse:ComHeader
 VIVIMEDLAB,Vivimed Labs Limited,INE526G01021,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
@@ -2520,75 +2586,9 @@ ZUARI,Zuari Agro Chemicals Limited,INE840M01016,EQ,Commodities,Chemicals,Fertili
 ZUARIIND,ZUARI INDUSTRIES LIMITED,INE217A01012,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,kept:bse:ComHeader
 ZYDUSLIFE,Zydus Lifesciences Limited,INE010B01027,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 ZYDUSWELL,Zydus Wellness Limited,INE768C01028,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
-AAKASH,Aakash Exploration Services Limited,INE087Z01024,EQ,Energy,Oil Gas & Consumable Fuels,Oil,Oil Equipment & Services,override
-AARON,Aaron Industries Limited,INE721Z01010,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
-ABMINTLLTD,ABM International Limited,INE251C01025,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,override
-AGASTYAEN,Agastya Energy and Infrastructure Limited,INE753W01010,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
-AGROPHOS,Agro Phos India Limited,INE740V01019,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
-AIROLAM,Airo Lam limited,INE801L01010,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Plywood Boards/ Laminates,override
-AJOONI,Ajooni Biotech Limited,INE820Y01021,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Animal Feed,override
-ANNAPURNA,Annapurna Swadisht Limited,INE0MGM01017,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
-ARVEE,Arvee Laboratories (India) Limited,INE006Z01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
-ASPINWALL,Aspinwall and Company Limited,INE991I01015,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
-BOHRAIND,Bohra Industries Limited,INE802W01023,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
-BSE,BSE Limited,INE118H01025,EQ,Financial Services,Financial Services,Capital Markets,Exchange and Data Platform,override
-CDSL,Central Depository Services (India) Limited,INE736A01011,EQ,Financial Services,Financial Services,Capital Markets,Depositories Clearing Houses and Other Intermediaries,override
-CONSOFINVT,Consolidated Finvest & Holdings Limited,INE025A01027,BE,Financial Services,Financial Services,Finance,Investment Company,override
-CRESTO,CRESTO TECHNO LIMITED,INE203Y01012,BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,override
-DPSCLTD,DPSC Limited,INE360C01024,BE,Utilities,Power,Power,Integrated Power Utilities,override
-EIFFL,Euro India Fresh Foods Limited,INE546V01010,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
-FOCUS,Focus Lighting and Fixtures Limited,INE593W01028,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,override
-GANGAFORGE,Ganga Forging Limited,INE691Z01023,EQ,Industrials,Capital Goods,Industrial Products,Castings & Forgings,override
-GEEKAYWIRE,Geekay Wires Limited,INE669X01032,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
-GRADIENTE,Gradiente Infotainment Limited,INE361K01017,BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,override
-GROBTEA,The Grob Tea Company Limited,INE646C01018,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
-GVPTECH,GVP Infotech Limited,INE382T01030,BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,override
-HINDCON,Hindcon Chemicals Limited,INE642Y01029,BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
-ICEMAKE,Ice Make Refrigeration Limited,INE520Y01019,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
-JOCIL,Jocil Limited,INE839G01010,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
-KNAGRI,KN Agri Resources Limited,INE0KNW01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,override
-KOTHARIPET,Kothari Petrochemicals Limited,INE720A01015,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Petrochemicals,override
-KRISHANA,Krishana Phoschem Limited,INE506W01020,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
-KRISHNADEF,Krishna Defence And Allied Industries Limited,INE0J5601015,EQ,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,override
-LATTEYS,Latteys Industries Limited,INE262Z01023,EQ,Industrials,Capital Goods,Industrial Products,Compressors Pumps & Diesel Engines,override
-LFIC,Lakshmi Finance & Industrial Corporation Limited,INE850E01012,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),override
-MACPOWER,Macpower CNC Machines Limited,INE155Z01011,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,override
-MARINE,Marine Electricals (India) Limited,INE01JE01028,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
-MASKINVEST,Mask Investments Limited,INE885F01015,EQ,Financial Services,Financial Services,Finance,Investment Company,override
-MBAPL,Madhya Bharat Agro Products Limited,INE900L01028,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,override
-NBIFIN,N. B. I. Industrial Finance Company Limited,INE365I01020,EQ,Financial Services,Financial Services,Finance,Investment Company,override
-NDGL,Naga Dhunseri Group Limited,INE756C01015,EQ,Financial Services,Financial Services,Finance,Investment Company,override
-OSWALSEEDS,ShreeOswal Seeds And Chemicals Limited,INE00IK01029,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,override
-PARIN,Parin Enterprises Limited,INE00U801010,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,override
-PKTEA,The Peria Karamalai Tea & Produce Company Limited,INE431F01018,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
-PRITI,Priti International Limited,INE974Z01015,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,override
-SERVOTECH,Servotech Renewable Power System Limited,INE782X01033,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
-SHANTI,Shanti Overseas (India) Limited,INE933X01016,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,override
-SIKKO,Sikko Industries Limited,INE112X01025,BE,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,override
-SONAMLTD,SONAM LIMITED,INE00LM01029,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Houseware,override
-SPCENET,Spacenet Enterprises India Limited,INE970N01027,EQ,Financial Services,Financial Services,Financial Technology (Fintech),Financial Technology (Fintech),override
-STEELCITY,Steel City Securities Limited,INE395H01011,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,override
-TARACHAND,Tara Chand InfraLogistic Solutions Limited,INE555Z01020,EQ,Services,Services,Transport Services,Logistics Solution Provider,override
-THEJO,Thejo Engineering Limited,INE121N01019,EQ,Industrials,Capital Goods,Industrial Products,Other Industrial Products,override
-TIRUPATIFL,Tirupati Forge Limited,INE319Y01024,BE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,override
-TSFINV,TSF INVESTMENTS LIMITED,INE202Z01029,EQ,Financial Services,Financial Services,Finance,Holding Company,override
-UNIINFO,Uniinfo Telecom Services Limited,INE481Z01011,EQ,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,override
-UNITEDTEA,The United Nilgiri Tea Estates Company Limited,INE458F01011,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,override
-VITAL,Vital Chemtech Limited,INE0L4K01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
-APOLSINHOT,Apollo Sindoori Hotels Limited,INE451F01024,EQ,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,override
 GFSTEELS,,,BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 ICICIPRULI,,,EQ,Financial Services,Financial Services,Insurance,Life Insurance,override
-KAPSTON,Kapston Services Limited,INE542Z01028,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,override
-NITIRAJ,Nitiraj Engineers Limited,INE439T01012,EQ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,override
-PANACHE,Panache Digilife Limited,INE895W01019,BE,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,override
-VERTOZ,Vertoz Limited,INE188Y01031,EQ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,override
-AHLADA,Ahlada Engineers Limited,INE00PV01013,EQ,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
-AKG,Akg Exim Limited,INE00Y801016,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,override
-ARHAM,Arham Technologies Limited,INE0L2Y01011,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,override
-BEARDSELL,Beardsell Limited,INE520H01022,EQ,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,override
 CLCIND,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
 LASA,,,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,override
-LEXUS,Lexus Granito (India) Limited,INE500X01013,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Ceramics,override
 SELMC,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
-TOUCHWOOD,Touchwood Entertainment Limited,INE486Y01013,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,override
 UNIVAFOODS,,,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
