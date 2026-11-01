@@ -1,0 +1,30 @@
+name: US stocks history (Yahoo)
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Years of history to download"
+        default: "3"
+permissions:
+  contents: write
+concurrency:
+  group: us-feed
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas lxml requests
+      - run: python us_feed.py universe
+      - run: python us_feed.py history --years ${{ inputs.years }}
+      - name: Commit
+        run: |
+          git config user.name "us-feed"
+          git config user.email "us-feed@users.noreply.github.com"
+          git add global
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "US history"; git pull --rebase -q; git push; fi
