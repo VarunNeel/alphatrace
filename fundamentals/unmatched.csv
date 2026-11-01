@@ -41,7 +41,6 @@ CEMNTGROWW,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CENTEXT-RE,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CHEMICAL,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CHOICEGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
-CLCIND,,not in NSE's equity list (ETF / fund / bond / other instrument)
 COMMOIETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CONS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 CONSUMAXIS,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -80,7 +79,6 @@ FINIETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 FLEXIADD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 FMCGADD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 FMCGIETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
-GFSTEELS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 GILT10BETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 GILT5BETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 GILT5YBEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -149,7 +147,6 @@ HNGSNGBEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
 HSBCGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 HYBRIDETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 ICICIB22,,not in NSE's equity list (ETF / fund / bond / other instrument)
-ICICIPRULI,,not in NSE's equity list (ETF / fund / bond / other instrument)
 IDFNIFTYET,,not in NSE's equity list (ETF / fund / bond / other instrument)
 INFRA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 INFRABEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -170,7 +167,6 @@ IVZINNIFTY,,not in NSE's equity list (ETF / fund / bond / other instrument)
 IVZSENSEX,,not in NSE's equity list (ETF / fund / bond / other instrument)
 JUNIORBEES,,not in NSE's equity list (ETF / fund / bond / other instrument)
 LARGEMID50,,not in NSE's equity list (ETF / fund / bond / other instrument)
-LASA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 LICMFGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 LICNETFGSC,,not in NSE's equity list (ETF / fund / bond / other instrument)
 LICNETFN50,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -311,7 +307,6 @@ SBISMLETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SBIVALETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SECLEDBETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SELECTIPO,,not in NSE's equity list (ETF / fund / bond / other instrument)
-SELMC,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXADD,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXAXIS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SENSEXBETA,,not in NSE's equity list (ETF / fund / bond / other instrument)
@@ -354,147 +349,8 @@ TOP15IETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 TOP20,,not in NSE's equity list (ETF / fund / bond / other instrument)
 TWCGOLDETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 UNIONGOLD,,not in NSE's equity list (ETF / fund / bond / other instrument)
-UNIVAFOODS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 VAL30IETF,,not in NSE's equity list (ETF / fund / bond / other instrument)
 VALUE,,not in NSE's equity list (ETF / fund / bond / other instrument)
 VALUEAXIS,,not in NSE's equity list (ETF / fund / bond / other instrument)
-3BBLACKBIO,INE994E01018,"classified, but no shares/float from any source"
-AARNAV,INE750R01016,"classified, but no shares/float from any source"
-ACGL,INE451C01013,"classified, but no shares/float from any source"
-AGOL,INE05FR01029,"classified, but no shares/float from any source"
-ALUFLUOR,INE058F01019,"classified, but no shares/float from any source"
-AMAL,INE841D01013,"classified, but no shares/float from any source"
-ARCIL,INE148G01016,"classified, but no shares/float from any source"
-ARTEMISMED,INE025R01021,"classified, but no shares/float from any source"
-ASHIKAG,INE094B01013,"classified, but no shares/float from any source"
-AUGMONT,INE16W401027,"classified, but no shares/float from any source"
-AURUS,INE142K01011,"classified, but no shares/float from any source"
-AUSTENG,INE759F01012,"classified, but no shares/float from any source"
-AXTEL,INE767C01012,"classified, but no shares/float from any source"
-BAJAJST,INE704G01024,"classified, but no shares/float from any source"
-BEEKAY,INE213D01015,"classified, but no shares/float from any source"
-BELDING,INE363L01045,"classified, but no shares/float from any source"
-BHARATCOAL,INE05XR01022,"classified, but no shares/float from any source"
-BLACKROSE,INE761G01016,"classified, but no shares/float from any source"
-BLEL,INE1EEM01017,"classified, but no shares/float from any source"
-BLUECLOUDS,INE373T01047,"classified, but no shares/float from any source"
-BONDADA,INE0Q8P01029,"classified, but no shares/float from any source"
-BRAHMINFRA,INE320I01017,"classified, but no shares/float from any source"
-CHALET,INE427F01016,"classified, but no shares/float from any source"
-CMPDI,INE05HV01027,"classified, but no shares/float from any source"
-CMRGREEN,INE00WV01027,"classified, but no shares/float from any source"
-COCKERILL,INE515A01019,"classified, but no shares/float from any source"
-CORONA,INE02ZQ01018,"classified, but no shares/float from any source"
-CPL,INE536P01021,"classified, but no shares/float from any source"
-CRAVATEX,INE145E01017,"classified, but no shares/float from any source"
-DAICHI,INE928C01010,"classified, but no shares/float from any source"
-DISAQ,INE131C01011,"classified, but no shares/float from any source"
-DRAGARWQ,INE934C01018,"classified, but no shares/float from any source"
-EBIX,INE432F01032,"classified, but no shares/float from any source"
-ECORECO,INE316A01038,"classified, but no shares/float from any source"
-EKI,INE0CPR01018,"classified, but no shares/float from any source"
-ELCIDIN,INE927X01018,"classified, but no shares/float from any source"
-ELITECON,INE669R01026,"classified, but no shares/float from any source"
-ENKEIWHEL,INE130L01014,"classified, but no shares/float from any source"
-FUSIONCX,INE0N2201019,"classified, but no shares/float from any source"
-GAJA,INE18UN01038,"classified, but no shares/float from any source"
-GUJRAFFIA,INE610B01024,"classified, but no shares/float from any source"
-HALDYNGL,INE506D01020,"classified, but no shares/float from any source"
-HAMPTON,INE299D01022,"classified, but no shares/float from any source"
-HBESD,INE640B01021,"classified, but no shares/float from any source"
-HDFIRE,INE18AK01028,"classified, but no shares/float from any source"
-HESTERBIO,INE782E01017,"classified, but no shares/float from any source"
-HINDALUMI,INE227B01019,"classified, but no shares/float from any source"
-HTEL,INE0LEG01024,"classified, but no shares/float from any source"
-ICICILIFE,INE726G01019,"classified, but no shares/float from any source"
-IIRM,INE670C01026,"classified, but no shares/float from any source"
-INDPRUD,INE620D01011,"classified, but no shares/float from any source"
-INDTONER,INE826B01026,"classified, but no shares/float from any source"
-INVPRECQ,INE155E01016,"classified, but no shares/float from any source"
-IONEXCHANG,INE570A01022,"classified, but no shares/float from any source"
-ITL,INE478D01014,"classified, but no shares/float from any source"
-JENBURPH,INE354A01013,"classified, but no shares/float from any source"
-JPL,INE0BJO01010,"classified, but no shares/float from any source"
-KAMAHOLD,INE411F01010,"classified, but no shares/float from any source"
-KANCOTEA,INE398L01017,"classified, but no shares/float from any source"
-KARAMTARA,INE590T01012,"classified, but no shares/float from any source"
-KHAZANCHI,INE0OWC01011,"classified, but no shares/float from any source"
-KIRANVYPAR,INE555P01013,"classified, but no shares/float from any source"
-KLBRENG-B,INE338F01015,"classified, but no shares/float from any source"
-KPL,INE552U01010,"classified, but no shares/float from any source"
-KUSUMGAR,INE0ISX01025,"classified, but no shares/float from any source"
-LAKSHMIMIL,INE938C01019,"classified, but no shares/float from any source"
-LKPSEC,INE341H01023,"classified, but no shares/float from any source"
-MANIKA,INE0KWF01020,"classified, but no shares/float from any source"
-MCCHRLS-B,INE435D01014,"classified, but no shares/float from any source"
-MENNPIS,INE650G01029,"classified, but no shares/float from any source"
-MERCANTILE,INE689O01013,"classified, but no shares/float from any source"
-MLKFOOD,INE588G01021,"classified, but no shares/float from any source"
-MPIMANIPAL,INE241U01028,"classified, but no shares/float from any source"
-MYSORPETRO,INE741A01011,"classified, but no shares/float from any source"
-NEAGI,INE605D01012,"classified, but no shares/float from any source"
-NTCIND,INE920C01017,"classified, but no shares/float from any source"
-PARASHLTH,INE661T01029,"classified, but no shares/float from any source"
-PARNAXLAB,INE383L01019,"classified, but no shares/float from any source"
-PERMAGN,INE418E01018,"classified, but no shares/float from any source"
-PERNIASPOP,INE0I1B01016,"classified, but no shares/float from any source"
-PLATIND,INE0PT501018,"classified, but no shares/float from any source"
-POLYSPIN,INE914G01029,"classified, but no shares/float from any source"
-PRADPME,INE770A01010,"classified, but no shares/float from any source"
-PRANAV,INE0H4201019,"classified, but no shares/float from any source"
-PREMCO,INE001E01012,"classified, but no shares/float from any source"
-PRICOLLTD,INE726V01018,"classified, but no shares/float from any source"
-RAMBHAJO,INE1SJO01012,"classified, but no shares/float from any source"
-RENTOMOJO,INE08T701025,"classified, but no shares/float from any source"
-RSDFIN,INE616F01022,"classified, but no shares/float from any source"
-SAICAPI,INE531X01018,"classified, but no shares/float from any source"
-SAMBANDAM,INE304D01012,"classified, but no shares/float from any source"
-SCANSTL,INE099G01011,"classified, but no shares/float from any source"
-SHINDL,INE220Z01013,"classified, but no shares/float from any source"
-SHRADDHA,INE311M01018,"classified, but no shares/float from any source"
-SIMPLXREA,INE167H01014,"classified, but no shares/float from any source"
-SINGERIND,INE638A01035,"classified, but no shares/float from any source"
-SKMEGGPROD,INE411D01023,"classified, but no shares/float from any source"
-SMT,INE356Y01018,"classified, but no shares/float from any source"
-SRIKPRIND,INE009C01019,"classified, but no shares/float from any source"
-STEAMHOUSE,INE0FRO01022,"classified, but no shares/float from any source"
-SUDARSHAN,INE00TV01023,"classified, but no shares/float from any source"
-SUNLOC,INE671C01016,"classified, but no shares/float from any source"
-SUNRAKSHAK,INE671K01027,"classified, but no shares/float from any source"
-SURYALA,INE132C01027,"classified, but no shares/float from any source"
-SWARNSAR,INE967A01012,"classified, but no shares/float from any source"
-TAMBOLIIN,INE864J01012,"classified, but no shares/float from any source"
-TANAA,INE692C01020,"classified, but no shares/float from any source"
-TCC,INE887D01024,"classified, but no shares/float from any source"
-TEMPSENS,INE1KZI01025,"classified, but no shares/float from any source"
-TIKONA,INE534A01028,"classified, but no shares/float from any source"
-TIMEX,INE064A01026,"classified, but no shares/float from any source"
-TONBO,INE0LDG01026,"classified, but no shares/float from any source"
-TRANSCOR,INE330E01023,"classified, but no shares/float from any source"
-TRITONV,INE440G01017,"classified, but no shares/float from any source"
-TRIVENIPT,INE2WKE01011,"classified, but no shares/float from any source"
-TURTLEMINT,INE0OC301013,"classified, but no shares/float from any source"
-UDAYJEW,INE551B01012,"classified, but no shares/float from any source"
-UPHOT,INE726E01014,"classified, but no shares/float from any source"
-VASUPRADA,INE574G01013,"classified, but no shares/float from any source"
-VEEGALAND,INE1JTV01015,"classified, but no shares/float from any source"
-VELJAN,INE232E01013,"classified, but no shares/float from any source"
-VIJSOLX,INE362D01010,"classified, but no shares/float from any source"
-VOITHPAPR,INE285C01015,"classified, but no shares/float from any source"
-WELSPLSOL,INE731F01037,"classified, but no shares/float from any source"
-YOGI,INE290E01011,"classified, but no shares/float from any source"
-ZETWERK,INE09PO01019,"classified, but no shares/float from any source"
-ZODIAC,INE761Y01019,"classified, but no shares/float from any source"
-AHLADA,INE00PV01013,second source found nothing (NSE blocked/empty; Yahoo industry 'Building Products & Equipment' not mappable)
-AKG,INE00Y801016,second source found nothing (NSE blocked/empty; Yahoo industry 'Industrial Distribution' not mappable)
-APOLSINHOT,INE451F01024,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
-ARHAM,INE0L2Y01011,"no BSE listing for this ISIN, so no classification"
 BANKA,INE862Y01015,second source found nothing (NSE blocked/empty; Yahoo industry 'Pollution & Treatment Controls' not mappable)
-BEARDSELL,INE520H01022,second source found nothing (NSE blocked/empty; Yahoo industry 'Building Products & Equipment' not mappable)
 GKWLIMITED,INE528A01020,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
-KAPSTON,INE542Z01028,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
-LEXUS,INE500X01013,second source found nothing (NSE blocked/empty; Yahoo industry 'Building Products & Equipment' not mappable)
-NITIRAJ,INE439T01012,second source found nothing (NSE blocked/empty; Yahoo industry 'Scientific & Technical Instruments' not mappable)
-PANACHE,INE895W01019,second source found nothing (NSE blocked/empty; Yahoo industry 'Communication Equipment' not mappable)
-TOUCHWOOD,INE486Y01013,second source found nothing (NSE blocked/empty; Yahoo industry 'Advertising Agencies' not mappable)
-VERTOZ,INE188Y01031,second source found nothing (NSE blocked/empty; Yahoo industry 'Software - Infrastructure' not mappable)
