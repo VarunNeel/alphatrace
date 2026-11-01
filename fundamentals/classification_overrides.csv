@@ -1,0 +1,264 @@
+SYMBOL,MACRO_ECONOMIC_SECTOR,SECTOR,INDUSTRY,BASIC_INDUSTRY,COMPANY_NAME
+AAKASH,Energy,Oil Gas & Consumable Fuels,Oil,Oil Equipment & Services,Aakash Exploration Services Limited
+AARON,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Aaron Industries Limited
+ABMINTLLTD,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,ABM International Limited
+AGASTYAEN,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Agastya Energy and Infrastructure Limited
+AGROPHOS,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,Agro Phos India Limited
+AIROLAM,Consumer Discretionary,Consumer Durables,Consumer Durables,Plywood Boards/ Laminates,Airo Lam limited
+AJOONI,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Animal Feed,Ajooni Biotech Limited
+ANNAPURNA,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,Annapurna Swadisht Limited
+ARVEE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Arvee Laboratories (India) Limited
+ASPINWALL,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,Aspinwall and Company Limited
+BOHRAIND,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,Bohra Industries Limited
+BSE,Financial Services,Financial Services,Capital Markets,Exchange and Data Platform,BSE Limited
+CDSL,Financial Services,Financial Services,Capital Markets,Depositories Clearing Houses and Other Intermediaries,Central Depository Services (India) Limited
+CONSOFINVT,Financial Services,Financial Services,Finance,Investment Company,Consolidated Finvest & Holdings Limited
+CRESTO,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,CRESTO TECHNO LIMITED
+DPSCLTD,Utilities,Power,Power,Integrated Power Utilities,DPSC Limited
+EIFFL,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,Euro India Fresh Foods Limited
+FOCUS,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,Focus Lighting and Fixtures Limited
+GANGAFORGE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,Ganga Forging Limited
+GEEKAYWIRE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,Geekay Wires Limited
+GRADIENTE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,Gradiente Infotainment Limited
+GROBTEA,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,The Grob Tea Company Limited
+GVPTECH,Information Technology,Information Technology,IT - Services,IT Enabled Services,GVP Infotech Limited
+HINDCON,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Hindcon Chemicals Limited
+ICEMAKE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Ice Make Refrigeration Limited
+JOCIL,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Jocil Limited
+KNAGRI,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,KN Agri Resources Limited
+KOTHARIPET,Commodities,Chemicals,Chemicals & Petrochemicals,Petrochemicals,Kothari Petrochemicals Limited
+KRISHANA,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,Krishana Phoschem Limited
+KRISHNADEF,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,Krishna Defence And Allied Industries Limited
+LATTEYS,Industrials,Capital Goods,Industrial Products,Compressors Pumps & Diesel Engines,Latteys Industries Limited
+LFIC,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),Lakshmi Finance & Industrial Corporation Limited
+MACPOWER,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Macpower CNC Machines Limited
+MARINE,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,Marine Electricals (India) Limited
+MASKINVEST,Financial Services,Financial Services,Finance,Investment Company,Mask Investments Limited
+MBAPL,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,Madhya Bharat Agro Products Limited
+NBIFIN,Financial Services,Financial Services,Finance,Investment Company,N. B. I. Industrial Finance Company Limited
+NDGL,Financial Services,Financial Services,Finance,Investment Company,Naga Dhunseri Group Limited
+OSWALSEEDS,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,ShreeOswal Seeds And Chemicals Limited
+PARIN,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,Parin Enterprises Limited
+PKTEA,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,The Peria Karamalai Tea & Produce Company Limited
+PRITI,Consumer Discretionary,Consumer Durables,Consumer Durables,Furniture Home Furnishing,Priti International Limited
+SERVOTECH,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,Servotech Renewable Power System Limited
+SHANTI,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Other Agricultural Products,Shanti Overseas (India) Limited
+SIKKO,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,Sikko Industries Limited
+SONAMLTD,Consumer Discretionary,Consumer Durables,Consumer Durables,Houseware,SONAM LIMITED
+SPCENET,Financial Services,Financial Services,Financial Technology (Fintech),Financial Technology (Fintech),Spacenet Enterprises India Limited
+STEELCITY,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,Steel City Securities Limited
+TARACHAND,Services,Services,Transport Services,Logistics Solution Provider,Tara Chand InfraLogistic Solutions Limited
+THEJO,Industrials,Capital Goods,Industrial Products,Other Industrial Products,Thejo Engineering Limited
+TIRUPATIFL,Industrials,Capital Goods,Industrial Products,Castings & Forgings,Tirupati Forge Limited
+TSFINV,Financial Services,Financial Services,Finance,Holding Company,TSF INVESTMENTS LIMITED
+UNIINFO,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,Uniinfo Telecom Services Limited
+UNITEDTEA,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,The United Nilgiri Tea Estates Company Limited
+VITAL,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Vital Chemtech Limited
+APOLSINHOT,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,
+GFSTEELS,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,
+HEG,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,
+HMT,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,
+ICICIPRULI,Financial Services,Financial Services,Insurance,Life Insurance,
+IL&FSENGG,Industrials,Construction,Construction,Civil Construction,
+KAPSTON,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,
+NITIRAJ,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,
+PANACHE,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,
+RAJESHEXPO,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,
+SANGINITA,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,
+SUPREMEENG,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,
+VERTOZ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,
+AHLADA,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,
+AKG,Services,Services,Commercial Services & Supplies,Trading & Distributors,
+ANKITMETAL,Commodities,Metals & Mining,Ferrous Metals,Iron & Steel,
+ANSALAPI,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,
+ARHAM,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,
+ARSHIYA,Services,Services,Transport Services,Logistics Solution Provider,
+ASTRON,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,
+BEARDSELL,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,
+CEREBRAINT,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,
+CLCIND,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,
+COMPINFO,Services,Services,Commercial Services & Supplies,Trading & Distributors,
+DHARAN,Industrials,Construction,Construction,Civil Construction,
+FEL,Consumer Discretionary,Consumer Services,Retailing,Diversified Retail,
+FELDVR,Consumer Discretionary,Consumer Services,Retailing,Diversified Retail,
+FLFL,Consumer Discretionary,Consumer Services,Retailing,Speciality Retail,
+GENSOL,Industrials,Construction,Construction,Civil Construction,
+HDIL,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,
+IL&FSTRANS,Services,Services,Transport Infrastructure,Road Assets–Toll Annuity Hybrid-Annuity,
+IMPEXFERRO,Commodities,Metals & Mining,Ferrous Metals,Ferro & Silica Manganese,
+LAKPRE,Industrials,Capital Goods,Industrial Products,Other Industrial Products,
+LASA,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,
+LEXUS,Consumer Discretionary,Consumer Durables,Consumer Durables,Ceramics,
+MEP,Services,Services,Transport Infrastructure,Road Assets–Toll Annuity Hybrid-Annuity,
+ORTEL,Telecommunication,Telecommunication,Telecom - Services,Telecom - Cellular & Fixed line services,
+OSIAHYPER,Consumer Discretionary,Consumer Services,Retailing,Diversified Retail,
+RHFL,Financial Services,Financial Services,Finance,Housing Finance Company,
+SANWARIA,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Edible Oil,
+SELMC,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,
+SETUINFRA,Industrials,Construction,Construction,Civil Construction,
+SHRENIK,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,
+SILLYMONKS,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Digital Entertainment,
+SIMBHALS,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,
+SITINET,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,
+TOUCHWOOD,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,
+UNIVAFOODS,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,
+WARDINMOBI,Consumer Discretionary,Automobile and Auto Components,Automobiles,2/3 Wheelers,
+GOLDENTOBC,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Cigarettes & Tobacco Products,Cigarettes & Tobacco Products,
+AARNAV-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Aarnav Fashions Limited
+ABINFRA-BE,Industrials,Construction,Construction,Civil Construction,A B Infrabuild Limited
+ABMINTLLTD-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,ABM International Limited
+ACSTECH-BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,ACS Technologies Limited
+AHLWEST-BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,Asian Hotels (West) Limited
+AKI-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Leather And Leather Products,AKI India Limited
+ALKALI-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Alkali Metals Limited
+ALMONDZ-BE,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,Almondz Global Securities Limited
+ALPHAGEO-BE,Energy,Oil Gas & Consumable Fuels,Oil,Offshore Support Solution Drilling,Alphageo (India) Limited
+AMANTA-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Amanta Healthcare Limited
+AMBALALSA-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Ambalal Sarabhai Enterprises Limited
+AMDIND-BE,Industrials,Capital Goods,Industrial Products,Packaging,AMD Industries Limited
+ANMOL-BE,Energy,Oil Gas & Consumable Fuels,Consumable Fuels,Trading Coal,Anmol India Limited
+ARIES-BE,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,Aries Agro Limited
+BGRENERGY-BE,Industrials,Construction,Construction,Civil Construction,BGR Energy Systems Limited
+BI-BE,Healthcare,Healthcare,Healthcare Services,Healthcare Research Analytics & Technology,Bilcare Limited
+BIRLAPREC-BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Birla Precision Technologies Limited
+BLACKROSE-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Black Rose Inds. Limited
+BLISSGVS-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Bliss GVS Pharma Limited
+BLUECHIP-BE,Financial Services,Financial Services,Finance,Investment Company,Blue Chip India Limited
+BURNPUR-BE,Commodities,Construction Materials,Cement & Cement Products,Cement & Cement Products,Burnpur Cement Limited
+CALSOFT-BE,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,California Software Company Limited
+CFEL-BE,Services,Services,Commercial Services & Supplies,Trading & Distributors,Confidence Futuristic Energetech Limited
+CHEMBONDCH-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Chembond Chemicals Limited
+CHEMCON-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Chemcon Speciality Chemicals Limited
+CONSOFINVT-BE,Financial Services,Financial Services,Finance,Investment Company,Consolidated Finvest & Holdings Limited
+CORDSCABLE-BE,Industrials,Capital Goods,Industrial Products,Cables - Electricals,Cords Cable Industries Limited
+CTE-BE,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,Cambridge Technology Enterprises Limited
+CURAA-BE,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,Cura Technologies Limited
+CYBERMEDIA-BE,Consumer Discretionary,Media Entertainment & Publication,Media,Electronic Media,Cyber Media (India) Limited
+DAICHI-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Dai-Ichi Karkaria Limited
+DEEP-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Deep Polymers Limited
+DHABRIYA-BE,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,Dhabriya Polywood Limited
+DIACABS-BE,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,Diamond Power Infrastructure Limited
+DIGJAMLMTD-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Digjam Limited
+DPSCLTD-BE,Utilities,Power,Power,Integrated Power Utilities,DPSC Limited
+DTIL-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,Dhunseri Tea & Industries Limited
+E2E-BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,E2E Networks Limited
+EBIX-BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,EBIX Limited
+EIFFL-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,Euro India Fresh Foods Limited
+EMAMIPAP-BE,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,Emami Paper Mills Limited
+ESAFSFB-BE,Financial Services,Financial Services,Banks,Other Bank,ESAF Small Finance Bank Limited
+EUROTEXIND-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Eurotex Industries and Exports Limited
+EVERESTIND-BE,Commodities,Construction Materials,Other Construction Materials,Other Construction Materials,Everest Industries Limited
+FAIRCHEMOR-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Fairchem Organics Limited
+FOCUS-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,Focus Lighting and Fixtures Limited
+GANESHBE-BE,Energy,Oil Gas & Consumable Fuels,Oil,Oil Storage & Transportation,Ganesh Benzoplast Limited
+GEECEE-BE,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,GeeCee Ventures Limited
+GFSTEELS-BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,
+GICL-BE,Services,Services,Transport Services,Logistics Solution Provider,Globe International Carriers Limited
+GRADIENTE-BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,Gradiente Infotainment Limited
+GRAVISSHO-BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,Graviss Hospitality Limited
+GVPTECH-BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,GVP Infotech Limited
+HALDYNGL-BE,Industrials,Capital Goods,Industrial Products,Packaging,Haldyn Glass Limited
+HEXAGON-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Other Food Products,Hexagon Nutrition Limited
+HFCL-BE,Telecommunication,Telecommunication,Telecom - Services,Telecom - Infrastructure,HFCL Limited
+HITECHCORP-BE,Industrials,Capital Goods,Industrial Products,Packaging,Hitech Corporation Limited
+HITECHGEAR-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,The Hi-Tech Gears Limited
+HMVL-BE,Consumer Discretionary,Media Entertainment & Publication,Media,Print Media,Hindustan Media Ventures Limited
+HYBRIDFIN-BE,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,Hybrid Financial Services Limited
+ICDSLTD-BE,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,ICDS Limited
+INDOAMIN-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Indo Amines Limited
+INVPRECQ-BE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,Investment & Precision Castings Limited
+ISFT-BE,Consumer Discretionary,Consumer Services,Retailing,E-Retail/ E-Commerce,Intrasoft Technologies Limited
+KALYANIFRG-BE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,Kalyani Forge Limited
+KANORICHEM-BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Kanoria Chemicals & Industries Limited
+KAVDEFENCE-BE,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,Kavveri Defence & Wireless Technologies Limited
+KAYA-BE,Consumer Discretionary,Consumer Services,Leisure Services,Wellness,Kaya Limited
+KESORAMIND-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Kesoram Industries Limited
+KILITCH-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Kilitch Drugs (India) Limited
+KOTARISUG-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,Kothari Sugars And Chemicals Limited
+KOTYARK-BE,Energy,Oil Gas & Consumable Fuels,Petroleum Products,Refineries & Marketing,Kotyark Industries Limited
+KRONOX-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,Kronox Lab Sciences Limited
+KSR-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Footwear,KSR Footwear Limited
+LADDERUP-BE,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),Ladderup Finance Limited
+LANCORHOL-BE,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,Lancor Holdings Limited
+LASA-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,
+LEENEE-BE,Information Technology,Information Technology,IT - Services,IT Enabled Services,Lee & Nee Softwares Exports Limited
+LOTUSDEV-BE,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,Sri Lotus Developers and Realty Limited
+MAHASTEEL-BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,Mahamaya Steel Industries Limited
+MANAKSTEEL-BE,Commodities,Metals & Mining,Ferrous Metals,Iron & Steel,Manaksia Steels Limited
+MANUGRAPH-BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Manugraph India Limited
+MEDICAMEQ-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Medicamen Biotech Limited
+MEDICAPQ-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Medi Caps Limited
+MENNPIS-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Menon Pistons Limited
+MENONBE-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Menon Bearings Limited
+MHLXMIRU-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Mahalaxmi Rubtech Limited
+MICEL-BE,Industrials,Capital Goods,Industrial Products,Other Industrial Products,MIC Electronics Limited
+MILKYMIST-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Dairy Products,Milky Mist Dairy Food Limited
+MINALIND-BE,Services,Services,Commercial Services & Supplies,Trading & Distributors,Minal Industries Limited
+MODISONLTD-BE,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,MODISON LIMITED
+MPDL-BE,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,MPDL Limited
+MTARTECH-BE,Industrials,Capital Goods,Electrical Equipment,Other Electrical Equipment,Mtar Technologies Limited
+MUKKA-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Animal Feed,Mukka Proteins Limited
+MUKTAARTS-BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,Mukta Arts Limited
+MYSORPETRO-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Trading - Chemicals,Mysore Petro Chemicals Limited
+NATCAPSUQ-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Natural Capsules Limited
+NEUEON-BE,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,Neueon Corporation Limited
+NIRAJISPAT-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,Niraj Ispat Industries Limited
+NRL-BE,Utilities,Utilities,Other Utilities,Waste Management,Nupur Recyclers Limited
+OCCLLTD-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,OCCL Limited
+ONMOBILE-BE,Consumer Discretionary,Media Entertainment & Publication,Media,Web based media and service,OnMobile Global Limited
+ORBTEXP-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Orbit Exports Limited
+PANACHE-BE,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,
+PAR-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Par Drugs And Chemicals Limited
+PKTEA-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,The Peria Karamalai Tea & Produce Company Limited
+PPL-BE,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,Prakash Pipes Limited
+PRADPME-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Pradeep Metals Limited
+PRITIKAUTO-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Pritika Auto Industries Limited
+QMSMEDI-BE,Healthcare,Healthcare,Healthcare Equipment & Supplies,Medical Equipment & Supplies,QMS Medical Allied Services Limited
+QUINT-BE,Consumer Discretionary,Media Entertainment & Publication,Media,Electronic Media,Quint Digital Limited
+RADHIKAJWE-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,Radhika Jeweltech Limited
+RAJOOENG-BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Rajoo Engineers Limited
+RAJRILTD-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Raj Rayon Industries Limited
+RAMASTEEL-BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,Rama Steel Tubes Limited
+RBZJEWEL-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,RBZ Jewellers Limited
+RELINFRA-BE,Utilities,Power,Power,Integrated Power Utilities,Reliance Infrastructure Limited
+RMDRIP-BE,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,R M Drip and Sprinklers Systems Limited
+RNBDENIMS-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,R&B Denims Limited
+SADHNANIQ-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,Sadhana Nitrochem Limited
+SCPL-BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Dairy Products,Sheetal Cool Products Limited
+SELMC-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,
+SHAHALLOYS-BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,Shah Alloys Limited
+SHEMAROO-BE,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,Shemaroo Entertainment Limited
+SICALLOG-BE,Services,Services,Transport Services,Logistics Solution Provider,Sical Logistics Limited
+SIGIND-BE,Services,Services,Commercial Services & Supplies,Trading & Distributors,Signet Industries Limited
+SIGMAADV-BE,Industrials,Capital Goods,Aerospace & Defense,Aerospace & Defense,SIGMA ADVANCED SYSTEMS LIMITED
+SONAMLTD-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Houseware,SONAM LIMITED
+SPECIALITY-BE,Consumer Discretionary,Consumer Services,Leisure Services,Restaurants,Speciality Restaurants Limited
+SPECTRUM-BE,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,Spectrum Electrical Industries Limited
+SREEL-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Footwear,Sreeleathers Limited
+SRIKPRIND-BE,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,Sri KPR Industries Limited
+STALLION-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Industrial Gases,Stallion India Fluorochemicals Limited
+STERTOOLS-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Sterling Tools Limited
+STLTECH-BE,Telecommunication,Telecommunication,Telecom - Equipment & Accessories,Telecom - Equipment & Accessories,Sterlite Technologies Limited
+SUNDRMBRAK-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Sundaram Brake Linings Limited
+SUPTANERY-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Leather And Leather Products,Super Tannery Limited
+SUTLEJTEX-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Sutlej Textiles and Industries Limited
+SWANDEF-BE,Industrials,Capital Goods,Industrial Manufacturing,Ship Building & Allied Services,Swan Defence and Heavy Industries Limited
+SWARAJ-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Swaraj Suiting Limited
+SWISSMLTRY-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Diversified consumer products,Swiss Military Consumer Goods Limited
+SYSTMTXC-BE,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,Systematix Corporate Services Limited
+TBZ-BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,Tribhovandas Bhimji Zaveri Limited
+TIJARIA-BE,Industrials,Capital Goods,Industrial Products,Plastic Products - Industrial,Tijaria Polypipes Limited
+TIL-BE,Industrials,Capital Goods,Agricultural Commercial & Construction Vehicles,Construction Vehicles,TIL Limited
+TIRUPATIFL-BE,Industrials,Capital Goods,Industrial Products,Castings & Forgings,Tirupati Forge Limited
+TOTAL-BE,Services,Services,Transport Services,Logistics Solution Provider,Total Transport Systems Limited
+TPHQ-BE,Industrials,Construction,Construction,Civil Construction,Teamo Productions HQ Limited
+TRANSPEK-BE,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,Transpek Industry Limited
+UCAL-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,UCAL LIMITED
+UFBL-BE,Consumer Discretionary,Consumer Services,Leisure Services,Restaurants,United Foodbrands Limited
+VALIANTLAB-BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,Valiant Laboratories Limited
+VCL-BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,Vaxtex Cotfab Limited
+VELJAN-BE,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,Veljan Denison Limited
+VHLTD-BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,Viceroy Hotels Limited
+VIRTUALG-BE,Consumer Discretionary,Consumer Services,Other Consumer Services,Education,Virtual Global Education Limited
+VISAKAIND-BE,Commodities,Construction Materials,Cement & Cement Products,Cement & Cement Products,Visaka Industries Limited
+WELINV-BE,Financial Services,Financial Services,Finance,Investment Company,Welspun Investments and Commercials Limited
