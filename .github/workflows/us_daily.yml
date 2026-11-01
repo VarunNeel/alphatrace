@@ -1,0 +1,32 @@
+name: US stocks daily (Yahoo)
+on:
+  schedule:
+    - cron: "30 23 * * 1-5"   # 05:00 IST next morning — after the US close
+    - cron: "30 3 * * 2-6"    # second pass for late updates
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: us-feed
+  cancel-in-progress: false
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas lxml requests
+      - run: python us_feed.py universe
+      - name: First run downloads the history (3 years)
+        run: |
+          if [ ! -f global/US_STOCKS_DAILY.csv.gz ]; then python us_feed.py history --years 3; fi
+      - run: python us_feed.py daily
+      - name: Commit
+        run: |
+          git config user.name "us-feed"
+          git config user.email "us-feed@users.noreply.github.com"
+          git add global
+          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "US feed $(date -u +%F)"; git pull --rebase -q; git push; fi
