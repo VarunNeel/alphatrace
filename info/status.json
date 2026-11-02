@@ -1,1 +1,1 @@
-{"mode":"run","universe":2593,"sources":{"gnews":{"ok":true,"msg":""},"yahoo":{"ok":true,"msg":""}},"news":{"ok":597,"fail":0,"empty":3},"fund":{"ok":300,"fail":0},"groups":{"ok":267,"fail":0},"at":1793625567}
+{"mode":"run","universe":2596,"sources":{"gnews":{"ok":true,"msg":""},"yahoo":{"ok":true,"msg":""}},"news":{"ok":599,"fail":0,"empty":1},"fund":{"ok":298,"fail":2},"groups":{"ok":267,"fail":0},"at":1793660093}
