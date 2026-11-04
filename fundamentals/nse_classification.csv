@@ -1596,7 +1596,6 @@ NOIDATOLL,Noida Toll Bridge Company Limited,INE781B01015,EQ,Services,Services,Tr
 NORBTEAEXP,Norben Tea & Exports Limited,INE369C01017,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Tea & Coffee,kept:bse:ComHeader
 NORTHARC,Northern Arc Capital Limited,INE850M01015,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 NOVAAGRI,Nova Agritech Limited,INE02H701025,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Fertilizers,kept:bse:ComHeader
-NOVARTIND,Novartis India Limited,INE234A01025,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 NPST,Network People Services Technologies Limited,INE0FFK01017,EQ,Financial Services,Financial Services,Financial Technology (Fintech),Financial Technology (Fintech),kept:bse:ComHeader
 NRAIL,N R Agarwal Industries Limited,INE740D01017,EQ,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,kept:bse:ComHeader
 NRBBEARING,NRB Bearing Limited,INE349A01021,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
@@ -2586,6 +2585,8 @@ ZUARIIND,ZUARI INDUSTRIES LIMITED,INE217A01012,EQ,Fast Moving Consumer Goods,Fas
 ZYDUSLIFE,Zydus Lifesciences Limited,INE010B01027,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 ZYDUSWELL,Zydus Wellness Limited,INE768C01028,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 EDELALTS,EAAA India Alternatives Limited,INE528L01027,EQ,Financial Services,Financial Services,Unclassified,Unclassified,"yahoo:Asset Management (sector only, 100% of 35)"
+ENNATURE,Ennature Bio Pharma Limited,INE2WCT01016,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,yahoo:Drug Manufacturers - Specialty & Generic (matches 98% of 96 BSE-classified stocks)
+IGLSPIRITS,IGL Spirits Limited,INE2W6901017,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Beverages,Breweries & Distilleries,yahoo:Beverages - Wineries & Distilleries (matches 100% of 12 BSE-classified stocks)
 GFSTEELS,,,BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 ICICIPRULI,,,EQ,Financial Services,Financial Services,Insurance,Life Insurance,override
 CLCIND,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override

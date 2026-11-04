@@ -1,8 +1,12 @@
 Symbol,ISIN,Reason
 ABCOTS,,not in NSE's equity list (ETF / fund / bond / other instrument)
+NOVARTIND,,not in NSE's equity list (ETF / fund / bond / other instrument)
 SPELS,,not in NSE's equity list (ETF / fund / bond / other instrument)
 ABCIND,INE08PH01015,"no BSE listing for this ISIN, so no classification"
 BANKA,INE862Y01015,second source found nothing (NSE blocked/empty; Yahoo industry 'Pollution & Treatment Controls' not mappable)
 BLSPOLY,INE0ZCQ01019,"no BSE listing for this ISIN, so no classification"
+EVONILE,INE234A01025,"no BSE listing for this ISIN, so no classification"
 GKWLIMITED,INE528A01020,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
+MELSTAR,INE817A01050,second source found nothing (NSE blocked/empty; Yahoo industry 'Shell Companies' not mappable)
+MKJEWELS,INE2IXO01012,"no BSE listing for this ISIN, so no classification"
 SFCTECH,INE0PKN01028,"no BSE listing for this ISIN, so no classification"
