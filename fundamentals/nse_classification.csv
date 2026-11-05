@@ -689,6 +689,7 @@ ENERGYDEV,Energy Development Company Limited,INE306C01019,EQ,Utilities,Power,Pow
 ENGINERSIN,Engineers India Limited,INE510A01028,EQ,Industrials,Construction,Construction,Civil Construction,kept:bse:ComHeader
 ENIL,Entertainment Network (India) Limited,INE265F01028,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Media & Entertainment,kept:bse:ComHeader
 ENKEIWHEL,Enkei Wheels (India) Limited,INE130L01014,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,kept:bse:ComHeader
+ENNATURE,Ennature Bio Pharma Limited,INE2WCT01016,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:yahoo:Drug Manufacturers - Specialty & Generic (matches 98% of 96 BSE-classified stocks)
 ENRIN,Siemens Energy India Limited,INE1NPP01017,EQ,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,kept:bse:ComHeader
 ENTERO,Entero Healthcare Solutions Limited,INE010601016,EQ,Consumer Discretionary,Consumer Services,Retailing,Pharmacy Retail,kept:bse:ComHeader
 EPACK,EPACK Durable Limited,INE0G5901015,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,kept:bse:ComHeader
@@ -1005,6 +1006,7 @@ IGARASHI,Igarashi Motors India Limited,INE188B01013,EQ,Consumer Discretionary,Au
 IGCL,Indogulf Cropsciences Limited,INE05J901018,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,kept:bse:ComHeader
 IGIL,International Gemological Institute Limited,INE0Q9301021,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,kept:bse:ComHeader
 IGL,Indraprastha Gas Limited,INE203G01027,EQ,Energy,Oil Gas & Consumable Fuels,Gas,LPG/CNG/PNG/LNG Supplier,kept:bse:ComHeader
+IGLSPIRITS,IGL Spirits Limited,INE2W6901017,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Beverages,Breweries & Distilleries,kept:yahoo:Beverages - Wineries & Distilleries (matches 100% of 12 BSE-classified stocks)
 IGPL,IG Petrochemicals Limited,INE204A01010,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Commodity Chemicals,kept:bse:ComHeader
 IIFL,IIFL Finance Limited,INE530B01024,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),kept:bse:ComHeader
 IIFLCAPS,IIFL Capital Services Limited,INE489L01022,EQ,Financial Services,Financial Services,Capital Markets,Stockbroking & Allied,kept:bse:ComHeader
@@ -2585,8 +2587,6 @@ ZUARIIND,ZUARI INDUSTRIES LIMITED,INE217A01012,EQ,Fast Moving Consumer Goods,Fas
 ZYDUSLIFE,Zydus Lifesciences Limited,INE010B01027,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,kept:bse:ComHeader
 ZYDUSWELL,Zydus Wellness Limited,INE768C01028,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,kept:bse:ComHeader
 EDELALTS,EAAA India Alternatives Limited,INE528L01027,EQ,Financial Services,Financial Services,Unclassified,Unclassified,"yahoo:Asset Management (sector only, 100% of 35)"
-ENNATURE,Ennature Bio Pharma Limited,INE2WCT01016,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,yahoo:Drug Manufacturers - Specialty & Generic (matches 98% of 96 BSE-classified stocks)
-IGLSPIRITS,IGL Spirits Limited,INE2W6901017,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Beverages,Breweries & Distilleries,yahoo:Beverages - Wineries & Distilleries (matches 100% of 12 BSE-classified stocks)
 GFSTEELS,,,BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 ICICIPRULI,,,EQ,Financial Services,Financial Services,Insurance,Life Insurance,override
 CLCIND,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
