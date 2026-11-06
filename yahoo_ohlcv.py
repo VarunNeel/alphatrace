@@ -82,6 +82,52 @@ def download(yf, syms, start, end, batch, delay, log=print):
         time.sleep(delay)
 
 
+def ist_now():
+    return dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)
+
+
+def expected_day():
+    """Newest weekday whose session has closed (after 15:45 IST) - the day the daily file should hold."""
+    n = ist_now(); d = n.date()
+    if n.hour * 60 + n.minute < 15 * 60 + 45: d -= dt.timedelta(days=1)
+    while d.weekday() >= 5: d -= dt.timedelta(days=1)
+    return d.isoformat()
+
+
+def fill_from_15m(yf, syms, day, batch, delay, log=print):
+    """Yahoo often posts a day's Open/High/Low/Volume but no final Close for hours. For stocks that have no daily row for `day`,
+    build the day from its 15-minute bars (open = first, high = max, low = min, close = LAST 15-minute close, volume = sum).
+    Later runs replace it with Yahoo's final bar automatically (the newest days are always rewritten)."""
+    out = []
+    for i in range(0, len(syms), batch):
+        chunk = syms[i:i + batch]; tick = [x + ".NS" for x in chunk]; data = None
+        for attempt in range(3):
+            try:
+                data = yf.download(tick, period="5d", interval="15m", auto_adjust=False, group_by="ticker", threads=True, progress=False); break
+            except Exception as e:  # noqa
+                log("    15m batch failed (%s) - retrying" % str(e)[:60]); time.sleep(5 * (attempt + 1))
+        if data is None or len(data) == 0: continue
+        multi = hasattr(data.columns, "levels") and len(getattr(data.columns, "levels", [])) > 1
+        for x, t in zip(chunk, tick):
+            try: df = data[t] if multi else data
+            except KeyError: continue
+            df = df.dropna(subset=["Close"]) if "Close" in df else df
+            if not len(df): continue
+            try:
+                idx = df.index.tz_convert("Asia/Kolkata") if getattr(df.index, "tz", None) is not None else df.index
+            except Exception:
+                idx = df.index
+            df = df[[ts.strftime("%Y-%m-%d") == day for ts in idx]]
+            if not len(df): continue
+            c = float(df["Close"].iloc[-1])
+            if c != c or c <= 0: continue
+            o = float(df["Open"].iloc[0]) if df["Open"].iloc[0] == df["Open"].iloc[0] else c
+            h = float(df["High"].max()); l = float(df["Low"].min()); v = df["Volume"].sum()
+            out.append([day, fmt(c), fmt(c), fmt(h), fmt(l), fmt(o), int(v) if v == v else 0, x])
+        time.sleep(delay)
+    return out
+
+
 def write_csv(path, rows, gz=False):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     op = (lambda p: gzip.open(p, "wt", newline="", encoding="utf-8")) if gz else (lambda p: open(p, "w", newline="", encoding="utf-8"))
@@ -103,11 +149,18 @@ def cmd_daily(a, yf):
     for s, rows in download(yf, syms, start.isoformat(), end.isoformat(), a.batch, a.delay):
         got.add(s)
         for r in rows: by_date.setdefault(r[0], []).append(r)
+    day = expected_day(); have = {r[7] for r in by_date.get(day, [])}
+    todo = [x for x in syms if x not in have]
+    if todo and (not by_date or day >= max(by_date)):
+        print("daily: %d stocks have no final close for %s - filling from 15-minute bars" % (len(todo), day))
+        extra = fill_from_15m(yf, todo, day, a.batch, a.delay)
+        for r in extra: by_date.setdefault(day, []).append(r); got.add(r[7])
+        print("daily: %d filled from 15-minute bars" % len(extra))
     if not by_date: print("Yahoo returned no data — nothing written."); return 1
     ddir = os.path.join(a.out, "daily"); os.makedirs(ddir, exist_ok=True)
     for d, rows in by_date.items():
         p = os.path.join(ddir, d + ".csv")
-        if a.force or not os.path.exists(p) or d == max(by_date): write_csv(p, sorted(rows, key=lambda r: r[7]))
+        if a.force or not os.path.exists(p) or d >= sorted(by_date)[-2:][0]: write_csv(p, sorted(rows, key=lambda r: r[7]))
     latest = max(by_date); write_csv(os.path.join(a.out, "DAILY_OHLCV.csv"), sorted(by_date[latest], key=lambda r: r[7]))
     files = sorted(glob.glob(os.path.join(ddir, "????-??-??.csv")))
     cutoff = (today - dt.timedelta(days=a.keep_days)).isoformat()
