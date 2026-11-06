@@ -6,7 +6,9 @@ SYMBOLS  ALL stocks by default: intraday_symbols.csv if it exists (one symbol pe
 
 COMMANDS
   pick   python intraday.py pick  --float STOCKS_FLOAT.csv --top 500 --out intraday_symbols.csv
-  fetch  python intraday.py fetch [--symbols intraday_symbols.csv] [--intervals 5m,15m,1h] [--days 5]
+  fetch  python intraday.py fetch [--symbols intraday_symbols.csv] [--intervals 5m,15m,1h] [--days 5] [--last 15m=2,1h=7] [--soft]
+           --last IV=N  keeps only the newest N TRADING days for that interval (weekends/holidays skipped), e.g. 15m=2 → today + previous session.
+           --soft       exit 0 even when Yahoo returns nothing (market holiday) — used by the every-15-minutes live job.
            intraday/<iv>/YYYY-MM-DD.csv.gz   one file per IST trading day:  Time,Open,High,Low,Close,Volume,Symbol
                                              Time = UNIX seconds (UTC).  Close is split-adjusted by Yahoo.
            intraday/<iv>/index.json          {"interval":..., "dates":[...], "updated":...}
@@ -103,12 +105,15 @@ def write_day(path, d):
         w = csv.writer(fh); w.writerow(HEAD); w.writerows(rows)
 
 
-def fetch_interval(yf, syms, iv, a, keep):
-    days = min(a.days, LIMIT[iv]); by_day = {}; got = set()
+def fetch_interval(yf, syms, iv, a, keep, last=0):
+    # last=N: N trading days -> ask Yahoo for enough calendar days to cover weekends/holidays, then keep the newest N dates
+    days = min(int(last * 7 / 5) + 4 if last else a.days, LIMIT[iv]); by_day = {}; got = set()
     for s, perday in download(yf, syms, iv, days, a.batch, a.delay):
         got.add(s)
         for day, rows in perday.items(): by_day.setdefault(day, []).extend(rows)
     if not by_day: print("%s: Yahoo returned no data." % iv); return 0
+    if last:
+        for day in sorted(by_day)[:-last]: del by_day[day]
     base = os.path.join(a.out, iv)
     for day, rows in by_day.items():
         p = os.path.join(base, day + ".csv.gz"); d = read_day(p)
@@ -134,11 +139,15 @@ def cmd_fetch(a, yf):
     for kv in (a.keep or "").split(","):
         if "=" in kv:
             k, v = kv.split("="); keep[k.strip()] = int(v)
+    last = {}
+    for kv in (a.last or "").split(","):
+        if "=" in kv:
+            k, v = kv.split("="); last[k.strip()] = max(1, int(v))
     n = 0
     for iv in [x.strip() for x in a.intervals.split(",") if x.strip()]:
         if iv not in LIMIT: print("skip unknown interval", iv); continue
-        n += fetch_interval(yf, syms, iv, a, keep[iv])
-    return 0 if n else 1
+        n += fetch_interval(yf, syms, iv, a, keep[iv], last.get(iv, 0))
+    return 0 if (n or a.soft) else 1
 
 
 def make_parser():
@@ -147,7 +156,7 @@ def make_parser():
     q = s.add_parser("pick"); q.add_argument("--float", default="STOCKS_FLOAT.csv"); q.add_argument("--top", type=int, default=500); q.add_argument("--out", default="intraday_symbols.csv")
     q = s.add_parser("fetch"); q.add_argument("--symbols", default="intraday_symbols.csv"); q.add_argument("--stocks", default="stocks.csv")
     q.add_argument("--intervals", default="5m,15m,1h"); q.add_argument("--days", type=int, default=5); q.add_argument("--out", default="intraday")
-    q.add_argument("--keep", default=""); q.add_argument("--batch", type=int, default=100); q.add_argument("--delay", type=float, default=1.5)
+    q.add_argument("--keep", default=""); q.add_argument("--last", default=""); q.add_argument("--soft", action="store_true"); q.add_argument("--batch", type=int, default=100); q.add_argument("--delay", type=float, default=1.5)
     return p
 
 
