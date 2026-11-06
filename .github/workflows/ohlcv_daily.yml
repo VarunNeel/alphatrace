@@ -1,29 +1,48 @@
 name: Daily OHLCV (Yahoo)
+# Every day at 17:00, 19:00, 21:00 and 23:00 IST. Later slots catch prices Yahoo posted late. A slot with nothing new does nothing.
 on:
   schedule:
-    - cron: "30 12 * * 1-5"    # 18:00 IST, weekdays — Yahoo has usually posted the day's final prices by now
-    - cron: "30 15 * * 1-5"    # 21:00 IST — second pass to catch late updates
+    - cron: "30 11 * * *"     # 17:00 IST, every day
+    - cron: "30 13 * * *"     # 19:00 IST
+    - cron: "30 15 * * *"     # 21:00 IST
+    - cron: "30 17 * * *"     # 23:00 IST
   workflow_dispatch: {}
 permissions:
   contents: write
 concurrency:
-  group: ohlcv
+  group: ohlcv-daily
   cancel-in-progress: false
 jobs:
   daily:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install yfinance
-      - name: Download the last days for every stock in stocks.csv
-        run: python yahoo_ohlcv.py daily --stocks stocks.csv
-      - name: Commit
+      - run: pip install -q --retries 5 --timeout 60 yfinance
+      - name: Download the last days for every stock in stocks.csv (3 tries)
+        run: |
+          ok=0
+          for i in $(seq 1 3); do
+            if python yahoo_ohlcv.py daily --stocks stocks.csv; then ok=1; break; fi
+            echo "Attempt $i of 3 failed; waiting $((i*60))s"; sleep $((i*60))
+          done
+          [ "$ok" = 1 ] || echo "::warning::the Yahoo download failed 3 times; the next scheduled run will try again"
+      - name: Commit (retries if another job pushed first)
+        if: always()
         run: |
           git config user.name  "ohlcv"
           git config user.email "ohlcv@users.noreply.github.com"
           git add ohlcv/DAILY_OHLCV.csv ohlcv/daily ohlcv/missing.csv
-          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "OHLCV $(date -u +%F)"; git pull --rebase -q; git push; fi
+          if git diff --cached --quiet; then echo "Nothing new"; else
+            git commit -q -m "OHLCV $(date -u +%F)"
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash -q && git push -q; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $i failed (another job pushed first?); trying again in $((i*10))s"; sleep $((i*10))
+            done
+            [ "$pushed" = 1 ] || { echo "::error::could not push after 5 tries"; exit 1; }
+          fi
