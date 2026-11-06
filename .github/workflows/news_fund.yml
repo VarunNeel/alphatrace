@@ -27,15 +27,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install yfinance
+      - run: pip install -q --retries 5 --timeout 60 yfinance
       - name: Collect
         run: |
           MODE="${{ github.event.inputs.mode || 'run' }}"
           if [ "$MODE" = "test" ]; then python news_fund.py test
           else python news_fund.py run --news-limit "${{ github.event.inputs.news_limit || '600' }}" --fund-limit "${{ github.event.inputs.fund_limit || '300' }}"; fi
-      - name: Commit results
+      - name: Commit results (retries if another job pushed first)
+        if: always()
         run: |
           git config user.name  "news-fund"
           git config user.email "news-fund@users.noreply.github.com"
           git add info
-          if git diff --cached --quiet; then echo "No change"; else git commit -m "News + financials $(date -u +%F)"; git pull --rebase -q; git push; fi
+          if git diff --cached --quiet; then echo "Nothing new"; else
+            git commit -q -m "News + financials $(date -u +%F)"
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash -q && git push -q; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $i failed (another job pushed first?); trying again in $((i*10))s"; sleep $((i*10))
+            done
+            [ "$pushed" = 1 ] || { echo "::error::could not push after 5 tries"; exit 1; }
+          fi
