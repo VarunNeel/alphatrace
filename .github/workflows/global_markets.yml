@@ -22,13 +22,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install yfinance
+      - run: pip install -q --retries 5 --timeout 60 yfinance
       - name: Download
         run: |
           if [ "${{ github.event.inputs.full }}" = "true" ]; then python global_markets.py full; else python global_markets.py daily; fi
-      - name: Commit
+      - name: Commit (retries if another job pushed first)
+        if: always()
         run: |
           git config user.name  "global"
           git config user.email "global@users.noreply.github.com"
           git add global
-          if git diff --cached --quiet; then echo "Nothing new"; else git commit -m "Global markets $(date -u +%F)"; git pull --rebase -q; git push; fi
+          if git diff --cached --quiet; then echo "Nothing new"; else
+            git commit -q -m "Global markets $(date -u +%F)"
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash -q && git push -q; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $i failed (another job pushed first?); trying again in $((i*10))s"; sleep $((i*10))
+            done
+            [ "$pushed" = 1 ] || { echo "::error::could not push after 5 tries"; exit 1; }
+          fi
