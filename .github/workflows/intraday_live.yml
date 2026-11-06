@@ -1,0 +1,61 @@
+name: Intraday live (15m every 15 min)
+# During market hours: the last 2 trading days of 15-minute bars, every 15 minutes, so the app has today's prices long before the
+# end-of-day file. Published to a separate branch called 'live' that is REPLACED on every run (no history kept), so the repo does
+# not grow by ~25 commits a day. The evening job (intraday.yml) writes the final bars to main as before.
+# GitHub may start a run a few minutes late; a newer run replaces one that is still waiting, so runs never pile up.
+on:
+  schedule:                                  # GitHub runs schedules in UTC; IST = UTC + 5:30.
+    - cron: "46 3 * * 1-5"                   # 09:16 IST
+    - cron: "1,16,31,46 4-9 * * 1-5"         # 09:31 … 15:16 IST, every 15 minutes
+    - cron: "1,16,31 10 * * 1-5"             # 15:31, 15:46, 16:01 IST (closing bars)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: intraday-live
+  cancel-in-progress: true                   # a newer run replaces one still waiting or running
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            intraday.py
+            yahoo_ohlcv.py
+            stocks.csv
+            intraday_symbols.csv
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q --retries 5 --timeout 60 yfinance
+      - name: Fetch the last 2 trading days of 15-minute bars (3 tries)
+        run: |
+          ok=0
+          for i in $(seq 1 3); do
+            if python intraday.py fetch --intervals 15m --last 15m=2 --soft --out live_out/intraday; then ok=1; break; fi
+            echo "Attempt $i of 3 failed; waiting $((i*20))s"; sleep $((i*20))
+          done
+          [ "$ok" = 1 ] || echo "::warning::the intraday download failed 3 times; the next scheduled run will try again"
+      - name: Publish to the 'live' branch (replaced every run)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -f live_out/intraday/15m/index.json ] || { echo "No bars yet (holiday or before the open)"; exit 0; }
+          cd live_out
+          printf 'Live 15-minute bars for the last 2 trading days.\nReplaced every 15 minutes during market hours by intraday_live.yml; final bars are on main (intraday/).\n' > README.md
+          git init -q -b live
+          git config user.name  "intraday-live"
+          git config user.email "intraday-live@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Live intraday $(date -u +%FT%H:%MZ)"
+          pushed=0
+          for i in 1 2 3 4; do
+            if git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" live; then pushed=1; break; fi
+            echo "Push attempt $i failed; trying again in $((i*5))s"; sleep $((i*5))
+          done
+          [ "$pushed" = 1 ] || { echo "::error::could not publish to the live branch"; exit 1; }
+          echo "Published $(ls intraday/15m/*.csv.gz | wc -l) day file(s) to branch 'live'"
