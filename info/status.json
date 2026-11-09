@@ -1,1 +1,1 @@
-{"mode":"test","sources":{"gnews":{"ok":true,"items":14,"msg":""},"yahoo":{"ok":true,"quarters":5,"ratios":17,"msg":""}},"at":1794165914}
+{"mode":"run","universe":2605,"sources":{"gnews":{"ok":true,"msg":""},"yahoo":{"ok":true,"msg":""}},"news":{"ok":589,"fail":0,"empty":11},"fund":{"ok":299,"fail":1},"groups":{"ok":267,"fail":0},"at":1794267268}
