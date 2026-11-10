@@ -42,7 +42,7 @@ jobs:
             git commit -q -m "New listings $(date -u +%F)"
             pushed=0
             for i in 1 2 3 4 5; do
-              if git pull --rebase --autostash -q && git push -q; then pushed=1; break; fi
+              if git pull --rebase -X theirs --autostash -q && git push -q; then pushed=1; break; fi
               git rebase --abort 2>/dev/null || true
               echo "Push attempt $i failed (another job pushed first?); trying again in $((i*10))s"; sleep $((i*10))
             done
