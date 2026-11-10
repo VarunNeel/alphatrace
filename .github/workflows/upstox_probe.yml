@@ -27,5 +27,5 @@ jobs:
           git add upstox/probe.json
           if git diff --cached --quiet; then echo "No change"; else
             git commit -q -m "Upstox probe $(date -u +%F)"
-            git pull --rebase --autostash -q && git push -q
+            git pull --rebase -X theirs --autostash -q && git push -q
           fi
