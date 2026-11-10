@@ -1,0 +1,83 @@
+{
+ "when_ist": "2026-11-11T03:19",
+ "trading_day": "2026-11-09",
+ "underlyings": {
+  "NIFTY": {
+   "key": "NSE_INDEX|Nifty 50",
+   "expiries": [
+    {
+     "expiry": "2026-11-17",
+     "rows": 262
+    },
+    {
+     "expiry": "2026-11-23",
+     "rows": 294
+    },
+    {
+     "expiry": "2026-12-01",
+     "rows": 262
+    }
+   ],
+   "rows": 818,
+   "errors": []
+  },
+  "BANKNIFTY": {
+   "key": "NSE_INDEX|Nifty Bank",
+   "expiries": [
+    {
+     "expiry": "2026-11-23",
+     "rows": 356
+    },
+    {
+     "expiry": "2026-12-29",
+     "rows": 356
+    },
+    {
+     "expiry": "2027-01-25",
+     "rows": 350
+    }
+   ],
+   "rows": 1062,
+   "errors": []
+  },
+  "FINNIFTY": {
+   "key": "NSE_INDEX|Nifty Fin Service",
+   "expiries": [
+    {
+     "expiry": "2026-11-23",
+     "rows": 300
+    },
+    {
+     "expiry": "2026-12-29",
+     "rows": 162
+    },
+    {
+     "expiry": "2027-01-25",
+     "rows": 156
+    }
+   ],
+   "rows": 618,
+   "errors": []
+  },
+  "MIDCPNIFTY": {
+   "key": "NSE_INDEX|NIFTY MID SELECT",
+   "expiries": [
+    {
+     "expiry": "2026-11-23",
+     "rows": 354
+    },
+    {
+     "expiry": "2026-12-29",
+     "rows": 306
+    },
+    {
+     "expiry": "2027-01-25",
+     "rows": 288
+    }
+   ],
+   "rows": 948,
+   "errors": []
+  }
+ },
+ "total_rows": 3446
+}
