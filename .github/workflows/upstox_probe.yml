@@ -1,0 +1,31 @@
+name: Upstox connection test
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: upstox-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test the token, candles, option chain
+        env:
+          UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
+        run: python upstox_probe.py
+      - name: Commit the report
+        if: always()
+        run: |
+          git config user.name  "upstox"
+          git config user.email "upstox@users.noreply.github.com"
+          git add upstox/probe.json
+          if git diff --cached --quiet; then echo "No change"; else
+            git commit -q -m "Upstox probe $(date -u +%F)"
+            git pull --rebase --autostash -q && git push -q
+          fi
