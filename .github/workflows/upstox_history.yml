@@ -1,0 +1,51 @@
+name: Upstox stock history (end-of-day)
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"    # 19:00 IST weekdays - last 7 days of daily prices
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "First day, YYYY-MM-DD (blank = 2010-01-01)"
+        default: ""
+      to_date:
+        description: "Last day, YYYY-MM-DD (blank = today)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: upstox-ohlcv
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download daily prices from Upstox
+        env:
+          UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
+          SCHED: ${{ github.event.schedule }}
+          FROM_DATE: ${{ inputs.from_date }}
+          TO_DATE: ${{ inputs.to_date }}
+        run: |
+          if [ -n "$SCHED" ]; then python upstox_ohlcv.py daily --stocks stocks.csv
+          else python upstox_ohlcv.py history --stocks stocks.csv --from-date "${FROM_DATE:-2010-01-01}" --to-date "$TO_DATE"; fi
+      - name: Commit (retries if another job pushed first)
+        if: always()
+        run: |
+          git config user.name  "upstox"
+          git config user.email "upstox@users.noreply.github.com"
+          git add ohlcv/upstox upstox/history_report.json upstox/progress.json
+          if git diff --cached --quiet; then echo "Nothing new"; else
+            git commit -q -m "Upstox daily prices $(date -u +%F)"
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git pull --rebase --autostash -q && git push -q; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $i failed; trying again in $((i*10))s"; sleep $((i*10))
+            done
+            [ "$pushed" = 1 ] || { echo "::error::could not push after 5 tries"; exit 1; }
+          fi
