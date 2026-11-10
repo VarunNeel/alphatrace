@@ -1,0 +1,110 @@
+{
+ "when": "2026-11-10T21:23:51.421448Z",
+ "tests": {
+  "token": {
+   "ok": true,
+   "note": "secret found (337 characters)"
+  },
+  "instruments": {
+   "ok": true,
+   "note": "85462 NSE instruments",
+   "by_segment": {
+    "NSE_EQ": 9887,
+    "NCD_FO": 8828,
+    "NSE_FO": 41665,
+    "NSE_COM": 24943,
+    "NSE_INDEX": 139
+   },
+   "sample_keys": [
+    "exchange",
+    "exchange_token",
+    "freeze_quantity",
+    "instrument_key",
+    "instrument_type",
+    "isin",
+    "lot_size",
+    "name",
+    "qty_multiplier",
+    "security_type",
+    "segment",
+    "tick_size",
+    "trading_symbol"
+   ]
+  },
+  "daily_candles": {
+   "ok": true,
+   "note": "21 candles for RELIANCE, newest 2026-11-09T00:00:00+05:30",
+   "first_row": [
+    "2026-11-09T00:00:00+05:30",
+    1317.0,
+    1330.2,
+    1305.5,
+    1324.4,
+    19734153,
+    0
+   ]
+  },
+  "option_contracts": {
+   "ok": true,
+   "note": "2066 contracts, 18 expiries, next 2026-11-17"
+  },
+  "option_chain": {
+   "ok": true,
+   "note": "131 strikes for 2026-11-17",
+   "first_strike": {
+    "expiry": "2026-11-17",
+    "strike_price": 20850.0,
+    "underlying_key": "NSE_INDEX|Nifty 50",
+    "underlying_spot_price": 25044.65,
+    "call_options": {
+     "instrument_key": "NSE_FO|45134",
+     "market_data": {
+      "ltp": 0.0,
+      "volume": 0,
+      "oi": 0.0,
+      "close_price": 2004.65,
+      "bid_price": 3593.5,
+      "bid_qty": 975,
+      "ask_price": 4283.8,
+      "ask_qty": 390,
+      "prev_oi": 0.0
+     },
+     "option_greeks": {
+      "vega": 0.0,
+      "theta": 0.0,
+      "gamma": 0.0,
+      "delta": 1.0,
+      "iv": 0.0,
+      "pop": 99.0
+     }
+    },
+    "put_options": {
+     "instrument_key": "NSE_FO|45136",
+     "market_data": {
+      "ltp": 1.3,
+      "volume": 900835,
+      "oi": 541450.0,
+      "close_price": 3.0,
+      "bid_price": 1.25,
+      "bid_qty": 1560,
+      "ask_price": 1.3,
+      "ask_qty": 1690,
+      "prev_oi": 476645.0
+     },
+     "option_greeks": {
+      "vega": 0.2814,
+      "theta": -0.782,
+      "gamma": 0.0,
+      "delta": -0.0024,
+      "iv": 44.43,
+      "pop": 0.3
+     }
+    }
+   }
+  },
+  "ltp": {
+   "ok": true,
+   "note": "HTTP 200 {\"status\":\"success\",\"data\":{\"NSE_EQ:RELIANCE\":{\"last_price\":1324.4,\"instrument_token\":\"NSE_EQ|INE002A01018\"}}}"
+  }
+ }
+}
