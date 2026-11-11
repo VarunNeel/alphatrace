@@ -579,7 +579,6 @@ CIFL,Capital India Finance Limited,INE345H01024,EQ,Financial Services,Financial 
 CINELINE,Cineline India Limited,INE704H01022,EQ,Consumer Discretionary,Media Entertainment & Publication,Entertainment,Film Production Distribution & Exhibition,bse:ComHeader
 CINEVISTA,Cinevista Limited,INE039B01026,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,bse:ComHeader
 CIPLA,Cipla Limited,INE059A01026,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
-CLCIND,CLC Industries Limited,INE376C01038,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
 CLEAN,Clean Science and Technology Limited,INE227W01023,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,bse:ComHeader
 CLEANMAX,Clean Max Enviro Energy Solutions Limited,INE647U01026,EQ,Utilities,Power,Power,Power Generation,bse:ComHeader
 CLEDUCATE,CL Educate Limited,INE201M01029,EQ,Consumer Discretionary,Consumer Services,Other Consumer Services,Education,bse:ComHeader
@@ -1366,7 +1365,6 @@ LANCORHOL,Lancor Holdings Limited,INE572G01025,BE,Consumer Discretionary,Realty,
 LANDMARK,Landmark Cars Limited,INE559R01029,EQ,Consumer Discretionary,Automobile and Auto Components,Automobiles,Auto -Dealer,bse:ComHeader
 LANDSMILL,Landsmill Green Limited,INE688J01023,BE,Services,Services,Commercial Services & Supplies,Trading & Distributors,bse:ComHeader
 LAOPALA,La Opala RG Limited,INE059D01020,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Glass - Consumer,bse:ComHeader
-LASA,Lasa Supergenerics Limited,INE670X01014,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,override
 LASERPOWER,Laser Power & Infra Limited,INE17IR01028,EQ,Industrials,Capital Goods,Industrial Products,Cables - Electricals,bse:ComHeader
 LATENTVIEW,Latent View Analytics Limited,INE0I7C01011,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,bse:ComHeader
 LAURUSLABS,Laurus Labs Limited,INE947Q01028,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
@@ -2046,7 +2044,6 @@ SEDEMAC,SEDEMAC Mechatronics Limited,INE00XB01019,EQ,Consumer Discretionary,Auto
 SEIL,Shanti Educational Initiatives Limited,INE440T01028,EQ,Consumer Discretionary,Consumer Services,Other Consumer Services,Education,bse:ComHeader
 SEJALLTD,Sejal Glass Limited,INE955I01044,EQ,Industrials,Capital Goods,Industrial Products,Glass - Industrial,bse:ComHeader
 SEKURITIND,Saint Gobain Sekurit India Limited,INE068B01017,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,bse:ComHeader
-SELMC,SEL Manufacturing Company Limited,INE105I01020,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
 SEMAC,Semac Construction Limited,INE617A01013,EQ,Industrials,Construction,Construction,Civil Construction,bse:ComHeader
 SENCO,Senco Gold Limited,INE602W01027,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,bse:ComHeader
 SENORES,Senores Pharmaceuticals Limited,INE0RB801010,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
@@ -2435,7 +2432,6 @@ UNIPARTS,Uniparts India Limited,INE244O01017,EQ,Consumer Discretionary,Automobil
 UNITDSPR,United Spirits Limited,INE854D01024,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Beverages,Breweries & Distilleries,bse:ComHeader
 UNITECH,Unitech Limited,INE694A01020,EQ,Consumer Discretionary,Realty,Realty,Residential Commercial Projects,bse:ComHeader
 UNITEDPOLY,United Polyfab Gujarat Limited,INE368U01029,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
-UNIVAFOODS,Univa Foods Limited,INE275F01019,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
 UNIVCABLES,Universal Cables Limited,INE279A01012,EQ,Industrials,Capital Goods,Industrial Products,Cables - Electricals,bse:ComHeader
 UNIVPHOTO,Universus Photo Imagings Limited,INE03V001013,BE,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,bse:ComHeader
 UNOMINDA,UNO Minda Limited,INE405E01023,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,bse:ComHeader
@@ -2604,3 +2600,7 @@ ZYDUSLIFE,Zydus Lifesciences Limited,INE010B01027,EQ,Healthcare,Healthcare,Pharm
 ZYDUSWELL,Zydus Wellness Limited,INE768C01028,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,bse:ComHeader
 GFSTEELS,,,BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,override
 ICICIPRULI,,,EQ,Financial Services,Financial Services,Insurance,Life Insurance,override
+CLCIND,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
+LASA,,,BE,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,override
+SELMC,,,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,override
+UNIVAFOODS,,,BE,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Food Products,Packaged Foods,override
