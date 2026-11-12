@@ -138,4 +138,5 @@ YOGI,INE290E01011,"classified, but no shares/float from any source"
 ZETWERK,INE09PO01019,"classified, but no shares/float from any source"
 ZODIAC,INE761Y01019,"classified, but no shares/float from any source"
 BANKA,INE862Y01015,second source found nothing (NSE blocked/empty; Yahoo industry 'Pollution & Treatment Controls' not mappable)
+ESFL,INE0ITO01014,"no BSE listing for this ISIN, so no classification"
 GKWLIMITED,INE528A01020,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
