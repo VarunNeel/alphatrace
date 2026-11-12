@@ -2,10 +2,7 @@ name: Daily OHLCV (Yahoo)
 # Every day at 17:00, 19:00, 21:00 and 23:00 IST. Later slots catch prices Yahoo posted late. A slot with nothing new does nothing.
 on:
   schedule:
-    - cron: "30 11 * * *"     # 17:00 IST, every day
-    - cron: "30 13 * * *"     # 19:00 IST
-    - cron: "30 15 * * *"     # 21:00 IST
-    - cron: "30 17 * * *"     # 23:00 IST
+    - cron: "17 * * * *"      # every hour at :17 (a quiet minute; GitHub delays runs that start on the hour), every day
   workflow_dispatch: {}
 permissions:
   contents: write
