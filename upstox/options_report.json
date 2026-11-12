@@ -1,24 +1,24 @@
 {
- "when_ist": "2026-11-11T23:57",
- "trading_day": "2026-11-09",
+ "when_ist": "2026-11-13T00:14",
+ "trading_day": "2026-11-11",
  "underlyings": {
   "NIFTY": {
    "key": "NSE_INDEX|Nifty 50",
    "expiries": [
     {
      "expiry": "2026-11-17",
-     "rows": 262
+     "rows": 284
     },
     {
      "expiry": "2026-11-23",
-     "rows": 294
+     "rows": 316
     },
     {
      "expiry": "2026-12-01",
-     "rows": 262
+     "rows": 284
     }
    ],
-   "rows": 818,
+   "rows": 884,
    "errors": []
   },
   "BANKNIFTY": {
@@ -26,18 +26,18 @@
    "expiries": [
     {
      "expiry": "2026-11-23",
-     "rows": 356
+     "rows": 378
     },
     {
      "expiry": "2026-12-29",
-     "rows": 356
+     "rows": 378
     },
     {
      "expiry": "2027-01-25",
-     "rows": 350
+     "rows": 372
     }
    ],
-   "rows": 1062,
+   "rows": 1128,
    "errors": []
   },
   "FINNIFTY": {
@@ -45,18 +45,18 @@
    "expiries": [
     {
      "expiry": "2026-11-23",
-     "rows": 300
+     "rows": 328
     },
     {
      "expiry": "2026-12-29",
-     "rows": 162
+     "rows": 176
     },
     {
      "expiry": "2027-01-25",
-     "rows": 156
+     "rows": 170
     }
    ],
-   "rows": 618,
+   "rows": 674,
    "errors": []
   },
   "MIDCPNIFTY": {
@@ -68,16 +68,16 @@
     },
     {
      "expiry": "2026-12-29",
-     "rows": 306
+     "rows": 308
     },
     {
      "expiry": "2027-01-25",
-     "rows": 288
+     "rows": 290
     }
    ],
-   "rows": 948,
+   "rows": 952,
    "errors": []
   }
  },
- "total_rows": 3446
+ "total_rows": 3638
 }
