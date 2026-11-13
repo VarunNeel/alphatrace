@@ -1,15 +1,16 @@
 {
- "when": "2026-11-12T21:12:51.513565Z",
+ "when": "2026-11-13T20:47:46.270884Z",
  "range": [
-  "2026-11-05",
-  "2026-11-12"
+  "2026-11-06",
+  "2026-11-13"
  ],
- "stocks_requested": 2609,
+ "stocks_requested": 2610,
  "fetched": 2594,
  "empty": [
   "ELCIDIN",
   "SAB",
   "WILLAMAGOR",
+  "MPDL",
   "KALYANI"
  ],
  "no_upstox_key": [
@@ -26,7 +27,7 @@
   "UNIVAFOODS"
  ],
  "errors": [],
- "bars": 13164,
+ "bars": 13197,
  "complete": true,
  "stopped_early": false,
  "years_written": [
