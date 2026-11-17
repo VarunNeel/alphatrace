@@ -1,5 +1,7 @@
 Symbol,ISIN,Reason
 ABCOTS,,not in NSE's equity list (ETF / fund / bond / other instrument)
+DRAGARWQ,,not in NSE's equity list (ETF / fund / bond / other instrument)
+ELPROINTL,,not in NSE's equity list (ETF / fund / bond / other instrument)
 NOVARTIND,,not in NSE's equity list (ETF / fund / bond / other instrument)
 3BBLACKBIO,INE994E01018,"classified, but no shares/float from any source"
 AARNAV,INE750R01016,"classified, but no shares/float from any source"
@@ -36,7 +38,6 @@ CPL,INE536P01021,"classified, but no shares/float from any source"
 CRAVATEX,INE145E01017,"classified, but no shares/float from any source"
 DAICHI,INE928C01010,"classified, but no shares/float from any source"
 DISAQ,INE131C01011,"classified, but no shares/float from any source"
-DRAGARWQ,INE934C01018,"classified, but no shares/float from any source"
 EBIX,INE432F01032,"classified, but no shares/float from any source"
 ECORECO,INE316A01038,"classified, but no shares/float from any source"
 EKI,INE0CPR01018,"classified, but no shares/float from any source"
@@ -140,3 +141,4 @@ ZODIAC,INE761Y01019,"classified, but no shares/float from any source"
 BANKA,INE862Y01015,second source found nothing (NSE blocked/empty; Yahoo industry 'Pollution & Treatment Controls' not mappable)
 ESFL,INE0ITO01014,"no BSE listing for this ISIN, so no classification"
 GKWLIMITED,INE528A01020,second source found nothing (NSE blocked/empty; Yahoo industry 'Specialty Business Services' not mappable)
+JKSHAH,INE2OD001016,"no BSE listing for this ISIN, so no classification"
