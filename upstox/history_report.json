@@ -1,11 +1,11 @@
 {
- "when": "2026-11-16T23:08:57.197060Z",
+ "when": "2026-11-17T22:12:27.621064Z",
  "range": [
-  "2026-11-09",
-  "2026-11-16"
+  "2026-11-10",
+  "2026-11-17"
  ],
  "stocks_requested": 2610,
- "fetched": 2600,
+ "fetched": 2596,
  "empty": [
   "ELCIDIN",
   "WILLAMAGOR",
@@ -18,10 +18,14 @@
   "NOVARTIND",
   "GFSTEELS",
   "PARSVNATH",
-  "VIVIMEDLAB"
+  "VIVIMEDLAB",
+  "CLCIND",
+  "LASA",
+  "SELMC",
+  "UNIVAFOODS"
  ],
  "errors": [],
- "bars": 10585,
+ "bars": 12933,
  "complete": true,
  "stopped_early": false,
  "years_written": [
