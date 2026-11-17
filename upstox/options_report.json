@@ -1,14 +1,10 @@
 {
- "when_ist": "2026-11-17T02:20",
- "trading_day": "2026-11-16",
+ "when_ist": "2026-11-18T01:10",
+ "trading_day": "2026-11-17",
  "underlyings": {
   "NIFTY": {
    "key": "NSE_INDEX|Nifty 50",
    "expiries": [
-    {
-     "expiry": "2026-11-17",
-     "rows": 284
-    },
     {
      "expiry": "2026-11-23",
      "rows": 316
@@ -16,9 +12,13 @@
     {
      "expiry": "2026-12-01",
      "rows": 284
+    },
+    {
+     "expiry": "2026-12-08",
+     "rows": 236
     }
    ],
-   "rows": 884,
+   "rows": 836,
    "errors": []
   },
   "BANKNIFTY": {
@@ -79,5 +79,5 @@
    "errors": []
   }
  },
- "total_rows": 3654
+ "total_rows": 3606
 }
