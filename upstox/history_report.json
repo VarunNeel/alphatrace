@@ -1,11 +1,11 @@
 {
- "when": "2026-11-17T22:12:27.621064Z",
+ "when": "2026-11-18T21:44:14.418709Z",
  "range": [
-  "2026-11-10",
-  "2026-11-17"
+  "2026-11-11",
+  "2026-11-18"
  ],
- "stocks_requested": 2610,
- "fetched": 2596,
+ "stocks_requested": 2611,
+ "fetched": 2595,
  "empty": [
   "ELCIDIN",
   "WILLAMAGOR",
@@ -13,6 +13,8 @@
  ],
  "no_upstox_key": [
   "ABCOTS",
+  "DRAGARWQ",
+  "ELPROINTL",
   "HAMPTON",
   "ICICIPRULI",
   "NOVARTIND",
@@ -25,7 +27,7 @@
   "UNIVAFOODS"
  ],
  "errors": [],
- "bars": 12933,
+ "bars": 13024,
  "complete": true,
  "stopped_early": false,
  "years_written": [
