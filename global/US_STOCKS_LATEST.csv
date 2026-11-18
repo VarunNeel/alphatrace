@@ -38,7 +38,6 @@ Date,Adj Close,Close,High,Low,Open,Volume,SYMBOL,NAME,GROUP,COUNTRY
 2026-11-11,315.18,315.18,315.28,311.49,311.49,609000,APD.US,Air Products,US Stocks,United States
 2026-11-11,79.31,79.31,83.99,79.19,83.99,15818400,APH.US,Amphenol,US Stocks,United States
 2026-11-11,122.95,122.95,125.32,122.79,123.46,2308600,APO.US,Apollo Global Management,US Stocks,United States
-2026-11-11,404.77,404.77,413.6,394.495,394.495,4675800,APP.US,AppLovin,US Stocks,United States
 2026-11-11,39.41,39.41,39.95,39.18,39.69,2816700,APTV.US,Aptiv,US Stocks,United States
 2026-11-11,45.08,45.08,45.54,43.47,44.3,1911600,ARE.US,Alexandria Real Estate Equities,US Stocks,United States
 2026-11-11,137.89,137.89,141.91,137.65,139.77,1405800,ARES.US,Ares Management,US Stocks,United States
@@ -541,7 +540,6 @@ Date,Adj Close,Close,High,Low,Open,Volume,SYMBOL,NAME,GROUP,COUNTRY
 2026-11-12,316.2,316.2,317.35,312.76,316.18,698400,APD.US,Air Products,US Stocks,United States
 2026-11-12,79.62,79.62,81.65,76.15,76.15,17471200,APH.US,Amphenol,US Stocks,United States
 2026-11-12,121.35,121.35,123.3,119.52,122.37,2910200,APO.US,Apollo Global Management,US Stocks,United States
-2026-11-12,393.68,393.68,408.99,393.05,400.09,3061800,APP.US,AppLovin,US Stocks,United States
 2026-11-12,38.81,38.81,39.33,38.38,39.1,3000600,APTV.US,Aptiv,US Stocks,United States
 2026-11-12,44.3,44.3,45.32,44.18,44.85,1360700,ARE.US,Alexandria Real Estate Equities,US Stocks,United States
 2026-11-12,133.29,133.29,138.26,132.68,136.63,1773600,ARES.US,Ares Management,US Stocks,United States
@@ -1044,7 +1042,6 @@ Date,Adj Close,Close,High,Low,Open,Volume,SYMBOL,NAME,GROUP,COUNTRY
 2026-11-13,316.53,316.53,318.48,312.99,318.48,651400,APD.US,Air Products,US Stocks,United States
 2026-11-13,78.23,78.23,80.31,76.05,79.53,9580900,APH.US,Amphenol,US Stocks,United States
 2026-11-13,123.47,123.47,123.57,121.47,123.14,3063900,APO.US,Apollo Global Management,US Stocks,United States
-2026-11-13,409.1,409.1,413.88,391.49,395.57,3429200,APP.US,AppLovin,US Stocks,United States
 2026-11-13,38.75,38.75,39.35,38.46,38.9,2521000,APTV.US,Aptiv,US Stocks,United States
 2026-11-13,43.84,43.84,44.46,43.1,44.18,1403100,ARE.US,Alexandria Real Estate Equities,US Stocks,United States
 2026-11-13,134.61,134.61,135.49,132.075,135.04,1781700,ARES.US,Ares Management,US Stocks,United States
@@ -1547,7 +1544,6 @@ Date,Adj Close,Close,High,Low,Open,Volume,SYMBOL,NAME,GROUP,COUNTRY
 2026-11-16,313.9,313.9,318.48,312.71,317.71,769000,APD.US,Air Products,US Stocks,United States
 2026-11-16,75.43,75.43,77.0,74.64,75.89,10834100,APH.US,Amphenol,US Stocks,United States
 2026-11-16,119.98,119.98,123.99,119.4,121.88,3924900,APO.US,Apollo Global Management,US Stocks,United States
-2026-11-16,415.22,415.22,418.767,404.78,414.6,4548200,APP.US,AppLovin,US Stocks,United States
 2026-11-16,37.81,37.81,39.0,37.61,38.84,3604400,APTV.US,Aptiv,US Stocks,United States
 2026-11-16,43.53,43.53,44.0,42.91,43.93,1483000,ARE.US,Alexandria Real Estate Equities,US Stocks,United States
 2026-11-16,130.19,130.19,134.85,128.95,133.53,2003400,ARES.US,Ares Management,US Stocks,United States
@@ -2050,7 +2046,6 @@ Date,Adj Close,Close,High,Low,Open,Volume,SYMBOL,NAME,GROUP,COUNTRY
 2026-11-17,306.92,306.92,315.13,306.45,311.72,1424700,APD.US,Air Products,US Stocks,United States
 2026-11-17,76.36,76.36,76.53,74.63,75.97,10408300,APH.US,Amphenol,US Stocks,United States
 2026-11-17,117.89,117.89,121.71,117.43,119.72,2557200,APO.US,Apollo Global Management,US Stocks,United States
-2026-11-17,398.94,398.94,414.79,388.74,412.56,4567000,APP.US,AppLovin,US Stocks,United States
 2026-11-17,37.88,37.88,38.45,37.43,37.65,3686600,APTV.US,Aptiv,US Stocks,United States
 2026-11-17,42.38,42.38,43.4,42.0,42.91,1185900,ARE.US,Alexandria Real Estate Equities,US Stocks,United States
 2026-11-17,127.74,127.74,131.44,126.828,130.11,2146800,ARES.US,Ares Management,US Stocks,United States
