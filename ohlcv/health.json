@@ -83,30 +83,18 @@
   },
   {
    "date": "2026-11-18",
-   "history": 790,
+   "history": 2610,
    "daily": 2610,
-   "state": "history incomplete"
+   "state": "repaired"
   },
   {
    "date": "2026-11-19",
-   "history": 2572,
+   "history": 2591,
    "daily": 2591,
-   "state": "history is a snapshot"
+   "state": "repaired"
   }
  ],
  "issues": [
-  {
-   "kind": "history_incomplete",
-   "date": "2026-11-18",
-   "detail": "history has 790 of ~2579 stocks; the daily file has 2610",
-   "fixable": true
-  },
-  {
-   "kind": "history_stale",
-   "date": "2026-11-19",
-   "detail": "1528 of 2572 closes differ from the final daily file (mid-day snapshot)",
-   "fixable": true
-  },
   {
    "kind": "hole",
    "date": "2026-10-22",
@@ -118,7 +106,7 @@
  "unfixable_holes": 2,
  "quarantine_total": 51,
  "quarantine_recent": [],
- "repaired_rows": 0,
- "repair_mode": false,
- "generated_utc": "2026-11-19T22:50:42Z"
+ "repaired_rows": 3367,
+ "repair_mode": true,
+ "generated_utc": "2026-11-19T22:51:35Z"
 }
