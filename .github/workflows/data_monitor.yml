@@ -1,0 +1,69 @@
+name: Data monitor
+# Checks the price files three times a day and writes ohlcv/health.json + ohlcv/quarantine.csv.
+# 19:47 IST and 23:47 IST (after the daily files are final) and 08:47 IST (before the market opens).
+# Repairs (from ohlcv/daily only, every change logged in ohlcv/repair_log.csv) run when you start
+# the job with "repair" ticked, or on every scheduled run if the repository variable
+# DATA_AUTO_REPAIR is set to true (Settings -> Secrets and variables -> Actions -> Variables).
+# An Issue labelled data-health is opened when something is wrong and closed when it is fixed.
+on:
+  schedule:
+    - cron: "17 14,18,3 * * *"
+  workflow_dispatch:
+    inputs:
+      repair:
+        description: "Repair what can be repaired safely (from ohlcv/daily only)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: data-monitor
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check (and repair if asked)
+        id: mon
+        env:
+          REPAIR: ${{ github.event.inputs.repair == 'true' || vars.DATA_AUTO_REPAIR == 'true' }}
+        run: |
+          if [ "$REPAIR" = "true" ]; then FLAG=--repair; else FLAG=; fi
+          python data_monitor.py $FLAG --issue-body "$RUNNER_TEMP/health.md"
+      - name: Commit (retries if another job pushed first)
+        run: |
+          git config user.name  "data-monitor"
+          git config user.email "data-monitor@users.noreply.github.com"
+          git add ohlcv/health.json ohlcv/quarantine.csv ohlcv/calendar.json
+          [ -f ohlcv/repair_log.csv ] && git add ohlcv/repair_log.csv ohlcv/history
+          if git diff --cached --quiet; then echo "Nothing new"; else
+            git commit -q -m "Data health $(date -u +%F)"
+            pushed=0
+            for i in 1 2 3 4 5; do
+              if git pull --rebase -X theirs --autostash -q && git push -q; then pushed=1; break; fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $i failed (another job pushed first?); trying again in $((i*10))s"; sleep $((i*10))
+            done
+            [ "$pushed" = 1 ] || { echo "::error::could not push after 5 tries"; exit 1; }
+          fi
+      - name: Open, update or close the data-health Issue
+        if: always() && steps.mon.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.mon.outputs.status }}
+        run: |
+          gh label create data-health --color B60205 --description "Opened by the Data monitor job" 2>/dev/null || true
+          num=$(gh issue list --label data-health --state open --json number -q '.[0].number' 2>/dev/null || true)
+          if [ "$STATUS" = "ok" ]; then
+            [ -n "$num" ] && gh issue close "$num" --comment "All checks pass now. Closed automatically." || true
+          elif [ -n "$num" ]; then
+            gh issue edit "$num" --body-file "$RUNNER_TEMP/health.md"
+          else
+            gh issue create --title "Price data needs attention" --label data-health --body-file "$RUNNER_TEMP/health.md"
+          fi
