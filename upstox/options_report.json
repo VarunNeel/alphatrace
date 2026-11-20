@@ -1,6 +1,6 @@
 {
- "when_ist": "2026-11-20T00:54",
- "trading_day": "2026-11-18",
+ "when_ist": "2026-11-21T00:29",
+ "trading_day": "2026-11-19",
  "underlyings": {
   "NIFTY": {
    "key": "NSE_INDEX|Nifty 50",
@@ -26,18 +26,18 @@
    "expiries": [
     {
      "expiry": "2026-11-23",
-     "rows": 396
+     "rows": 426
     },
     {
      "expiry": "2026-12-29",
-     "rows": 396
+     "rows": 426
     },
     {
      "expiry": "2027-01-25",
-     "rows": 390
+     "rows": 420
     }
    ],
-   "rows": 1182,
+   "rows": 1272,
    "errors": []
   },
   "FINNIFTY": {
@@ -45,18 +45,18 @@
    "expiries": [
     {
      "expiry": "2026-11-23",
-     "rows": 332
+     "rows": 334
     },
     {
      "expiry": "2026-12-29",
-     "rows": 178
+     "rows": 180
     },
     {
      "expiry": "2027-01-25",
-     "rows": 172
+     "rows": 174
     }
    ],
-   "rows": 682,
+   "rows": 688,
    "errors": []
   },
   "MIDCPNIFTY": {
@@ -79,5 +79,5 @@
    "errors": []
   }
  },
- "total_rows": 3656
+ "total_rows": 3752
 }
