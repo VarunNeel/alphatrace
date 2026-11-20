@@ -1,1 +1,1 @@
-{"mode":"run","universe":2605,"sources":{"gnews":{"ok":true,"msg":""},"yahoo":{"ok":true,"msg":""}},"news":{"ok":594,"fail":0,"empty":6},"fund":{"ok":299,"fail":1},"groups":{"ok":267,"fail":0},"at":1795127172}
+{"mode":"run","universe":2605,"sources":{"gnews":{"ok":false,"msg":"HTTP Error 404: Not Found"},"yahoo":{"ok":true,"msg":""}},"news":{"ok":595,"fail":1,"empty":4},"fund":{"ok":300,"fail":0},"groups":{"ok":267,"fail":0},"at":1795211982}
