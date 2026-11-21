@@ -5,102 +5,96 @@
  "days": [
   {
    "date": "2026-10-30",
-   "history": 2600,
+   "history": 2599,
    "daily": 2942,
    "state": "ok"
   },
   {
    "date": "2026-11-02",
-   "history": 2601,
+   "history": 2600,
    "daily": 9,
    "state": "ok"
   },
   {
    "date": "2026-11-03",
-   "history": 2603,
+   "history": 2602,
    "daily": 28,
    "state": "ok"
   },
   {
    "date": "2026-11-04",
-   "history": 2606,
+   "history": 2605,
    "daily": 10,
    "state": "ok"
   },
   {
    "date": "2026-11-05",
-   "history": 2607,
+   "history": 2606,
    "daily": 2587,
    "state": "ok"
   },
   {
    "date": "2026-11-06",
-   "history": 2608,
+   "history": 2607,
    "daily": 2607,
    "state": "ok"
   },
   {
    "date": "2026-11-09",
-   "history": 2608,
+   "history": 2607,
    "daily": 2607,
    "state": "ok"
   },
   {
    "date": "2026-11-11",
-   "history": 2610,
-   "daily": 2609,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-12",
-   "history": 2610,
-   "daily": 2589,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-13",
-   "history": 2610,
-   "daily": 2609,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-16",
-   "history": 2610,
-   "daily": 2609,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-17",
-   "history": 2610,
-   "daily": 2591,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-18",
-   "history": 2611,
-   "daily": 2592,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-19",
    "history": 2609,
    "daily": 2609,
    "state": "ok"
   },
   {
+   "date": "2026-11-12",
+   "history": 2609,
+   "daily": 2589,
+   "state": "ok"
+  },
+  {
+   "date": "2026-11-13",
+   "history": 2609,
+   "daily": 2609,
+   "state": "ok"
+  },
+  {
+   "date": "2026-11-16",
+   "history": 2609,
+   "daily": 2609,
+   "state": "ok"
+  },
+  {
+   "date": "2026-11-17",
+   "history": 2609,
+   "daily": 2591,
+   "state": "ok"
+  },
+  {
+   "date": "2026-11-18",
+   "history": 2610,
+   "daily": 2592,
+   "state": "ok"
+  },
+  {
+   "date": "2026-11-19",
+   "history": 2608,
+   "daily": 2609,
+   "state": "ok"
+  },
+  {
    "date": "2026-11-20",
-   "history": 800,
+   "history": 2609,
    "daily": 2611,
-   "state": "history incomplete"
+   "state": "ok"
   }
  ],
  "issues": [
-  {
-   "kind": "history_incomplete",
-   "date": "2026-11-20",
-   "detail": "history has 800 of ~2583 stocks; the daily file has 2611",
-   "fixable": true
-  },
   {
    "kind": "hole",
    "date": "2026-10-22",
@@ -114,5 +108,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-21T11:05:54Z"
+ "generated_utc": "2026-11-21T20:33:01Z"
 }
