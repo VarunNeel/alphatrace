@@ -84,7 +84,7 @@
   {
    "date": "2026-11-19",
    "history": 2608,
-   "daily": 2609,
+   "daily": 2590,
    "state": "ok"
   },
   {
@@ -108,5 +108,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-21T20:33:01Z"
+ "generated_utc": "2026-11-22T20:44:28Z"
 }
