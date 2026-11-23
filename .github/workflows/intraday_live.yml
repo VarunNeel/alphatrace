@@ -27,6 +27,7 @@ jobs:
             yahoo_ohlcv.py
             stocks.csv
             intraday_symbols.csv
+            upstox_live.py
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
@@ -40,11 +41,17 @@ jobs:
             echo "Attempt $i of 3 failed; waiting $((i*20))s"; sleep $((i*20))
           done
           [ "$ok" = 1 ] || echo "::warning::the intraday download failed 3 times; the next scheduled run will try again"
+      - name: Upstox live quotes for the stocks Yahoo does not cover (skipped without the UPSTOX_ANALYTICS_TOKEN secret)
+        continue-on-error: true
+        env:
+          UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
+        run: |
+          [ -f upstox_live.py ] && python upstox_live.py --stocks stocks.csv --out live_out/upstox || echo "upstox_live.py not installed yet"
       - name: Publish to the 'live' branch (replaced every run)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          [ -f live_out/intraday/15m/index.json ] || { echo "No bars yet (holiday or before the open)"; exit 0; }
+          [ -f live_out/intraday/15m/index.json ] || [ -f live_out/upstox/index.json ] || { echo "No bars yet (holiday or before the open)"; exit 0; }
           cd live_out
           printf 'Live 15-minute bars for the last 2 trading days.\nReplaced every 15 minutes during market hours by intraday_live.yml; final bars are on main (intraday/).\n' > README.md
           git init -q -b live
@@ -58,4 +65,4 @@ jobs:
             echo "Push attempt $i failed; trying again in $((i*5))s"; sleep $((i*5))
           done
           [ "$pushed" = 1 ] || { echo "::error::could not publish to the live branch"; exit 1; }
-          echo "Published $(ls intraday/15m/*.csv.gz | wc -l) day file(s) to branch 'live'"
+          echo "Published $(ls intraday/15m/*.csv.gz 2>/dev/null | wc -l) day file(s) and $( [ -f upstox/today.csv.gz ] && echo 'the Upstox quotes' || echo 'no Upstox quotes') to branch 'live'"
