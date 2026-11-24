@@ -4,12 +4,6 @@
  "universe": 2583,
  "days": [
   {
-   "date": "2026-10-30",
-   "history": 2599,
-   "daily": 2942,
-   "state": "ok"
-  },
-  {
    "date": "2026-11-02",
    "history": 2600,
    "daily": 9,
@@ -90,11 +84,23 @@
   {
    "date": "2026-11-20",
    "history": 2609,
-   "daily": 2608,
+   "daily": 2590,
    "state": "ok"
+  },
+  {
+   "date": "2026-11-23",
+   "history": 0,
+   "daily": 2596,
+   "state": "history incomplete"
   }
  ],
  "issues": [
+  {
+   "kind": "history_incomplete",
+   "date": "2026-11-23",
+   "detail": "history has 0 of ~2583 stocks; the daily file has 2596",
+   "fixable": true
+  },
   {
    "kind": "hole",
    "date": "2026-10-22",
@@ -108,5 +114,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-23T12:47:54Z"
+ "generated_utc": "2026-11-24T01:42:22Z"
 }
