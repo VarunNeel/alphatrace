@@ -1,15 +1,16 @@
 {
- "when": "2026-11-24T01:31:09.544101Z",
+ "when": "2026-11-24T23:24:30.271721Z",
  "range": [
   "2026-11-17",
   "2026-11-24"
  ],
- "stocks_requested": 2613,
+ "stocks_requested": 2614,
  "fetched": 2595,
  "empty": [
   "ELCIDIN",
   "WILLAMAGOR",
-  "KALYANI"
+  "KALYANI",
+  "MITSU"
  ],
  "no_upstox_key": [
   "ABCOTS",
