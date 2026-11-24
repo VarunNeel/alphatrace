@@ -1,5 +1,5 @@
 {
- "when_ist": "2026-11-24T03:59",
+ "when_ist": "2026-11-25T02:31",
  "trading_day": "2026-11-23",
  "underlyings": {
   "NIFTY": {
@@ -15,10 +15,10 @@
     },
     {
      "expiry": "2026-12-15",
-     "rows": 186
+     "rows": 204
     }
    ],
-   "rows": 706,
+   "rows": 724,
    "errors": []
   },
   "BANKNIFTY": {
@@ -33,11 +33,11 @@
      "rows": 446
     },
     {
-     "expiry": "2027-03-30",
-     "rows": 36
+     "expiry": "2027-02-23",
+     "rows": 224
     }
    ],
-   "rows": 934,
+   "rows": 1122,
    "errors": []
   },
   "FINNIFTY": {
@@ -45,14 +45,18 @@
    "expiries": [
     {
      "expiry": "2026-12-29",
-     "rows": 198
+     "rows": 248
     },
     {
      "expiry": "2027-01-25",
      "rows": 192
+    },
+    {
+     "expiry": "2027-02-23",
+     "rows": 92
     }
    ],
-   "rows": 390,
+   "rows": 532,
    "errors": []
   },
   "MIDCPNIFTY": {
@@ -65,11 +69,15 @@
     {
      "expiry": "2027-01-25",
      "rows": 292
+    },
+    {
+     "expiry": "2027-02-23",
+     "rows": 154
     }
    ],
-   "rows": 602,
+   "rows": 756,
    "errors": []
   }
  },
- "total_rows": 2632
+ "total_rows": 3134
 }
