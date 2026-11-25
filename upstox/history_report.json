@@ -1,13 +1,14 @@
 {
- "when": "2026-11-24T23:24:30.271721Z",
+ "when": "2026-11-25T22:52:41.524926Z",
  "range": [
-  "2026-11-17",
-  "2026-11-24"
+  "2026-11-18",
+  "2026-11-25"
  ],
- "stocks_requested": 2614,
+ "stocks_requested": 2615,
  "fetched": 2595,
  "empty": [
   "ELCIDIN",
+  "WHBRADY",
   "WILLAMAGOR",
   "KALYANI",
   "MITSU"
@@ -30,7 +31,7 @@
   "UNIVAFOODS"
  ],
  "errors": [],
- "bars": 12943,
+ "bars": 10928,
  "complete": true,
  "stopped_early": false,
  "years_written": [
