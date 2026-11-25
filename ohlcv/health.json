@@ -71,26 +71,26 @@
   },
   {
    "date": "2026-11-18",
-   "history": 2592,
+   "history": 2594,
    "daily": 2592,
    "state": "ok"
   },
   {
    "date": "2026-11-19",
-   "history": 2589,
+   "history": 2591,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-20",
-   "history": 2590,
-   "daily": 2609,
+   "history": 2592,
+   "daily": 2610,
    "state": "ok"
   },
   {
    "date": "2026-11-23",
-   "history": 2608,
-   "daily": 2609,
+   "history": 2610,
+   "daily": 2591,
    "state": "ok"
   }
  ],
@@ -115,5 +115,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-24T23:29:34Z"
+ "generated_utc": "2026-11-25T12:59:18Z"
 }
