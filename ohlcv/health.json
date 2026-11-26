@@ -1,8 +1,14 @@
 {
  "status": "warn",
- "last_history_date": "2026-11-23",
+ "last_history_date": "2026-11-25",
  "universe": 2574,
  "days": [
+  {
+   "date": "2026-11-02",
+   "history": 2584,
+   "daily": 9,
+   "state": "ok"
+  },
   {
    "date": "2026-11-03",
    "history": 2585,
@@ -71,36 +77,24 @@
   },
   {
    "date": "2026-11-19",
-   "history": 2591,
+   "history": 2590,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-20",
-   "history": 2592,
+   "history": 2591,
    "daily": 2610,
    "state": "ok"
   },
   {
    "date": "2026-11-23",
-   "history": 2610,
+   "history": 2590,
    "daily": 2590,
    "state": "ok"
-  },
-  {
-   "date": "2026-11-25",
-   "history": 0,
-   "daily": 2594,
-   "state": "history incomplete"
   }
  ],
  "issues": [
-  {
-   "kind": "history_incomplete",
-   "date": "2026-11-25",
-   "detail": "history has 0 of ~2574 stocks; the daily file has 2594",
-   "fixable": true
-  },
   {
    "kind": "hole",
    "date": "2026-10-22",
@@ -121,5 +115,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-25T23:07:10Z"
+ "generated_utc": "2026-11-26T12:38:08Z"
 }
