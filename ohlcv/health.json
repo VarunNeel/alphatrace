@@ -4,18 +4,6 @@
  "universe": 2574,
  "days": [
   {
-   "date": "2026-11-02",
-   "history": 2584,
-   "daily": 9,
-   "state": "ok"
-  },
-  {
-   "date": "2026-11-03",
-   "history": 2585,
-   "daily": 28,
-   "state": "ok"
-  },
-  {
    "date": "2026-11-04",
    "history": 2588,
    "daily": 10,
@@ -92,9 +80,33 @@
    "history": 2590,
    "daily": 2590,
    "state": "ok"
+  },
+  {
+   "date": "2026-11-25",
+   "history": 37,
+   "daily": 2590,
+   "state": "history incomplete"
+  },
+  {
+   "date": "2026-11-26",
+   "history": 0,
+   "daily": 2597,
+   "state": "history incomplete"
   }
  ],
  "issues": [
+  {
+   "kind": "history_incomplete",
+   "date": "2026-11-25",
+   "detail": "history has 37 of ~2574 stocks; the daily file has 2590",
+   "fixable": true
+  },
+  {
+   "kind": "history_incomplete",
+   "date": "2026-11-26",
+   "detail": "history has 0 of ~2574 stocks; the daily file has 2597",
+   "fixable": true
+  },
   {
    "kind": "hole",
    "date": "2026-10-22",
@@ -115,5 +127,5 @@
  "quarantine_recent": [],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-26T12:38:08Z"
+ "generated_utc": "2026-11-26T23:00:07Z"
 }
