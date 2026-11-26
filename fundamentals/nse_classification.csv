@@ -117,6 +117,7 @@ VAISHALI,Vaishali Pharma Limited,INE972X01022,EQ,Healthcare,Healthcare,Pharmaceu
 VARDHACRLC,Vardhman Acrylics Limited,INE116G01013,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 VCL,Vaxtex Cotfab Limited,INE098201036,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 VERTOZ,Vertoz Limited,INE188Y01031,EQ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,override
+VGL,VARVEE GLOBAL LIMITED,INE273D01027,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 VITAL,Vital Chemtech Limited,INE0L4K01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 VIVIANA,Viviana Power Tech Limited,INE0MEG01014,EQ,Industrials,Construction,Construction,Civil Construction,kept:yahoo:Engineering & Construction (matches 69% of 95 BSE-classified stocks)
 WIPL,The Western India Plywoods Limited,INE215F01023,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Plywood Boards/ Laminates,kept:yahoo:Lumber & Wood Production (matches 83% of 6 BSE-classified stocks)
@@ -625,6 +626,7 @@ CREST,Crest Ventures Limited,INE559D01011,EQ,Financial Services,Financial Servic
 CRISIL,Crisil Limited,INE007A01025,EQ,Financial Services,Financial Services,Finance,Other Financial Services,bse:ComHeader
 CRIZAC,Crizac Limited,INE0S4R01014,EQ,Consumer Discretionary,Consumer Services,Retailing,Internet & Catalogue Retail,bse:ComHeader
 CROMPTON,Crompton Greaves Consumer Electricals Limited,INE299U01018,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,bse:ComHeader
+CRYSTALCP,Crystal Crop Protection Limited,INE101P01016,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,bse:ComHeader
 CSBBANK,CSB Bank Limited,INE679A01013,EQ,Financial Services,Financial Services,Banks,Private Sector Bank,bse:ComHeader
 CSLFINANCE,CSL Finance Limited,INE718F01018,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
 CSM,CSM Technologies Limited,INE0ZK601013,EQ,Information Technology,Information Technology,IT - Software,Computers - Software & Consulting,bse:ComHeader
@@ -1356,7 +1358,6 @@ KWIL,Kwality Wall's (India) Limited,INE2KCE01013,EQ,Fast Moving Consumer Goods,F
 LADDERUP,Ladderup Finance Limited,INE519D01015,BE,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
 LAHOTIOV,Lahoti Overseas Limited,INE515C01023,EQ,Services,Services,Commercial Services & Supplies,Trading & Distributors,bse:ComHeader
 LAKSHMIMIL,Lakshmi Mills Company Limited,INE938C01019,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
-LAL,Lorenzini Apparels Limited,INE740X01023,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,bse:ComHeader
 LALITHAA,Lalithaa Jewellery Mart Limited,INE0K9O01026,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Gems Jewellery And Watches,bse:ComHeader
 LALPATHLAB,Dr. Lal Path Labs Ltd.,INE600L01024,EQ,Healthcare,Healthcare,Healthcare Services,Healthcare Service Provider,bse:ComHeader
 LAMBODHARA,Lambodhara Textiles Limited,INE112F01022,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
@@ -1540,6 +1541,7 @@ MONARCH,Monarch Networth Capital Limited,INE903D01011,EQ,Financial Services,Fina
 MONEYBOXX,Moneyboxx Finance Limited,INE296Q01012,BE,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
 MONEYVIEW,Moneyview Limited,INE0PTN01011,EQ,Financial Services,Financial Services,Financial Technology (Fintech),Financial Technology (Fintech),bse:ComHeader
 MONTECARLO,Monte Carlo Fashions Limited,INE950M01013,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,bse:ComHeader
+MONTEIL,MONTEIL LIMITED,INE740X01023,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Garments & Apparels,bse:ComHeader
 MOREPENLAB,Morepen Laboratories Limited,INE083A01026,EQ,Healthcare,Healthcare,Pharmaceuticals & Biotechnology,Pharmaceuticals,bse:ComHeader
 MOSCHIP,Moschip Technologies Limited,INE935B01025,EQ,Information Technology,Information Technology,IT - Hardware,Computers Hardware & Equipments,bse:ComHeader
 MOTHERSON,Samvardhana Motherson International Limited,INE775A01035,EQ,Consumer Discretionary,Automobile and Auto Components,Auto Components,Auto Components & Equipments,bse:ComHeader
@@ -2478,7 +2480,6 @@ VERANDA,Veranda Learning Solutions Limited,INE0IQ001011,BE,Consumer Discretionar
 VESUVIUS,Vesuvius India Limited,INE386A01023,EQ,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,bse:ComHeader
 VETO,Veto Switchgears And Cables Limited,INE918N01018,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,bse:ComHeader
 VGCL,Vibrant Global Capital Limited,INE761Q01015,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
-VGL,VARVEE GLOBAL LIMITED,INE273D01027,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 VGUARD,V-Guard Industries Limited,INE951I01027,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,bse:ComHeader
 VHL,Vardhman Holdings Limited,INE701A01023,EQ,Financial Services,Financial Services,Finance,Investment Company,bse:ComHeader
 VHLTD,Viceroy Hotels Limited,INE048C01025,BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,bse:ComHeader
