@@ -1,17 +1,16 @@
 {
- "when": "2026-11-25T22:52:41.524926Z",
+ "when": "2026-11-26T22:41:54.795038Z",
  "range": [
-  "2026-11-18",
-  "2026-11-25"
+  "2026-11-19",
+  "2026-11-26"
  ],
- "stocks_requested": 2615,
- "fetched": 2595,
+ "stocks_requested": 2617,
+ "fetched": 2597,
  "empty": [
   "ELCIDIN",
-  "WHBRADY",
   "WILLAMAGOR",
   "KALYANI",
-  "MITSU"
+  "CRYSTALCP"
  ],
  "no_upstox_key": [
   "ABCOTS",
@@ -21,6 +20,7 @@
   "ICICIPRULI",
   "NOVARTIND",
   "SHUKRAPHAR",
+  "UMIYA-MRO",
   "VIRAT",
   "GFSTEELS",
   "PARSVNATH",
@@ -31,7 +31,7 @@
   "UNIVAFOODS"
  ],
  "errors": [],
- "bars": 10928,
+ "bars": 10587,
  "complete": true,
  "stopped_early": false,
  "years_written": [
