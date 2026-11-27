@@ -117,7 +117,6 @@ VAISHALI,Vaishali Pharma Limited,INE972X01022,EQ,Healthcare,Healthcare,Pharmaceu
 VARDHACRLC,Vardhman Acrylics Limited,INE116G01013,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 VCL,Vaxtex Cotfab Limited,INE098201036,BE,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:yahoo:Textile Manufacturing (matches 82% of 108 BSE-classified stocks)
 VERTOZ,Vertoz Limited,INE188Y01031,EQ,Consumer Discretionary,Media Entertainment & Publication,Media,Advertising & Media Agencies,override
-VGL,VARVEE GLOBAL LIMITED,INE273D01027,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,kept:bse:ComHeader
 VITAL,Vital Chemtech Limited,INE0L4K01016,EQ,Commodities,Chemicals,Chemicals & Petrochemicals,Specialty Chemicals,override
 VIVIANA,Viviana Power Tech Limited,INE0MEG01014,EQ,Industrials,Construction,Construction,Civil Construction,kept:yahoo:Engineering & Construction (matches 69% of 95 BSE-classified stocks)
 WIPL,The Western India Plywoods Limited,INE215F01023,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Plywood Boards/ Laminates,kept:yahoo:Lumber & Wood Production (matches 83% of 6 BSE-classified stocks)
@@ -1016,6 +1015,7 @@ HDFIRE,HD Fire Protect Limited,INE18AK01028,EQ,Industrials,Capital Goods,Industr
 HEADSUP,Heads UP Ventures Limited,INE759V01019,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Trading - Textile Products,bse:ComHeader
 HEALTHX,Health X Platform Limited,INE019J01013,EQ,Healthcare,Healthcare,Healthcare Services,Healthcare Service Provider,bse:ComHeader
 HEGAM,HEG Advanced Materials Limited,INE545A01024,EQ,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,bse:ComHeader
+HEGRAPHITE,HEG Limited,INE0Y9J01020,BE,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,bse:ComHeader
 HEIDELBERG,HeidelbergCement India Limited,INE578A01017,EQ,Commodities,Construction Materials,Cement & Cement Products,Cement & Cement Products,bse:ComHeader
 HEMIPROP,Hemisphere Properties India Limited,INE0AJG01018,EQ,Services,Services,Commercial Services & Supplies,Diversified Commercial Services,bse:ComHeader
 HERANBA,Heranba Industries Limited,INE694N01015,EQ,Commodities,Chemicals,Fertilizers & Agrochemicals,Pesticides & Agrochemicals,bse:ComHeader
@@ -1424,6 +1424,7 @@ MAFATIND,Mafatlal Industries Limited,INE270B01035,EQ,Consumer Discretionary,Text
 MAGADSUGAR,Magadh Sugar & Energy Limited,INE347W01011,EQ,Fast Moving Consumer Goods,Fast Moving Consumer Goods,Agricultural Food & other Products,Sugar,bse:ComHeader
 MAGNUM,Magnum Ventures Limited,INE387I01016,EQ,Commodities,Forest Materials,Paper Forest & Jute Products,Paper & Paper Products,bse:ComHeader
 MAHABANK,Bank of Maharashtra,INE457A01014,EQ,Financial Services,Financial Services,Banks,Public Sector Bank,bse:ComHeader
+MAHACOAL,Mahanadi Coalfields Limited,INE03K401026,EQ,Energy,Oil Gas & Consumable Fuels,Consumable Fuels,Coal,bse:ComHeader
 MAHAPEXLTD,Maha Rashtra Apex Corporation Limited,INE843B01013,EQ,Financial Services,Financial Services,Finance,Other Financial Services,bse:ComHeader
 MAHASTEEL,Mahamaya Steel Industries Limited,INE451L01014,BE,Industrials,Capital Goods,Industrial Products,Iron & Steel Products,bse:ComHeader
 MAHEPC,Mahindra EPC Irrigation Limited,INE215D01010,EQ,Industrials,Capital Goods,Industrial Manufacturing,Industrial Products,bse:ComHeader
@@ -2480,6 +2481,7 @@ VERANDA,Veranda Learning Solutions Limited,INE0IQ001011,BE,Consumer Discretionar
 VESUVIUS,Vesuvius India Limited,INE386A01023,EQ,Industrials,Capital Goods,Industrial Products,Electrodes & Refractories,bse:ComHeader
 VETO,Veto Switchgears And Cables Limited,INE918N01018,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Consumer Electronics,bse:ComHeader
 VGCL,Vibrant Global Capital Limited,INE761Q01015,EQ,Financial Services,Financial Services,Finance,Non Banking Financial Company (NBFC),bse:ComHeader
+VGL,VARVEE GLOBAL LIMITED,INE273D01035,EQ,Consumer Discretionary,Textiles,Textiles & Apparels,Other Textile Products,bse:ComHeader
 VGUARD,V-Guard Industries Limited,INE951I01027,EQ,Consumer Discretionary,Consumer Durables,Consumer Durables,Household Appliances,bse:ComHeader
 VHL,Vardhman Holdings Limited,INE701A01023,EQ,Financial Services,Financial Services,Finance,Investment Company,bse:ComHeader
 VHLTD,Viceroy Hotels Limited,INE048C01025,BE,Consumer Discretionary,Consumer Services,Leisure Services,Hotels & Resorts,bse:ComHeader
