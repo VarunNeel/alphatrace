@@ -1,6 +1,6 @@
 {
- "when_ist": "2026-11-27T01:30",
- "trading_day": "2026-11-25",
+ "when_ist": "2026-11-28T01:20",
+ "trading_day": "2026-11-27",
  "underlyings": {
   "NIFTY": {
    "key": "NSE_INDEX|Nifty 50",
@@ -72,12 +72,12 @@
     },
     {
      "expiry": "2027-02-23",
-     "rows": 156
+     "rows": 164
     }
    ],
-   "rows": 758,
+   "rows": 766,
    "errors": []
   }
  },
- "total_rows": 3306
+ "total_rows": 3314
 }
