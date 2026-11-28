@@ -1,110 +1,104 @@
 {
  "status": "warn",
- "last_history_date": "2026-11-26",
- "universe": 2574,
+ "last_history_date": "2026-11-27",
+ "universe": 2575,
  "days": [
   {
    "date": "2026-11-05",
-   "history": 2588,
+   "history": 2609,
    "daily": 2587,
    "state": "ok"
   },
   {
    "date": "2026-11-06",
-   "history": 2589,
+   "history": 2610,
    "daily": 2607,
    "state": "ok"
   },
   {
    "date": "2026-11-09",
-   "history": 2589,
+   "history": 2610,
    "daily": 2607,
    "state": "ok"
   },
   {
    "date": "2026-11-11",
-   "history": 2591,
+   "history": 2612,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-12",
-   "history": 2591,
+   "history": 2612,
    "daily": 2589,
    "state": "ok"
   },
   {
    "date": "2026-11-13",
-   "history": 2591,
+   "history": 2612,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-16",
-   "history": 2591,
+   "history": 2612,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-17",
-   "history": 2591,
+   "history": 2612,
    "daily": 2591,
    "state": "ok"
   },
   {
    "date": "2026-11-18",
-   "history": 2594,
+   "history": 2613,
    "daily": 2592,
    "state": "ok"
   },
   {
    "date": "2026-11-19",
-   "history": 2590,
+   "history": 2611,
    "daily": 2609,
    "state": "ok"
   },
   {
    "date": "2026-11-20",
-   "history": 2610,
+   "history": 2611,
    "daily": 2610,
    "state": "ok"
   },
   {
    "date": "2026-11-23",
-   "history": 2609,
+   "history": 2610,
    "daily": 2590,
    "state": "ok"
   },
   {
    "date": "2026-11-25",
-   "history": 2608,
+   "history": 2609,
    "daily": 2608,
    "state": "ok"
   },
   {
    "date": "2026-11-26",
-   "history": 12,
+   "history": 2609,
    "daily": 2591,
-   "state": "history incomplete"
+   "state": "ok"
   },
   {
    "date": "2026-11-27",
-   "history": 0,
-   "daily": 2599,
+   "history": 731,
+   "daily": 2617,
    "state": "history incomplete"
   }
  ],
  "issues": [
   {
    "kind": "history_incomplete",
-   "date": "2026-11-26",
-   "detail": "history has 12 of ~2574 stocks; the daily file has 2591",
-   "fixable": true
-  },
-  {
-   "kind": "history_incomplete",
    "date": "2026-11-27",
-   "detail": "history has 0 of ~2574 stocks; the daily file has 2599",
+   "detail": "history has 731 of ~2575 stocks; the daily file has 2617",
    "fixable": true
   },
   {
@@ -113,26 +107,25 @@
    "symbol": "ELCIDIN",
    "detail": "ELCIDIN is missing 2 trading day(s): 2026-10-14, 2026-10-22",
    "fixable": false
-  },
-  {
-   "kind": "hole",
-   "date": "2026-11-19",
-   "symbol": "63MOONS",
-   "detail": "63MOONS is missing 1 trading day(s): 2026-11-19",
-   "fixable": true
-  },
-  {
-   "kind": "hole",
-   "date": "2026-11-19",
-   "symbol": "SHUKRAMED",
-   "detail": "SHUKRAMED is missing 1 trading day(s): 2026-11-19",
-   "fixable": true
   }
  ],
  "unfixable_holes": 2,
- "quarantine_total": 51,
- "quarantine_recent": [],
+ "quarantine_total": 54,
+ "quarantine_recent": [
+  [
+   "2026-11-19",
+   "INTERARCH",
+   "1-day move -80% (possible unadjusted split/bonus)",
+   "320.08"
+  ],
+  [
+   "2026-11-19",
+   "TECHM",
+   "1-day move -51% (possible unadjusted split/bonus)",
+   "861.5"
+  ]
+ ],
  "repaired_rows": 0,
  "repair_mode": false,
- "generated_utc": "2026-11-27T22:44:06Z"
+ "generated_utc": "2026-11-28T11:49:43Z"
 }
